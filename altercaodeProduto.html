@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alteração de Produto</title>
+    <style>
+        /* (Reutilizar estilos do Cadastro) */
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+        h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input[type="text"], .form-group input[type="number"], .form-group select, .form-group textarea {
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        .btn-update { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-right: 10px; }
+        .btn-update:hover { background-color: #0056b3; }
+        .info-estoque { background-color: #fff3cd; border: 1px solid #ffeeba; padding: 10px; border-radius: 4px; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alterar Produto: <span id="produtoNome"></span></h1>
+
+        <div class="info-estoque">
+            <strong>Quantidade em Estoque:</strong> <span id="estoqueAtual"></span>
+            <br>
+            *Para alterar o estoque, use a função de "Movimentação de Estoque".
+        </div>
+
+        <form id="alteracaoForm">
+            <div class="form-group">
+                <label for="codigoBarras">Código de Barras (Não Editável)</label>
+                <input type="text" id="codigoBarras" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="nome">Nome do Produto *</label>
+                <input type="text" id="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="secao">Seção *</label>
+                <select id="secao" required>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="hortifruti">Hortifruti</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fornecedor">Fornecedor Principal *</label>
+                <input type="text" id="fornecedor" required>
+            </div>
+
+            <div class="form-group">
+                <label for="custo">Novo Custo Unitário (Preço Compra) *</label>
+                <input type="number" id="custo" required min="0.01" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="venda">Novo Preço de Venda *</label>
+                <input type="number" id="venda" required min="0.01" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="3"></textarea>
+            </div>
+            
+            <button type="submit" class="btn-update">Salvar Alterações</button>
+            <button type="button" class="btn-update" style="background-color: #dc3545;" onclick="abrirDescontinuacao(1)">Descontinuar Produto</button>
+        </form>
+    </div>
+
+    <script>
+        // Simulação de carregamento de dados do produto ID 1 (do exemplo de Consulta)
+        const produtoCarregado = {
+            id: 1, 
+            codigo: '789001', 
+            nome: 'Sabão em Pó Azul 500g', 
+            secao: 'limpeza', 
+            estoque: 150, 
+            custo: 3.50,
+            venda: 5.99, 
+            fornecedor: 'Empresa X',
+            descricao: 'Sabão em pó para roupas brancas e coloridas.'
+        };
+
+        window.onload = function() {
+            document.getElementById('produtoNome').textContent = produtoCarregado.nome;
+            document.getElementById('estoqueAtual').textContent = produtoCarregado.estoque;
+            document.getElementById('codigoBarras').value = produtoCarregado.codigo;
+            document.getElementById('nome').value = produtoCarregado.nome;
+            document.getElementById('secao').value = produtoCarregado.secao;
+            document.getElementById('fornecedor').value = produtoCarregado.fornecedor;
+            document.getElementById('custo').value = produtoCarregado.custo.toFixed(2);
+            document.getElementById('venda').value = produtoCarregado.venda.toFixed(2);
+            document.getElementById('descricao').value = produtoCarregado.descricao;
+        };
+
+        document.getElementById('alteracaoForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Lógica de validação e envio das alterações
+            console.log("Alterações Salvas!");
+            alert("Produto alterado com sucesso!");
+        });
+        
+        function abrirDescontinuacao(id) {
+            // Reutiliza a função de descontinuação
+            alert(`Abrindo formulário de Descontinuação para o produto ID: ${id}`);
+        }
+    </script>
+</body>
+</html>
