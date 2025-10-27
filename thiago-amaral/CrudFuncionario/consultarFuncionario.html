@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Funcionário</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .container { max-width: 800px; margin: auto; }
+        .filters { padding: 1em; border: 1px solid #ccc; border-radius: 1em; margin-bottom: 2em; }
+        label { display: block; margin-top: 1em; }
+        input, select { width: 100%; padding: 0.5em; margin-top: 0.5em; box-sizing: border-box; }
+        button { margin-top: 1.5em; padding: 0.7em 1.2em; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[RFS02] – Consultar Funcionário</h1>
+        [cite_start]<p>Realize buscas e visualize os registros dos funcionários cadastrados. [cite: 30]</p>
+
+        <form class="filters" action="#" method="get">
+            <fieldset>
+                [cite_start]<legend>Filtros de Pesquisa [cite: 31]</legend>
+                <div>
+                    <label for="nome">Nome do Funcionário:</label>
+                    [cite_start]<input type="text" id="nome" name="nome" placeholder="Busca total ou parcial pelo nome [cite: 33]">
+                </div>
+                 <div>
+                    <label for="cpf">CPF:</label>
+                    [cite_start]<input type="text" id="cpf" name="cpf" placeholder="Filtrar por CPF [cite: 34]">
+                </div>
+                <div>
+                    <label for="cargo">Cargo:</label>
+                    <select id="cargo" name="cargo">
+                        <option value="">Todos os cargos</option>
+                        <option value="caixa">Caixa</option>
+                        <option value="repositor">Repositor</option>
+                        <option value="gerente">Gerente</option>
+                        <option value="estoquista">Estoquista</option>
+                        <option value="atendente">Atendente</option>
+                    </select>
+                </div>
+                 <div>
+                    <label for="data_inicio">Período de Admissão:</label>
+                    [cite_start]<input type="date" id="data_inicio" name="data_inicio" title="Início do período [cite: 38]">
+                    [cite_start]<input type="date" id="data_fim" name="data_fim" title="Fim do período [cite: 38]">
+                </div>
+                <button type="submit">Pesquisar</button>
+            </fieldset>
+        </form>
+        
+        <h2>Resultados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cargo</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Exemplo Funcionário 1</td>
+                    <td>Gerente</td>
+                    <td>(11) 91234-5678</td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="alert('Exportando para CSV...')">Exportar para CSV</button>
+        <button onclick="alert('Exportando para PDF...')">Exportar para PDF</button>
+    </div>
+</body>
+</html>

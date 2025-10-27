@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Seção</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        .container { max-width: 800px; margin: auto; }
+        .filters { padding: 1em; border: 1px solid #ccc; border-radius: 1em; margin-bottom: 2em; }
+        label { display: block; margin-top: 1em; }
+        input, select { width: 100%; padding: 0.5em; margin-top: 0.5em; box-sizing: border-box; }
+        button { margin-top: 1.5em; padding: 0.7em 1.2em; cursor: pointer; }
+        table { width: 100%; border-collapse: collapse; margin-top: 1em; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .inativa { background-color: #f2dede; color: #a94442; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>[RFS06] – Consultar Seção</h1>
+        [cite_start]<p>Consulte e liste todas as seções registradas no sistema. [cite: 88]</p>
+
+        <form class="filters" action="#" method="get">
+            <fieldset>
+                <legend>Filtros de Pesquisa</legend>
+                <div>
+                    <label for="nome_secao">Nome da Seção:</label>
+                    [cite_start]<input type="text" id="nome_secao" name="nome_secao" placeholder="Busca parcial pelo nome [cite: 90]">
+                </div>
+                 <div>
+                    <label for="codigo_secao">Código da Seção:</label>
+                    [cite_start]<input type="text" id="codigo_secao" name="codigo_secao" placeholder="Filtrar por código [cite: 91]">
+                </div>
+                <div>
+                    <label for="responsavel">Responsável:</label>
+                    [cite_start]<select id="responsavel" name="responsavel" title="Filtra seções de acordo com o funcionário responsável. [cite: 93]">
+                        <option value="">Todos</option>
+                        <option value="func1">Funcionário Exemplo 1</option>
+                    </select>
+                </div>
+                 <div>
+                    <label for="status">Status:</label>
+                    [cite_start]<select id="status" name="status" title="Filtro por status 'Ativa' ou 'Inativa'. [cite: 95]">
+                        <option value="">Todos</option>
+                        <option value="ativa">Ativa</option>
+                        <option value="inativa">Inativa</option>
+                    </select>
+                </div>
+                <button type="submit">Pesquisar</button>
+            </fieldset>
+        </form>
+        
+        <h2>Resultados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome da Seção</th>
+                    <th>Código</th>
+                    <th>Responsável</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Padaria</td>
+                    <td>PAD01</td>
+                    <td>Funcionário Exemplo 1</td>
+                    <td>Ativa</td>
+                </tr>
+                [cite_start]<tr class="inativa" title="Seções inativas devem ser destacadas. [cite: 99]">
+                    <td>Açougue</td>
+                    <td>ACG01</td>
+                    <td>-</td>
+                    <td>Inativa</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
