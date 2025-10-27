@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Produtos</title>
+    <style>
+        /* (CSS from previous example, plus table styles) */
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 1000px; margin: auto; }
+        h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .filtros { display: flex; gap: 10px; margin-bottom: 20px; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        .filtros input, .filtros select, .filtros button { padding: 8px; border: 1px solid #ccc; border-radius: 4px; }
+        .filtros button { background-color: #007bff; color: white; cursor: pointer; }
+        .filtros button:hover { background-color: #0056b3; }
+        
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+        table th, table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        table th { background-color: #f0f8ff; color: #333; }
+        .status-ativo { color: green; font-weight: bold; }
+        .status-inativo { color: red; font-weight: bold; }
+        .btn-acao { background-color: #ffc107; color: #333; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta e Gestão de Produtos</h1>
+
+        <div class="filtros">
+            <input type="text" id="filtroNome" placeholder="Buscar por Nome ou Código">
+            <select id="filtroSecao">
+                <option value="">Todas as Seções</option>
+                <option value="limpeza">Limpeza</option>
+                </select>
+            <select id="filtroStatus">
+                <option value="ativo">Ativo</option>
+                <option value="inativo">Descontinuado</option>
+                <option value="">Todos</option>
+            </select>
+            <button onclick="buscarProdutos()">Buscar</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nome do Produto</th>
+                    <th>Seção</th>
+                    <th>Qtd. Estoque</th>
+                    <th>Preço Venda</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaProdutos">
+                </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Dados de simulação
+        const produtos = [
+            { id: 1, codigo: '789001', nome: 'Sabão em Pó Azul 500g', secao: 'Limpeza', estoque: 150, venda: 5.99, status: 'ativo' },
+            { id: 2, codigo: '789002', nome: 'Pão Francês', secao: 'Padaria', estoque: 80, venda: 0.50, status: 'ativo' },
+            { id: 3, codigo: '789003', nome: 'Tomate Italiano Kg', secao: 'Hortifruti', estoque: 0, venda: 8.49, status: 'inativo' }
+        ];
+
+        function buscarProdutos() {
+            const tabelaProdutos = document.getElementById('tabelaProdutos');
+            tabelaProdutos.innerHTML = ''; // Limpa resultados anteriores
+            
+            // Lógica de filtro (simplificada)
+            const resultados = produtos.filter(p => p.status === document.getElementById('filtroStatus').value || document.getElementById('filtroStatus').value === '');
+
+            resultados.forEach(produto => {
+                const tr = document.createElement('tr');
+                const statusClass = produto.status === 'ativo' ? 'status-ativo' : 'status-inativo';
+
+                tr.innerHTML = `
+                    <td>${produto.codigo}</td>
+                    <td>${produto.nome}</td>
+                    <td>${produto.secao}</td>
+                    <td>${produto.estoque}</td>
+                    <td>R$ ${produto.venda.toFixed(2)}</td>
+                    <td class="${statusClass}">${produto.status === 'ativo' ? 'Ativo' : 'Descontinuado'}</td>
+                    <td>
+                        <button class="btn-acao" onclick="abrirAlteracao(${produto.id})">Alterar</button>
+                        <button class="btn-acao" onclick="abrirDescontinuacao(${produto.id})" ${produto.status === 'inativo' ? 'disabled' : ''}>Descontinuar</button>
+                    </td>
+                `;
+                tabelaProdutos.appendChild(tr);
+            });
+        }
+        
+        function abrirAlteracao(id) {
+            alert(`Abrir tela de Alteração para o produto ID: ${id}`);
+            // Na aplicação real, isto redirecionaria para a tela de Alteração
+        }
+
+        function abrirDescontinuacao(id) {
+            alert(`Abrir formulário de Descontinuação para o produto ID: ${id}`);
+            // Na aplicação real, isto abriria a modal/tela de Descontinuação
+        }
+
+        // Carrega a tabela ao iniciar a tela
+        window.onload = buscarProdutos;
+    </script>
+</body>
+</html>
