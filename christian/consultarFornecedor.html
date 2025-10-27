@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Fornecedores</title>
+    <style>
+        /* Estilos básicos para melhor visualização */
+        body { font-family: sans-serif; margin: 2em; }
+        .container { max-width: 900px; margin: auto; }
+        .filtros { padding: 2em; border: 1px solid #ccc; border-radius: 10px; margin-bottom: 2em; }
+        .filtros-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type="text"], select { width: 100%; padding: 8px; box-sizing: border-box; }
+        .btn-buscar { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; grid-column: 2; justify-self: end;}
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .grupo-ramo { font-weight: bold; background-color: #e9ecef; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Consulta de Fornecedores</h1>
+        
+        <div class="filtros">
+            <h2>Filtros de Busca</h2>
+            <div class="filtros-grid">
+                <div>
+                    <label for="razaoSocial">Razão Social</label>
+                    <input type="text" id="razaoSocial" name="razaoSocial" maxlength="30" placeholder="Digite o nome da empresa">
+                </div>
+                <div>
+                    <label for="cnpj">CNPJ</label>
+                    <input type="text" id="cnpj" name="cnpj" placeholder="Digite o CNPJ">
+                </div>
+                <div>
+                    <label for="ramoAtividade">Ramo de Atividade</label>
+                    <select id="ramoAtividade" name="ramoAtividade">
+                        <option value="" selected>Todos</option>
+                        <option value="industria">Indústria</option>
+                        <option value="comercio">Comércio</option>
+                        <option value="servico">Serviço</option>
+                    </select>
+                </div>
+                <button type="button" class="btn-buscar">Buscar</button>
+            </div>
+        </div>
+
+        <h2>Resultados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Razão Social</th>
+                    <th>CNPJ</th>
+                    <th>Endereço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="grupo-ramo">
+                    <td colspan="4">Comércio</td>
+                </tr>
+                <tr>
+                    <td>Distribuidora Alimentos ABC</td>
+                    <td>11.222.333/0001-44</td>
+                    <td>Rua das Flores, 123 - Centro</td>
+                    <td><a href="#">Editar</a> | <a href="#">Excluir</a></td>
+                </tr>
+                <tr>
+                    <td>Mercado Preço Bom Ltda.</td>
+                    <td>55.666.777/0001-88</td>
+                    <td>Avenida Principal, 987 - Bairro Novo</td>
+                    <td><a href="#">Editar</a> | <a href="#">Excluir</a></td>
+                </tr>
+
+                <tr class="grupo-ramo">
+                    <td colspan="4">Indústria</td>
+                </tr>
+                <tr>
+                    <td>Indústria de Embalagens ZYX</td>
+                    <td>99.888.777/0001-66</td>
+                    <td>Rodovia Industrial, km 5 - Distrito Industrial</td>
+                    <td><a href="#">Editar</a> | <a href="#">Excluir</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
