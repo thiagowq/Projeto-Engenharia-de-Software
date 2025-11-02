@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[RFS11] Editar Item de Estoque</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 2em; }
+        form { max-width: 800px; margin: auto; padding: 1em; border: 1px solid #ccc; border-radius: 1em; }
+        fieldset { border: none; padding: 0; margin-bottom: 2em; }
+        legend h1, legend h2 { margin: 0 0 .5em 0; font-size: 1.2em; }
+        label { display: block; margin-top: 1em; font-weight: 600; }
+        input, select { width: 100%; padding: .5em; margin-top: .5em; box-sizing: border-box; }
+        small { color: #555; font-size: .8em; font-weight: normal; }
+        .row { display: flex; gap: 1em; flex-wrap: wrap; }
+        .col { flex: 1 1 240px; }
+        button { margin-top: 1.5em; padding: .7em 1.2em; cursor: pointer; }
+        .audit-box { background:#f5f5f5; border:1px solid #ccc; border-radius:.5em; padding:1em; font-size:.9em; color:#333; }
+        .inline-check { display:flex; align-items:center; gap:.5em; font-size:.9em; margin-top:2em; }
+        .inline-check input { width:auto; margin-top:0; }
+        .danger { color:#c00; font-weight:bold; font-size:.85em; }
+    </style>
+</head>
+<body>
+
+    <!-- Buscar item -->
+    <form action="#" method="get" id="formBuscarItem">
+        <fieldset>
+            <legend><h1>[RFS11] Editar Item de Estoque</h1></legend>
+            <p>Informe o código interno do item para carregar os dados e permitir edição. O código interno pode ser bloqueado para edição.</p>
+
+            <div class="row">
+                <div class="col">
+                    <label for="busca_codigo">*Código Interno</label>
+                    <input type="text" id="busca_codigo" name="busca_codigo" required placeholder="Ex: 400-XYZ">
+                </div>
+            </div>
+
+            <button type="submit">Carregar Dados</button>
+        </fieldset>
+    </form>
+
+    <!-- Form de edição do item -->
+    <form action="#" method="post" id="formEditarItem">
+        <fieldset>
+            <legend><h2>Dados do Item</h2></legend>
+
+            <div class="row">
+                <div class="col">
+                    <label for="codigo_interno_edit">*Código Interno</label>
+                    <input type="text" id="codigo_interno_edit" name="codigo_interno_edit" value="400-XYZ" required readonly>
+                    <small>Código interno normalmente não muda.</small>
+                </div>
+
+                <div class="col inline-check">
+                    <input type="checkbox" id="permitir_codigo">
+                    <label for="permitir_codigo">Permitir alterar Código Interno</label>
+                    <span class="danger">(precisa continuar único)</span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="descricao_edit">*Descrição / Nome do produto</label>
+                    <input type="text" id="descricao_edit" name="descricao_edit" required maxlength="150" value="Tomate Italiano 1kg">
+                </div>
+
+                <div class="col">
+                    <label for="categoria_edit">*Categoria</label>
+                    <select id="categoria_edit" name="categoria_edit" required>
+                        <option>Hortifruti</option>
+                        <option>Frios</option>
+                        <option>Limpeza</option>
+                        <option>Bebidas</option>
+                        <option>Outros</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="unidade_edit">*Unidade de medida</label>
+                    <select id="unidade_edit" name="unidade_edit" required>
+                        <option>KG</option>
+                        <option>L</option>
+                        <option>ml</option>
+                        <option>UN</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <label for="fator_conv">Fator de conversão</label>
+                    <input type="number" id="fator_conv" name="fator_conv" min="0" step="0.01" placeholder="Ex: 0.5">
+                    <small>Ex.: caixa → unidade; kg → g.</small>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="lote_edit">Controle por Lote</label>
+                    <select id="lote_edit" name="lote_edit">
+                        <option>Não</option>
+                        <option>Sim</option>
+                    </select>
+                </div>
+
+                <div class="col">
+                    <label for="validade_edit">Controle por Validade</label>
+                    <select id="validade_edit" name="validade_edit">
+                        <option>Não</option>
+                        <option>Sim</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="estoque_minimo">Estoque mínimo</label>
+                    <input type="number" id="estoque_minimo" name="estoque_minimo" min="0" step="0.01" placeholder="Ex: 5.00">
+                </div>
+
+                <div class="col">
+                    <label for="ponto_reposicao">Ponto de reposição</label>
+                    <input type="number" id="ponto_reposicao" name="ponto_reposicao" min="0" step="0.01" placeholder="Ex: 10.00">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="localizacao_edit">*Localização</label>
+                    <input type="text" id="localizacao_edit" name="localizacao_edit" required value="Depósito A / Rua 3 / Prateleira 2">
+                </div>
+
+                <div class="col">
+                    <label for="status_edit">*Status</label>
+                    <select id="status_edit" name="status_edit" required>
+                        <option>Ativo</option>
+                        <option>Inativo</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="margin-top:1.5em;">
+                <div class="audit-box">
+                    <strong>Auditoria</strong><br>
+                    Última alteração: 02/11/2025 14:45<br>
+                    Usuário: almoxarife.joao<br><br>
+                    Exemplo de registro:<br>
+                    - Status: Ativo → Inativo<br>
+                    - Localização: "Depósito A / Rua 2" → "Depósito A / Rua 3 / Prateleira 2"
+                </div>
+                <small>O sistema deve registrar quem alterou, quando, e antes/depois.</small>
+            </div>
+
+            <button type="submit">Salvar Alterações</button>
+            <button type="reset">Descartar Mudanças</button>
+        </fieldset>
+    </form>
+
+    <script>
+        // permitir editar código interno se marcar a caixa
+        const permitir = document.getElementById('permitir_codigo');
+        const codigo = document.getElementById('codigo_interno_edit');
+
+        permitir.addEventListener('change', function() {
+            if (permitir.checked) {
+                codigo.removeAttribute('readonly');
+            } else {
+                codigo.setAttribute('readonly','readonly');
+            }
+        });
+
+        // validação numérica básica antes de enviar
+        document.getElementById('formEditarItem').addEventListener('submit', function(e){
+            const minv = document.getElementById('estoque_minimo').value;
+            const repv = document.getElementById('ponto_reposicao').value;
+            if (minv && minv < 0) { alert("Estoque mínimo não pode ser negativo."); e.preventDefault(); }
+            if (repv && repv < 0) { alert("Ponto de reposição não pode ser negativo."); e.preventDefault(); }
+        });
+    </script>
+</body>
+</html>
