@@ -1,4 +1,3 @@
-# Projeto-Engenharia-de-Software
 🛒 Visão Geral do Projeto: Sistema de Gestão para Supermercado
 Este projeto consiste no desenvolvimento de um Sistema Integrado de Gestão projetado especificamente para atender às necessidades operacionais de um supermercado, abrangendo desde o cadastro de clientes e funcionários até a gestão de estoque, produtos e fornecedores. O objetivo principal é centralizar e otimizar processos críticos, garantindo eficiência, controle e rastreabilidade em todas as áreas.
 
@@ -34,14 +33,7 @@ Organização lógica dos produtos e atribuição de responsabilidade por depart
 Cadastro: Permite registrar seções (departamentos) com Nome, Código, Descrição, Responsável e Status. Nome e Código devem ser únicos.
 Gestão: Permite consulta, edição e exclusão lógica de seções, com verificação obrigatória de vínculos com produtos antes da inativação ou exclusão.
 
-
 🔒 Regras de Negócio e Auditoria
 O sistema prioriza a integridade dos dados e a rastreabilidade das ações:
-
 Ações como edição de clientes , edição de funcionários , e exclusão de funcionários e seções  exigem o registro em auditoria de usuário, data e hora da modificação/operação.
-
-
-
-
-
 A inativação (exclusão lógica) é o padrão para preservar o histórico, sendo a remoção definitiva geralmente bloqueada em casos de vínculos (clientes com vendas, funcionários).
