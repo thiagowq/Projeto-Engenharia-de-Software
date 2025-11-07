@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Produto</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; }
+        .container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); max-width: 600px; margin: auto; }
+        h1 { color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+        .form-group { margin-bottom: 15px; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input[type="text"], .form-group input[type="number"], .form-group select, .form-group textarea {
+            width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;
+        }
+        .btn-submit { background-color: #28a745; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        .btn-submit:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastrar Novo Produto</h1>
+
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome do Produto *</label>
+                <input type="text" id="nome" required placeholder="Ex: Sabão em Pó Azul 500g">
+            </div>
+
+            <div class="form-group">
+                <label for="codigoBarras">Código de Barras *</label>
+                <input type="text" id="codigoBarras" required placeholder="Ex: 7891234567890">
+            </div>
+
+            <div class="form-group">
+                <label for="secao">Seção *</label>
+                <select id="secao" required>
+                    <option value="">Selecione a Seção</option>
+                    <option value="limpeza">Limpeza</option>
+                    <option value="hortifruti">Hortifruti</option>
+                    <option value="padaria">Padaria</option>
+                    <option value="mercearia">Mercearia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="fornecedor">Fornecedor Principal *</label>
+                <input type="text" id="fornecedor" required placeholder="Ex: Empresa X Distribuidora">
+            </div>
+
+            <div class="form-group">
+                <label for="custo">Custo Unitário (Preço Compra) *</label>
+                <input type="number" id="custo" required min="0.01" step="0.01" placeholder="R$ 0.00">
+            </div>
+
+            <div class="form-group">
+                <label for="venda">Preço de Venda *</label>
+                <input type="number" id="venda" required min="0.01" step="0.01" placeholder="R$ 0.00">
+            </div>
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <textarea id="descricao" rows="3" placeholder="Detalhes, ingredientes ou características."></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Cadastrar Produto</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Simulação de envio de dados
+            const dados = {
+                nome: document.getElementById('nome').value,
+                codigoBarras: document.getElementById('codigoBarras').value,
+                secao: document.getElementById('secao').value,
+                fornecedor: document.getElementById('fornecedor').value,
+                custo: document.getElementById('custo').value,
+                venda: document.getElementById('venda').value,
+                descricao: document.getElementById('descricao').value
+            };
+            console.log("Produto Cadastrado:", dados);
+            alert("Produto '" + dados.nome + "' cadastrado com sucesso!");
+            this.reset(); // Limpa o formulário
+        });
+    </script>
+</body>
+</html>
