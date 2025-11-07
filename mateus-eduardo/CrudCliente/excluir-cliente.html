@@ -5,20 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>[RFS04] Excluir Cliente</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 2em; }
-        form { max-width: 800px; margin: auto; padding: 1em; border: 1px solid #ccc; border-radius: 1em; }
-        fieldset { border: none; padding: 0; margin-bottom: 2em; }
-        legend h1, legend h2 { margin: 0 0 .5em 0; font-size: 1.2em; }
-        label { display: block; margin-top: 1em; font-weight: 600; }
-        input, select { width: 100%; padding: .5em; margin-top: .5em; box-sizing: border-box; }
-        button { margin-top: 1.5em; padding: .7em 1.2em; cursor: pointer; }
-        .row { display: flex; gap: 1em; flex-wrap: wrap; }
-        .col { flex: 1 1 240px; }
-        .resumo-box { background:#f5f5f5; border:1px solid #ccc; border-radius:.5em; padding:1em; font-size:.9em; color:#333; }
-        .alerta { color:#c00; font-size:.9em; font-weight:bold; margin-top:1em; display:none; }
-        .confirm-group { display:flex; align-items:flex-start; gap:.5em; margin-top:1em; font-size:.9em; }
-        .confirm-group input { width:auto; margin-top:.3em; }
-        small { color:#555; font-size:.8em; font-weight:normal; }
+        :root {
+                --primary-color: #dc3545; /* Vermelho para alerta/exclusão */
+                --secondary-color: #6c757d;
+                --light-bg: #f8f9fa;
+                --white: #ffffff;
+            }
+            body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background-color: var(--light-bg); }
+            .card { max-width: 900px; margin: auto; padding: 25px; background: var(--white); border-radius: 8px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.05); }
+            legend h1 { 
+                margin: 0 0 15px 0; 
+                font-size: 1.8em; 
+                color: var(--primary-color); 
+                border-bottom: 2px solid #e9ecef; 
+                padding-bottom: 10px; 
+            }
+
+            /* Formulário de Busca Inicial */
+            .search-form {
+                display: flex;
+                gap: 10px;
+                align-items: flex-end;
+                padding-bottom: 20px;
+                border-bottom: 1px dashed #ced4da;
+                margin-bottom: 20px;
+            }
+            .search-form .col { flex: 1; }
+            label { 
+                display: block; 
+                margin-top: 15px; 
+                font-weight: 600; 
+                font-size: 0.95em; 
+                color: #343a40; 
+            }
+            input { 
+                width: 100%; 
+                padding: 10px; 
+                margin-top: 5px; 
+                box-sizing: border-box; 
+                border: 1px solid #ced4da;
+                border-radius: 4px;
+            }
+            .search-button {
+                background-color: var(--primary-color);
+                color: var(--white);
+                padding: 10px 15px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.2s;
+            }
+            .search-button:hover { background-color: #c82333; }
+            
+            /* Área de Detalhes do Cliente */
+            .client-details {
+                background-color: #fcebeb; /* Fundo levemente vermelho para destaque */
+                border: 1px solid var(--primary-color);
+                padding: 20px;
+                border-radius: 6px;
+                margin-top: 20px;
+            }
+            .detail-item {
+                margin-bottom: 10px;
+                font-size: 1.05em;
+            }
+            .detail-item strong {
+                color: #343a40;
+                display: inline-block;
+                min-width: 100px;
+            }
+            
+            /* Botões de Ação */
+            .actions { margin-top: 25px; text-align: right; }
+            button { 
+                padding: 12px 20px; 
+                cursor: pointer;
+                border: none;
+                border-radius: 5px;
+                font-weight: 600;
+                transition: background-color 0.2s;
+            }
+            /* Botão Principal de Exclusão/Inativação (Vermelho) */
+            button[type="submit"] { background-color: var(--primary-color); color: var(--white); }
+            button[type="submit"]:hover { background-color: #c82333; }
+            /* Botão de Cancelar */
+            button[type="reset"] { background-color: var(--secondary-color); color: var(--white); margin-left: 10px; }
+            button[type="reset"]:hover { background-color: #5a6268; }
     </style>
 </head>
 <body>
