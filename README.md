@@ -41,20 +41,3 @@ Gestão: Permite consulta, edição e exclusão lógica de seções, com verific
 O sistema prioriza a integridade dos dados e a rastreabilidade das ações:
 Ações como edição de clientes , edição de funcionários , e exclusão de funcionários e seções  exigem o registro em auditoria de usuário, data e hora da modificação/operação.
 A inativação (exclusão lógica) é o padrão para preservar o histórico, sendo a remoção definitiva geralmente bloqueada em casos de vínculos (clientes com vendas, funcionários).
-
-Links
-Link do Cronograma (Trello): utilizamos o Trello para separar as responsabilidades das tarefas para os integrantes do grupo. Além disso separamos as tarefas por releases para facilitar o versionamento do projeto posteriormente;
-Link do Documento de Requisitos: documento contendo os principais requisitos do projeto; contendo requisitos funcionais, não-funcionais e requisitos de cliente;
-Link da Tabela da Matriz de Rastreabilidade: tabela para auxiliar na conexão entre os requisitos e os casos de teste, além de outras funcionalidades;
-Link da Representação Visual da Matriz de Rastreabilidade: documento que mapeia e conecta os diferentes requisitos do projeto, garantindo que todos os objetivos sejam atendidos e verificando a relação entre eles;
-Link do Documento de Casos de Teste: descrição detalhada de testes de como um usuário interage com um sistema para atingir o objetivo do serviço.
-Link do Documento de Estimativa de Tamanho: tabela com a estimativa de tamanho aproximada do projeto;
-
-Equipe
-
-Christian Ferreira Toledo
-Mateus Eduardo de Pádua Almeida
-Thiago Santos Fonseca Amaral
-Thiago José da Cruz
-
-Acesse como está ficando por esse link: https://thiagowq.github.io/Projeto-Engenharia-de-Software/
