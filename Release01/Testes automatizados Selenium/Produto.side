@@ -1,0 +1,659 @@
+{
+  "id": "2c5cb207-f4ec-4480-9a70-93723964c7b3",
+  "version": "2.0",
+  "name": "Produto",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "d5d9cb7d-e5db-4132-9a83-332ddcad08fb",
+    "name": "Consultar",
+    "commands": [{
+      "id": "64492d76-0bfc-4275-8293-e2fdb8a25607",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bfe476b-9c8f-44f7-b790-57ab2e7cde03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e27a13e8-09b6-47fd-864b-5cd566d9c9fa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar Produtos",
+      "targets": [
+        ["linkText=Consultar Produtos", "linkText"],
+        ["css=div:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/thiago/consultarProduto.html')]", "xpath:href"],
+        ["xpath=//div/div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12009328-6935-45d6-8a8c-9b3f0b9de838",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroNome",
+      "targets": [
+        ["id=filtroNome", "id"],
+        ["css=#filtroNome", "css:finder"],
+        ["xpath=//input[@id='filtroNome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48005c97-c17e-4516-8d4b-91db889ddbb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=filtroNome",
+      "targets": [
+        ["id=filtroNome", "id"],
+        ["css=#filtroNome", "css:finder"],
+        ["xpath=//input[@id='filtroNome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Tomate Italiano Kg"
+    }, {
+      "id": "4f175dce-f445-49e8-9933-63973a89dd0d",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroStatus",
+      "targets": [
+        ["id=filtroStatus", "id"],
+        ["css=#filtroStatus", "css:finder"],
+        ["xpath=//select[@id='filtroStatus']", "xpath:attributes"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae11df7c-3b87-45ac-a248-a9625858b333",
+      "comment": "",
+      "command": "select",
+      "target": "id=filtroStatus",
+      "targets": [],
+      "value": "label=Descontinuado"
+    }, {
+      "id": "5f6b39f2-786c-4bd8-81b5-ceb7dc02be8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroStatus > option:nth-child(2)",
+      "targets": [
+        ["css=#filtroStatus > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='inativo']", "xpath:attributes"],
+        ["xpath=//select[@id='filtroStatus']/option[2]", "xpath:idRelative"],
+        ["xpath=//select[2]/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Descontinuado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cea7e9fd-3852-4544-b270-95a0e0d3dae5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@onclick='buscarProdutos()']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "78cdcf3d-1823-4338-b6ae-7975f9ea58c1",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "f7d08f74-8660-40cb-87d0-de2e7d281163",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95a6535a-d8e1-480f-a15b-80b9c6d84ab8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a1f2274-c9b4-49e0-981f-b0f5f5944339",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar Produto",
+      "targets": [
+        ["linkText=Cadastrar Produto", "linkText"],
+        ["css=div:nth-child(2) > ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar Produto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/thiago/cadastrarProduto.html')]", "xpath:href"],
+        ["xpath=//div/div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85b615a5-86d7-4a12-8c6f-2a1e99f409f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71dd9bc3-81ea-4e9d-9b5f-1dd484f20455",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Detergente Neutro BrilhoMax 500 ml"
+    }, {
+      "id": "cce315f0-f4c1-4afc-af38-b77eede0b48f",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigoBarras",
+      "targets": [
+        ["id=codigoBarras", "id"],
+        ["css=#codigoBarras", "css:finder"],
+        ["xpath=//input[@id='codigoBarras']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0472cc36-af66-488c-ad1d-19cc3f13414b",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigoBarras",
+      "targets": [
+        ["id=codigoBarras", "id"],
+        ["css=#codigoBarras", "css:finder"],
+        ["xpath=//input[@id='codigoBarras']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "0100010111"
+    }, {
+      "id": "dac4498d-facb-4e57-80f0-b8b126e970d5",
+      "comment": "",
+      "command": "click",
+      "target": "id=secao",
+      "targets": [
+        ["id=secao", "id"],
+        ["css=#secao", "css:finder"],
+        ["xpath=//select[@id='secao']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[3]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a37b9c1-07c1-432a-9f91-229e506f64ac",
+      "comment": "",
+      "command": "select",
+      "target": "id=secao",
+      "targets": [],
+      "value": "label=Limpeza"
+    }, {
+      "id": "3ef11c92-59b7-4a89-a744-65c47500a0fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='limpeza']", "xpath:attributes"],
+        ["xpath=//select[@id='secao']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Limpeza')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "171838e5-011b-49d1-9b08-03c85111bbc3",
+      "comment": "",
+      "command": "click",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a03e5b0-9bec-4d6e-a058-1bfbb60dcd35",
+      "comment": "",
+      "command": "type",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "LimpaFácil Distribuidora"
+    }, {
+      "id": "ae83efe1-1b93-49d6-8a7f-09d5975daa88",
+      "comment": "",
+      "command": "click",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6ac9116-6404-467f-a833-af4cf0086f63",
+      "comment": "",
+      "command": "type",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "3.28"
+    }, {
+      "id": "32b59508-c374-47ce-b0c2-a23936f2aa97",
+      "comment": "",
+      "command": "click",
+      "target": "id=venda",
+      "targets": [
+        ["id=venda", "id"],
+        ["css=#venda", "css:finder"],
+        ["xpath=//input[@id='venda']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a36525-cf68-4b6f-aff1-ae3feb105227",
+      "comment": "",
+      "command": "type",
+      "target": "id=venda",
+      "targets": [
+        ["id=venda", "id"],
+        ["css=#venda", "css:finder"],
+        ["xpath=//input[@id='venda']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "4.28"
+    }, {
+      "id": "c2109247-4a5d-45c5-afba-effbe6823029",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao",
+      "targets": [
+        ["id=descricao", "id"],
+        ["css=#descricao", "css:finder"],
+        ["xpath=//textarea[@id='descricao']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[7]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55829a8d-5b19-4345-ad5a-5e11be4028a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao",
+      "targets": [
+        ["id=descricao", "id"],
+        ["css=#descricao", "css:finder"],
+        ["xpath=//textarea[@id='descricao']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/div[7]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Detergente líquido neutro com alto poder desengordurante, ideal para louças e superfícies."
+    }, {
+      "id": "5479f0c3-0ebb-41a1-a394-354c8f5a049c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-submit",
+      "targets": [
+        ["css=.btn-submit", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f753e73-180d-4911-aa83-cb5762228e1f",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Produto 'Detergente Neutro BrilhoMax 500 ml' cadastrado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1792bb88-2fc6-48c2-9fcd-cbc6042080ba",
+    "name": "Alterar",
+    "commands": [{
+      "id": "a1006795-2f1c-4cea-9b79-48fd50827d6f",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42ba8ded-0887-4ed3-aa7b-723b26fd0a3c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2997b569-58b6-4efe-8b6f-ee88a369d54b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Alterar Produto",
+      "targets": [
+        ["linkText=Alterar Produto", "linkText"],
+        ["css=div:nth-child(2) > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Alterar Produto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/thiago/altercaodeProduto.html')]", "xpath:href"],
+        ["xpath=//div/div[2]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Alterar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "57d348ce-b92b-4595-a8de-4c8cb621c3fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dd29fdb-b0c8-461d-80ac-733c7ece7a2b",
+      "comment": "",
+      "command": "click",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d8516a6-8303-4ff6-af30-3f5ff5414de4",
+      "comment": "",
+      "command": "type",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a060aa98-7f13-45b4-a581-2f7b363e042b",
+      "comment": "",
+      "command": "click",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73e9fd7f-b4b0-4afb-a749-7812044b8c73",
+      "comment": "",
+      "command": "type",
+      "target": "id=fornecedor",
+      "targets": [
+        ["id=fornecedor", "id"],
+        ["css=#fornecedor", "css:finder"],
+        ["xpath=//input[@id='fornecedor']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "BrilhoMax Indústria Química Ltda"
+    }, {
+      "id": "241ea3e5-3309-41c3-9661-a73efb804d3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2013851-5d7c-4974-8da8-007b7d8b5758",
+      "comment": "",
+      "command": "type",
+      "target": "id=custo",
+      "targets": [
+        ["id=custo", "id"],
+        ["css=#custo", "css:finder"],
+        ["xpath=//input[@id='custo']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[5]/input", "xpath:idRelative"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "2.84"
+    }, {
+      "id": "5893aec0-4677-4e91-83d2-d0cb4fc2fec0",
+      "comment": "",
+      "command": "click",
+      "target": "id=venda",
+      "targets": [
+        ["id=venda", "id"],
+        ["css=#venda", "css:finder"],
+        ["xpath=//input[@id='venda']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e6a75f1-6652-4d27-aac6-d8339028d3d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=venda",
+      "targets": [
+        ["id=venda", "id"],
+        ["css=#venda", "css:finder"],
+        ["xpath=//input[@id='venda']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/div[6]/input", "xpath:idRelative"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "3.56"
+    }, {
+      "id": "927efca5-4de4-48af-89be-88fdb03a9856",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-update:nth-child(8)",
+      "targets": [
+        ["css=.btn-update:nth-child(8)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "31474c67-5c5a-433b-a134-b70f11324af2",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Produto alterado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "39e8f8d2-f651-45e3-9b88-c572fdbb5180",
+    "name": "Descontinuar",
+    "commands": [{
+      "id": "21a27ace-b0e3-438c-8ce9-c3e39c3d6169",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "279833f6-5dfa-40fc-a4d6-443e6b76bdc0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86cd9de7-e27d-49bd-aaea-78662a2a80db",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Descontinuar Produto",
+      "targets": [
+        ["linkText=Descontinuar Produto", "linkText"],
+        ["css=div:nth-child(2) li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Descontinuar Produto')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/thiago/deletarProduto.html')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Descontinuar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b7cecdb-3a89-4a9d-929f-3317d93d46fb",
+      "comment": "",
+      "command": "click",
+      "target": "id=motivo",
+      "targets": [
+        ["id=motivo", "id"],
+        ["css=#motivo", "css:finder"],
+        ["xpath=//select[@id='motivo']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fa2ae60-8399-4103-b364-9b680fa07223",
+      "comment": "",
+      "command": "select",
+      "target": "id=motivo",
+      "targets": [],
+      "value": "label=Baixo Giro/Venda"
+    }, {
+      "id": "ea2f7c25-83b9-4bb1-a64e-87d5bdabe681",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='baixoGiro']", "xpath:attributes"],
+        ["xpath=//select[@id='motivo']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Baixo Giro/Venda')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cfa0f92-f0f2-4422-a441-6e1619010e99",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacao",
+      "targets": [
+        ["id=observacao", "id"],
+        ["css=#observacao", "css:finder"],
+        ["xpath=//textarea[@id='observacao']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e2262c75-690f-4e12-908d-33bff50b45a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacao",
+      "targets": [
+        ["id=observacao", "id"],
+        ["css=#observacao", "css:finder"],
+        ["xpath=//textarea[@id='observacao']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/div[3]/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Produto excluído do sistema devido ao baixo giro de vendas nos últimos meses, tornando inviável sua manutenção em estoque."
+    }, {
+      "id": "77823594-b313-4890-8f32-87d029b6179c",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "794794eb-ca5e-4778-98e9-a1cba814ee71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar Descontinuação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f117bb58-dce8-42a3-8549-6db1d77b3a8c",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Deseja realmente descontinuar o produto 'Sabão em Pó Azul 500g' pelo motivo: baixoGiro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54a4fc6f-51ec-4e33-a70f-b3eef7a5cb05",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dd727e19-b6e9-4788-b34a-0309fb8c5f6d",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Produto Sabão em Pó Azul 500g descontinuado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3d50bb7f-50db-416a-9644-817092287393",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d5d9cb7d-e5db-4132-9a83-332ddcad08fb"]
+  }],
+  "urls": ["https://thiagowq.github.io/Projeto-Engenharia-de-Software/"],
+  "plugins": []
+}
