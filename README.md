@@ -44,10 +44,14 @@ A inativação (exclusão lógica) é o padrão para preservar o histórico, sen
 
 🔗 Links dos Documentos
 
-DRE: https://docs.google.com/document/d/1AG3WQAE0YHvN49bGdYE4iE0XvViLezwdIagybRTVeGo/edit?tab=t.0
-Poker Planning (Planilha): https://docs.google.com/spreadsheets/d/1qxx6wb7zdPd04oXO9DWUSqzK6QyIl8gfT2rWcGnMj9Q/edit?gid=631401022#gid=631401022
-Poker Planning – Comparativo dos Níveis de Dificuldade: https://docs.google.com/document/d/16ifAUfpznmNTLzYRdH-eQ2tqcJDJVt2vAFeNw3M0uK4/edit?tab=t.0
-Quadro no Trello: https://trello.com/b/Gzl9QMux/engenharia-de-software-supermarket
+DRE:
+https://docs.google.com/document/d/1AG3WQAE0YHvN49bGdYE4iE0XvViLezwdIagybRTVeGo/edit?tab=t.0
+Poker Planning (Planilha):
+https://docs.google.com/spreadsheets/d/1qxx6wb7zdPd04oXO9DWUSqzK6QyIl8gfT2rWcGnMj9Q/edit?gid=631401022#gid=631401022
+Poker Planning – Comparativo dos Níveis de Dificuldade:
+https://docs.google.com/document/d/16ifAUfpznmNTLzYRdH-eQ2tqcJDJVt2vAFeNw3M0uK4/edit?tab=t.0
+Quadro no Trello:
+https://trello.com/b/Gzl9QMux/engenharia-de-software-supermarket
 
 Equipe
 
