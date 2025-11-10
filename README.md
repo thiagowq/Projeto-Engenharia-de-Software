@@ -42,25 +42,21 @@ O sistema prioriza a integridade dos dados e a rastreabilidade das ações:
 Ações como edição de clientes , edição de funcionários , e exclusão de funcionários e seções  exigem o registro em auditoria de usuário, data e hora da modificação/operação.
 A inativação (exclusão lógica) é o padrão para preservar o histórico, sendo a remoção definitiva geralmente bloqueada em casos de vínculos (clientes com vendas, funcionários).
 
-🔗 Links dos Documentos
+### Links dos Documentos
 
-DRE:
-https://docs.google.com/document/d/1AG3WQAE0YHvN49bGdYE4iE0XvViLezwdIagybRTVeGo/edit?tab=t.0
+* **DRE:** [https://docs.google.com/document/d/1AG3wDAE0YHVW49G6dYE4iE0XVViLezwdIAGyBRTveGo/edit?tab=t.0](https://docs.google.com/document/d/1AG3wDAE0YHVW49G6dYE4iE0XVViLezwdIAGyBRTveGo/edit?tab=t.0)
+* **Poker Planning (Planilha):** [https://docs.google.com/spreadsheets/d/1qxx6wb7zdPdO4oxO9DWLsqQK6Qi1l8gFT2rWcGnMj9Q/edit?gid=631401022#gid-6314010](https://docs.google.com/spreadsheets/d/1qxx6wb7zdPdO4oxO9DWLsqQK6Qi1l8gFT2rWcGnMj9Q/edit?gid=631401022#gid-6314010)
+* **Poker Planning (Comparativo):** [https://docs.google.com/document/d/16iFAUfpoznnNTLZYRdh-eQ2tqcIDJVT2VAFEhW3M0U/edit?tab=t.0](https://docs.google.com/document/d/16iFAUfpoznnNTLZYRdh-eQ2tqcIDJVT2VAFEhW3M0U/edit?tab=t.0)
+* **Quadro no Trello:** [https://trello.com/b/Gz19QMux/engenharia-de-software-supermarket](https://trello.com/b/Gz19QMux/engenharia-de-software-supermarket)
 
-Poker Planning (Planilha):
-https://docs.google.com/spreadsheets/d/1qxx6wb7zdPd04oXO9DWUSqzK6QyIl8gfT2rWcGnMj9Q/edit?gid=631401022#gid=6314010
+---
 
-Poker Planning – Comparativo dos Níveis de Dificuldade:
-https://docs.google.com/document/d/16ifAUfpznmNTLzYRdH-eQ2tqcJDJVt2vAFeNw3M0uK4/edit?tab=t.0
+### Equipe
 
-Quadro no Trello:
-https://trello.com/b/Gzl9QMux/engenharia-de-software-supermarket
+* Christian Ferreira Toledo
+* Mateus Eduardo de Pádua Almeida
+* Thiago Santos Fonseca Amaral
+* Thiago José da Cruz
 
-Equipe
-
-Christian Ferreira Toledo
-Mateus Eduardo de Pádua Almeida
-Thiago Santos Fonseca Amaral
-Thiago José da Cruz
-
+---
 Acesse como está ficando por esse link: https://thiagowq.github.io/Projeto-Engenharia-de-Software/
