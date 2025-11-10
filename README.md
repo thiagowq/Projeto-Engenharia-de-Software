@@ -41,3 +41,19 @@ Gestão: Permite consulta, edição e exclusão lógica de seções, com verific
 O sistema prioriza a integridade dos dados e a rastreabilidade das ações:
 Ações como edição de clientes , edição de funcionários , e exclusão de funcionários e seções  exigem o registro em auditoria de usuário, data e hora da modificação/operação.
 A inativação (exclusão lógica) é o padrão para preservar o histórico, sendo a remoção definitiva geralmente bloqueada em casos de vínculos (clientes com vendas, funcionários).
+
+🔗 Links dos Documentos
+
+DRE: https://docs.google.com/document/d/1AG3WQAE0YHvN49bGdYE4iE0XvViLezwdIagybRTVeGo/edit?tab=t.0
+Poker Planning (Planilha): https://docs.google.com/spreadsheets/d/1qxx6wb7zdPd04oXO9DWUSqzK6QyIl8gfT2rWcGnMj9Q/edit?gid=631401022#gid=631401022
+Poker Planning – Comparativo dos Níveis de Dificuldade: https://docs.google.com/document/d/16ifAUfpznmNTLzYRdH-eQ2tqcJDJVt2vAFeNw3M0uK4/edit?tab=t.0
+Quadro no Trello: https://trello.com/b/Gzl9QMux/engenharia-de-software-supermarket
+
+Equipe
+
+Christian Ferreira Toledo
+Mateus Eduardo de Pádua Almeida
+Thiago Santos Fonseca Amaral
+Thiago José da Cruz
+
+Acesse como está ficando por esse link: https://thiagowq.github.io/Projeto-Engenharia-de-Software/
