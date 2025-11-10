@@ -1,0 +1,1025 @@
+{
+  "id": "34e2d09c-0e87-4bce-8f83-b8452c84135d",
+  "version": "2.0",
+  "name": "Cliente",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "f5c78328-b145-4ec6-9c5b-d8a206f02f9e",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "b1ea77c5-0768-4240-836d-79595894b821",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b7a8254-f56b-4022-bcb0-3e226dede4d8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e771b468-89a0-4c27-a723-3941cabc785d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Inserir Cliente",
+      "targets": [
+        ["linkText=Inserir Cliente", "linkText"],
+        ["css=div:nth-child(1) > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Inserir Cliente')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/inserir-cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Inserir Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a168169c-318b-4898-aac0-f1cd98bf01da",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d8c7f36-887c-48e1-9df0-5bb2d6a918aa",
+      "comment": "Inserção do CPF",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123.456.789-10"
+    }, {
+      "id": "84ea2ffe-c3fd-4afb-9076-7b13cbd2bfb3",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome_completo",
+      "targets": [
+        ["id=nome_completo", "id"],
+        ["name=nome_completo", "name"],
+        ["css=#nome_completo", "css:finder"],
+        ["xpath=//input[@id='nome_completo']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2edf4459-ee45-4cec-9457-6c7fa3409437",
+      "comment": "Inserção do nome do cliente",
+      "command": "type",
+      "target": "id=nome_completo",
+      "targets": [
+        ["id=nome_completo", "id"],
+        ["name=nome_completo", "name"],
+        ["css=#nome_completo", "css:finder"],
+        ["xpath=//input[@id='nome_completo']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "João da Silva"
+    }, {
+      "id": "23c65c81-6c6d-4754-ad41-7afb51501bb6",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_nasc",
+      "targets": [
+        ["id=data_nasc", "id"],
+        ["name=data_nasc", "name"],
+        ["css=#data_nasc", "css:finder"],
+        ["xpath=//input[@id='data_nasc']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff344ae-1075-4d2f-bd33-36dd2d4600be",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_nasc",
+      "targets": [
+        ["id=data_nasc", "id"],
+        ["name=data_nasc", "name"],
+        ["css=#data_nasc", "css:finder"],
+        ["xpath=//input[@id='data_nasc']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ccc6afd6-e2ad-48de-980a-3ecf6e6d1777",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_nasc",
+      "targets": [
+        ["id=data_nasc", "id"],
+        ["name=data_nasc", "name"],
+        ["css=#data_nasc", "css:finder"],
+        ["xpath=//input[@id='data_nasc']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d1fd822-222a-4aa7-9034-478cd21a1ea6",
+      "comment": "Inserção da data de nascimento",
+      "command": "type",
+      "target": "id=data_nasc",
+      "targets": [
+        ["id=data_nasc", "id"],
+        ["name=data_nasc", "name"],
+        ["css=#data_nasc", "css:finder"],
+        ["xpath=//input[@id='data_nasc']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1996-09-04"
+    }, {
+      "id": "2dd05ebb-946a-4f5b-8d7a-5a499b808951",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "394ba6a3-3fb9-46eb-b9e3-204b6a2bddb1",
+      "comment": "Inserção do telefone",
+      "command": "type",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "(11) 234-567"
+    }, {
+      "id": "de56b55f-2cf5-40fc-a9c5-18db6a37b8c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d4fd6b-286c-4986-a06a-e774015f41f2",
+      "comment": "Inserção do Bairro",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Varginha"
+    }, {
+      "id": "c8e36db7-d9d3-4214-907a-a9c91af572a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=rua",
+      "targets": [
+        ["id=rua", "id"],
+        ["name=rua", "name"],
+        ["css=#rua", "css:finder"],
+        ["xpath=//input[@id='rua']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "34ec8f5c-f1a7-4ee2-bd49-421fc050d730",
+      "comment": "Inserção da Rua",
+      "command": "type",
+      "target": "id=rua",
+      "targets": [
+        ["id=rua", "id"],
+        ["name=rua", "name"],
+        ["css=#rua", "css:finder"],
+        ["xpath=//input[@id='rua']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua da coves"
+    }, {
+      "id": "041f43ec-ea21-4315-9bbc-93824513524e",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a5dab09-aac3-498c-8359-980e7d6acd36",
+      "comment": "Inserção do Número",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "3e498670-f0f1-43c1-857a-297e2ab29c83",
+      "comment": "",
+      "command": "click",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2cd5e823-332e-40a8-a381-b55d32b2b35f",
+      "comment": "Inserção do CEP",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "12345-678"
+    }, {
+      "id": "9fd9d8d1-a0ea-4c3a-bb31-f3b0bc4c6566",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(7)",
+      "targets": [
+        ["css=button:nth-child(7)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "95f06cbb-96be-4281-8ab6-2e34d5e272a1",
+    "name": "Consultar",
+    "commands": [{
+      "id": "997d0514-d8a7-4c92-9b31-c460ee65d5f6",
+      "comment": "",
+      "command": "open",
+      "target": "/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f2cc575-b443-4e37-9b1d-bccb1dfe2447",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1a36dde-49fe-46dc-a9a1-46c087c6da81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar Cliente",
+      "targets": [
+        ["linkText=Consultar Cliente", "linkText"],
+        ["css=div:nth-child(1) > ul > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar Cliente')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/consultar-cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e22fd929-2392-464b-aada-fc04a4e3445e",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_cpf",
+      "targets": [
+        ["id=f_cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#f_cpf", "css:finder"],
+        ["xpath=//input[@id='f_cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "178da2d2-7e13-4637-9a96-4cbfd3fdd57e",
+      "comment": "Inserção do nome",
+      "command": "type",
+      "target": "id=f_cpf",
+      "targets": [
+        ["id=f_cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#f_cpf", "css:finder"],
+        ["xpath=//input[@id='f_cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "12345678910"
+    }, {
+      "id": "63490480-8a6d-4295-a028-8f60a5e490f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_nome",
+      "targets": [
+        ["id=f_nome", "id"],
+        ["name=nome", "name"],
+        ["css=#f_nome", "css:finder"],
+        ["xpath=//input[@id='f_nome']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4caa677-7b30-4a2a-ad69-7259b97a4ba6",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_nome",
+      "targets": [
+        ["id=f_nome", "id"],
+        ["name=nome", "name"],
+        ["css=#f_nome", "css:finder"],
+        ["xpath=//input[@id='f_nome']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Ana Silva"
+    }, {
+      "id": "82cfb299-e195-4cb1-8c7c-67805ec8f9b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_tel",
+      "targets": [
+        ["id=f_tel", "id"],
+        ["name=telefone", "name"],
+        ["css=#f_tel", "css:finder"],
+        ["xpath=//input[@id='f_tel']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95a46155-4b2c-48ae-9ce6-716180ab3b65",
+      "comment": "Inserção do Telefone",
+      "command": "type",
+      "target": "id=f_tel",
+      "targets": [
+        ["id=f_tel", "id"],
+        ["name=telefone", "name"],
+        ["css=#f_tel", "css:finder"],
+        ["xpath=//input[@id='f_tel']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "11222333"
+    }, {
+      "id": "a058911b-6964-4cbe-8bf8-05ab29b4479e",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_endereco",
+      "targets": [
+        ["id=f_endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#f_endereco", "css:finder"],
+        ["xpath=//input[@id='f_endereco']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "78b3fde4-c9ad-460e-8d52-5b5fb3567638",
+      "comment": "Inserção do endereço",
+      "command": "type",
+      "target": "id=f_endereco",
+      "targets": [
+        ["id=f_endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#f_endereco", "css:finder"],
+        ["xpath=//input[@id='f_endereco']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Bairro Central, Rua das Flores, 120, 12345678"
+    }, {
+      "id": "13b51fe2-6d52-48fb-a114-a197ebf40701",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d568f7-5052-4e41-a765-4d265b5210ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d96c1f4-1727-4276-890b-e270b2ff9da1",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d7a702f-8ee4-4abd-929a-d02986d88b5e",
+      "comment": "Inserção da data inicial de cadastro",
+      "command": "type",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2025-11-02"
+    }, {
+      "id": "13fbe1e8-1337-4656-a6c4-6fc8800b448d",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60c6d41a-7360-46b5-a1db-4f4002205a88",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d97d5fe-4e96-4698-bfd9-2e63c1948775",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset",
+      "targets": [
+        ["css=fieldset", "css:finder"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1afaf516-6dd0-4f50-9714-871793d66b0c",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_fim",
+      "targets": [
+        ["id=f_data_fim", "id"],
+        ["name=data_fim", "name"],
+        ["css=#f_data_fim", "css:finder"],
+        ["xpath=//input[@id='f_data_fim']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b583e5-349d-47ac-9445-7e819c716e94",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_fim",
+      "targets": [
+        ["id=f_data_fim", "id"],
+        ["name=data_fim", "name"],
+        ["css=#f_data_fim", "css:finder"],
+        ["xpath=//input[@id='f_data_fim']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bfb72304-a4c7-4a80-b8a9-056b353cd3b2",
+      "comment": "Inserção da data final de cadastro",
+      "command": "type",
+      "target": "id=f_data_fim",
+      "targets": [
+        ["id=f_data_fim", "id"],
+        ["name=data_fim", "name"],
+        ["css=#f_data_fim", "css:finder"],
+        ["xpath=//input[@id='f_data_fim']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[3]/input", "xpath:position"]
+      ],
+      "value": "2025-11-02"
+    }, {
+      "id": "efd429e7-1dcc-4a0b-b5ed-f7f09e048c02",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset",
+      "targets": [
+        ["css=fieldset", "css:finder"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset", "xpath:idRelative"],
+        ["xpath=//fieldset", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43cdbe03-5192-49f7-8858-35fe49605442",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_data_ini",
+      "targets": [
+        ["id=f_data_ini", "id"],
+        ["name=data_ini", "name"],
+        ["css=#f_data_ini", "css:finder"],
+        ["xpath=//input[@id='f_data_ini']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b8d506-b275-44b5-92bb-54349c84f5b1",
+      "comment": "",
+      "command": "click",
+      "target": "id=formConsultaCliente",
+      "targets": [
+        ["id=formConsultaCliente", "id"],
+        ["css=#formConsultaCliente", "css:finder"],
+        ["xpath=//form[@id='formConsultaCliente']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "85de16c8-355d-4c55-ace0-29e194cf963b",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_status",
+      "targets": [
+        ["id=f_status", "id"],
+        ["name=status", "name"],
+        ["css=#f_status", "css:finder"],
+        ["xpath=//select[@id='f_status']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/div[4]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c7a7ab02-5eda-4e75-be60-cf83aefad9a2",
+      "comment": "Definição do statos do cliente",
+      "command": "select",
+      "target": "id=f_status",
+      "targets": [],
+      "value": "label=Ativo"
+    }, {
+      "id": "d1a83b83-b6b7-4ef4-b8d0-302689885f49",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//select[@id='f_status']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Ativo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e0c37a0-cb2e-4b6a-b0b5-c18b78e2af3c",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(5)",
+      "targets": [
+        ["css=button:nth-child(5)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "24802366-bc49-4e12-9bf3-3cd3b786cf91",
+    "name": "Editar",
+    "commands": [{
+      "id": "30d3511d-b74b-4852-82c1-e05712c68d46",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6a0c1dfc-37c3-4477-bb76-41eea472ae1b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Editar Cliente",
+      "targets": [
+        ["linkText=Editar Cliente", "linkText"],
+        ["css=div:nth-child(1) > ul > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Editar Cliente')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/editar-cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Editar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b18cfff4-0f4f-4785-afca-9e6e2746bf1f",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_codigo",
+      "targets": [
+        ["id=busca_codigo", "id"],
+        ["name=busca_codigo", "name"],
+        ["css=#busca_codigo", "css:finder"],
+        ["xpath=//input[@id='busca_codigo']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "df6bf55b-2933-424b-acd1-3980dc9ae9fa",
+      "comment": "Inserir CPF do Cliente",
+      "command": "type",
+      "target": "id=busca_codigo",
+      "targets": [
+        ["id=busca_codigo", "id"],
+        ["name=busca_codigo", "name"],
+        ["css=#busca_codigo", "css:finder"],
+        ["xpath=//input[@id='busca_codigo']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "352b4860-6690-4545-80c6-5b15f665c6ca",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_cpf",
+      "targets": [
+        ["id=busca_cpf", "id"],
+        ["name=busca_cpf", "name"],
+        ["css=#busca_cpf", "css:finder"],
+        ["xpath=//input[@id='busca_cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab9f916e-3b12-4595-b84f-ce87f8151874",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro_edit",
+      "targets": [
+        ["id=bairro_edit", "id"],
+        ["name=bairro_edit", "name"],
+        ["css=#bairro_edit", "css:finder"],
+        ["xpath=//input[@id='bairro_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a9841ac-3614-4a19-91c5-a16cd1e3c595",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro_edit",
+      "targets": [
+        ["id=bairro_edit", "id"],
+        ["name=bairro_edit", "name"],
+        ["css=#bairro_edit", "css:finder"],
+        ["xpath=//input[@id='bairro_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3fa509c2-94e8-4edf-a126-0249930faa73",
+      "comment": "Inserção do bairro editado",
+      "command": "type",
+      "target": "id=bairro_edit",
+      "targets": [
+        ["id=bairro_edit", "id"],
+        ["name=bairro_edit", "name"],
+        ["css=#bairro_edit", "css:finder"],
+        ["xpath=//input[@id='bairro_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "Bairro Capitolio"
+    }, {
+      "id": "13b1a6c8-31bc-4804-bc4f-084c2c5b8f56",
+      "comment": "",
+      "command": "click",
+      "target": "id=rua_edit",
+      "targets": [
+        ["id=rua_edit", "id"],
+        ["name=rua_edit", "name"],
+        ["css=#rua_edit", "css:finder"],
+        ["xpath=//input[@id='rua_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87f69934-4e79-46c0-ad67-1040cc60300f",
+      "comment": "Inserção da rua editada",
+      "command": "type",
+      "target": "id=rua_edit",
+      "targets": [
+        ["id=rua_edit", "id"],
+        ["name=rua_edit", "name"],
+        ["css=#rua_edit", "css:finder"],
+        ["xpath=//input[@id='rua_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua das Jardim California"
+    }, {
+      "id": "401fb1b4-d0a6-4a22-ba8c-2d0a1942b8e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero_edit",
+      "targets": [
+        ["id=numero_edit", "id"],
+        ["name=numero_edit", "name"],
+        ["css=#numero_edit", "css:finder"],
+        ["xpath=//input[@id='numero_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c44dd24-6df9-4d98-a165-942d6cef9bad",
+      "comment": "Inserção do numero editado",
+      "command": "type",
+      "target": "id=numero_edit",
+      "targets": [
+        ["id=numero_edit", "id"],
+        ["name=numero_edit", "name"],
+        ["css=#numero_edit", "css:finder"],
+        ["xpath=//input[@id='numero_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/input", "xpath:position"]
+      ],
+      "value": "512"
+    }, {
+      "id": "d8fb9962-f149-4d28-bb04-668eb5cc9361",
+      "comment": "",
+      "command": "click",
+      "target": "id=cep_edit",
+      "targets": [
+        ["id=cep_edit", "id"],
+        ["name=cep_edit", "name"],
+        ["css=#cep_edit", "css:finder"],
+        ["xpath=//input[@id='cep_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29559fae-e473-443c-a96e-f8e1b82caca0",
+      "comment": "Inserção do cep editado",
+      "command": "type",
+      "target": "id=cep_edit",
+      "targets": [
+        ["id=cep_edit", "id"],
+        ["name=cep_edit", "name"],
+        ["css=#cep_edit", "css:finder"],
+        ["xpath=//input[@id='cep_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "98765-432"
+    }, {
+      "id": "e74c5539-d2c0-42e3-a38e-872057b2f696",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(8)",
+      "targets": [
+        ["css=button:nth-child(8)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4cc1b1e9-298b-4d17-a489-e7ac619bf468",
+    "name": "Remover",
+    "commands": [{
+      "id": "3f758e60-6ba4-4676-964f-f7a6241946f2",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "938cf163-8ea6-4df3-b42e-1cbc42ade75e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1232x900",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "87009e14-b3ff-4c15-9b49-d4e37e43e835",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Excluir/Inativar Cliente",
+      "targets": [
+        ["linkText=Excluir/Inativar Cliente", "linkText"],
+        ["css=div:nth-child(1) > ul > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Excluir/Inativar Cliente')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/excluir-cliente.html')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Excluir/Inativar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a57cff3-420d-4f29-a5c6-3b243a5276dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=cod_excluir",
+      "targets": [
+        ["id=cod_excluir", "id"],
+        ["name=cod_excluir", "name"],
+        ["css=#cod_excluir", "css:finder"],
+        ["xpath=//input[@id='cod_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b955b0d-a6a4-4278-99a4-d6d121796294",
+      "comment": "Código do cliente a ser inativado",
+      "command": "type",
+      "target": "id=cod_excluir",
+      "targets": [
+        ["id=cod_excluir", "id"],
+        ["name=cod_excluir", "name"],
+        ["css=#cod_excluir", "css:finder"],
+        ["xpath=//input[@id='cod_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "e96a12e1-f474-4e85-8d18-40a9439f5b9d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf_excluir",
+      "targets": [
+        ["id=cpf_excluir", "id"],
+        ["name=cpf_excluir", "name"],
+        ["css=#cpf_excluir", "css:finder"],
+        ["xpath=//input[@id='cpf_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d3db48-7a6c-4860-bb03-4eaef07040b2",
+      "comment": "CPF do cliente a ser inativado",
+      "command": "type",
+      "target": "id=cpf_excluir",
+      "targets": [
+        ["id=cpf_excluir", "id"],
+        ["name=cpf_excluir", "name"],
+        ["css=#cpf_excluir", "css:finder"],
+        ["xpath=//input[@id='cpf_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123.456.789-10"
+    }, {
+      "id": "ac663785-5f00-4505-ba1a-28562c419a12",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(4)",
+      "targets": [
+        ["css=button:nth-child(4)", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Carregar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5befe417-d087-4917-894f-f9a48f4f7dfb",
+      "comment": "",
+      "command": "click",
+      "target": "name=acao_exclusao",
+      "targets": [
+        ["name=acao_exclusao", "name"],
+        ["css=label:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='acao_exclusao']", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirCliente']/fieldset/p/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "418e01ea-7dc1-4859-b684-3cca97c2e204",
+      "comment": "",
+      "command": "click",
+      "target": "css=button:nth-child(6)",
+      "targets": [
+        ["css=button:nth-child(6)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirCliente']/fieldset/button", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Executar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f66df8e-161b-4b1d-87f8-dbdd21c5c488",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Você precisa confirmar antes de executar a ação.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9040fbe7-472b-4eef-b2f5-9a14d6dde028",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c144981d-f89e-4bd3-9288-24cd6cf62afd",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f5c78328-b145-4ec6-9c5b-d8a206f02f9e"]
+  }],
+  "urls": ["https://thiagowq.github.io/", "https://thiagowq.github.io/Projeto-Engenharia-de-Software/"],
+  "plugins": []
+}

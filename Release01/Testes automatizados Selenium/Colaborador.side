@@ -1,0 +1,756 @@
+{
+  "id": "e385be6b-b93e-4b33-8c8b-192ce8ac2f31",
+  "version": "2.0",
+  "name": "Colaborador",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "da43d245-2da3-44cd-8912-d52b7536fd4a",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "bb405f00-1ef3-4584-95eb-bd24ebc62b57",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d05c20dd-9ea6-4501-b48b-455f3e0a84a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c66e88e9-691c-4682-9684-42d366673c7e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastrar Funcionário",
+      "targets": [
+        ["linkText=Cadastrar Funcionário", "linkText"],
+        ["css=div:nth-child(3) li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastrar Funcionário')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudFuncionario/cadastrarFuncionario.html')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastrar Funcionário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd693070-80ff-4517-acca-ec304a54a2c4",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d44e257a-f86b-450b-9057-bd3d100ef884",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Mariana Silva Costa"
+    }, {
+      "id": "93fa0f23-4318-44ea-9da3-b23f62d4d654",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ee47397-7bb6-4484-978f-ec74c281ef15",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345678900"
+    }, {
+      "id": "9580d324-ba84-4577-80d4-a1678212749e",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73eea208-84f9-435d-86dc-ac04deadf88b",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "(35)99883-5364"
+    }, {
+      "id": "56ed21f0-5cbf-4bee-a388-73f5283a207c",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f315ec1a-6a38-4920-84e4-46ddab26e4e4",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Caixa"
+    }, {
+      "id": "baf39459-5635-4b61-9ac2-fde051238e2a",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='caixa']", "xpath:attributes"],
+        ["xpath=//select[@id='cargo']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Caixa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49d73a5d-693b-409b-8850-8bfe98478ce1",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//textarea[@id='endereco']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5accf1e-2d2e-462b-aabb-cc3c72ac183b",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//textarea[@id='endereco']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee57d91d-5f13-485e-a168-c5887a82cd99",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//textarea[@id='endereco']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Rua das Acácias, 245 – Bairro Centro – Itajubá/MG"
+    }, {
+      "id": "44a6be3e-02e6-45e3-a3ee-04848d341366",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e380931-bed6-49dc-97af-06b8f58a3a25",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "2450"
+    }, {
+      "id": "701cebc3-ebfa-4e5b-992b-d43b212866cb",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_admissao",
+      "targets": [
+        ["id=data_admissao", "id"],
+        ["name=data_admissao", "name"],
+        ["css=#data_admissao", "css:finder"],
+        ["xpath=//input[@id='data_admissao']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a543053-b482-459e-81e3-f9761310ae03",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_admissao",
+      "targets": [
+        ["id=data_admissao", "id"],
+        ["name=data_admissao", "name"],
+        ["css=#data_admissao", "css:finder"],
+        ["xpath=//input[@id='data_admissao']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "2023-10-11"
+    }, {
+      "id": "c6b32a27-d311-4493-8011-f44de0ab62e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar Funcionário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b68d25e3-ee64-44a2-8843-35558874392d",
+    "name": "Consultar",
+    "commands": [{
+      "id": "a674d033-5f8f-4cbb-acb0-483c927a49c5",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aed4e1d-952a-45a6-a34c-2ff8aae0ecfb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c91d4b89-7f07-4f7b-9bfc-5209c62d691b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Consultar Funcionário",
+      "targets": [
+        ["linkText=Consultar Funcionário", "linkText"],
+        ["css=div:nth-child(3) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Consultar Funcionário')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudFuncionario/consultarFuncionario.html')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Consultar Funcionário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d158258e-4a24-4431-a87f-9f2d3e54ed86",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f087fe6f-6418-4d62-82ed-c0dbd09e0af5",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome",
+      "targets": [
+        ["id=nome", "id"],
+        ["name=nome", "name"],
+        ["css=#nome", "css:finder"],
+        ["xpath=//input[@id='nome']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "João Victor Carvalho"
+    }, {
+      "id": "d8e3287b-c0df-42a3-9472-b365724e086d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e8bbbad-f83b-4a8a-a1a0-f734cde0804e",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "98765432100"
+    }, {
+      "id": "8e574885-8a7c-4639-9cbf-b300a8e60021",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f4a45fb-3cef-4b0a-abe1-67df14009613",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Gerente"
+    }, {
+      "id": "6ae4db60-24e8-4002-b7bf-81418d6c5192",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(4)",
+      "targets": [
+        ["css=option:nth-child(4)", "css:finder"],
+        ["xpath=//option[@value='gerente']", "xpath:attributes"],
+        ["xpath=//select[@id='cargo']/option[4]", "xpath:idRelative"],
+        ["xpath=//option[4]", "xpath:position"],
+        ["xpath=//option[contains(.,'Gerente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac2784da-1e1e-42b1-b77b-31d60c23ea93",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_inicio",
+      "targets": [
+        ["id=data_inicio", "id"],
+        ["name=data_inicio", "name"],
+        ["css=#data_inicio", "css:finder"],
+        ["xpath=//input[@id='data_inicio']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e0bbaf-388a-4d62-84cc-c5a4a88fa179",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_inicio",
+      "targets": [
+        ["id=data_inicio", "id"],
+        ["name=data_inicio", "name"],
+        ["css=#data_inicio", "css:finder"],
+        ["xpath=//input[@id='data_inicio']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "2024-04-22"
+    }, {
+      "id": "5e08a1f6-9c31-4e15-b37b-cb83471d132a",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_fim",
+      "targets": [
+        ["id=data_fim", "id"],
+        ["name=data_fim", "name"],
+        ["css=#data_fim", "css:finder"],
+        ["xpath=//input[@id='data_fim']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20ae5d29-37a5-4b93-b083-385c415a0604",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_fim",
+      "targets": [
+        ["id=data_fim", "id"],
+        ["name=data_fim", "name"],
+        ["css=#data_fim", "css:finder"],
+        ["xpath=//input[@id='data_fim']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "2025-03-01"
+    }, {
+      "id": "38d7b673-accd-4cf2-90fd-54bca130a1b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=fieldset > button",
+      "targets": [
+        ["css=fieldset > button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pesquisar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6b8e53f4-81c6-4aa4-bada-9ec049e32d84",
+    "name": "Editar",
+    "commands": [{
+      "id": "2ce2a926-37f7-426b-b00b-8d94410ece20",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dfd5ab93-f985-4260-8a95-d846ee8b0099",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cb49f6ab-1c6f-43a2-ac6c-85fa5ba2145a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Editar Funcionário",
+      "targets": [
+        ["linkText=Editar Funcionário", "linkText"],
+        ["css=div:nth-child(3) li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Editar Funcionário')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudFuncionario/editarFuncionario.html')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Editar Funcionário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "64ef9a5b-0e60-4d48-982f-edee0d5b7a3a",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6323e5c2-cd02-4226-844e-75370b689ad0",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "(35)997432-3234"
+    }, {
+      "id": "9399aca0-1fd3-44ca-9d82-bace300329a9",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo",
+      "targets": [
+        ["id=cargo", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo", "css:finder"],
+        ["xpath=//select[@id='cargo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9463f8f0-da70-48a0-bbc2-c29e918f3c25",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo",
+      "targets": [],
+      "value": "label=Atendente"
+    }, {
+      "id": "caf8fe56-3418-4fdd-aad7-d0bfb8617607",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(5)",
+      "targets": [
+        ["css=option:nth-child(5)", "css:finder"],
+        ["xpath=//option[@value='atendente']", "xpath:attributes"],
+        ["xpath=//select[@id='cargo']/option[5]", "xpath:idRelative"],
+        ["xpath=//option[5]", "xpath:position"],
+        ["xpath=//option[contains(.,'Atendente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b503df2-0cbc-4bd3-9895-7bb4a1ea1918",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//textarea[@id='endereco']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30927edf-3523-444d-8ab0-4128f7d90789",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//textarea[@id='endereco']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02dd05c8-77ff-4c0f-839e-ee332738b7c3",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//textarea[@id='endereco']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Av. Santo Antônio, 1200 – Bairro Centro – Itajubá/MG"
+    }, {
+      "id": "30f72114-b668-41a9-bb6f-a206a2c1576b",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af9bf86-702f-4271-8d88-90fd7c27f13c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "-10,13.866668701171875"
+    }, {
+      "id": "e7f55c52-e27d-4b33-a24f-d8341f56c70b",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "-10,13.866668701171875"
+    }, {
+      "id": "6ab7bd08-383d-4dff-8d1b-a8e30d9be271",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": "-10,13.866668701171875"
+    }, {
+      "id": "acfcc110-82d1-485f-ab29-35e181ebab08",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "886171c0-2614-46a9-aa99-fcff35a90a89",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario",
+      "targets": [
+        ["id=salario", "id"],
+        ["name=salario", "name"],
+        ["css=#salario", "css:finder"],
+        ["xpath=//input[@id='salario']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f2a36a0-bee6-4af7-90f9-d2d7a0c8c618",
+      "comment": "",
+      "command": "click",
+      "target": "id=justificativa",
+      "targets": [
+        ["id=justificativa", "id"],
+        ["name=justificativa", "name"],
+        ["css=#justificativa", "css:finder"],
+        ["xpath=//textarea[@id='justificativa']", "xpath:attributes"],
+        ["xpath=//div[7]/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30ce807c-1b88-4488-8b25-86e5cf2aac35",
+      "comment": "",
+      "command": "type",
+      "target": "id=justificativa",
+      "targets": [
+        ["id=justificativa", "id"],
+        ["name=justificativa", "name"],
+        ["css=#justificativa", "css:finder"],
+        ["xpath=//textarea[@id='justificativa']", "xpath:attributes"],
+        ["xpath=//div[7]/textarea", "xpath:position"]
+      ],
+      "value": "A mudança foi solicitada pelo RH após atualização do plano de cargos e salários, refletindo a reestruturação interna da empresa"
+    }, {
+      "id": "c7dacf72-2d57-4ef0-b0e5-e5adc24a0436",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "327dfcdc-2423-452d-b5e1-4fb43ab932df",
+    "name": "Inativar",
+    "commands": [{
+      "id": "514f17be-72d5-428f-868c-aa7551552cc0",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a258eccf-225a-4f6f-9eb3-cc9dfecdf985",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x693",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "59e91dfa-46c2-4bde-8495-81503b488102",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Inativar Funcionário",
+      "targets": [
+        ["linkText=Inativar Funcionário", "linkText"],
+        ["css=div:nth-child(3) li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Inativar Funcionário')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'Release01/CrudFuncionario/excluirFuncionario.html')]", "xpath:href"],
+        ["xpath=//div[3]/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Inativar Funcionário')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2eb6651-f055-45d2-9868-d11b0dd0d6ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=p:nth-child(1)",
+      "targets": [
+        ["css=p:nth-child(1)", "css:finder"],
+        ["xpath=//div/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Nome: Nome do Funcionário a ser Excluído')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e706f194-88f1-4116-89aa-3de14e1ba8f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.info > p:nth-child(2)",
+      "targets": [
+        ["css=.info > p:nth-child(2)", "css:finder"],
+        ["xpath=//div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'CPF: 123.456.789-00')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6701e903-00eb-447f-9827-7d8cf5c561ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar Inativação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "359654ec-8cb1-4fb9-887b-e93311f0653f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["da43d245-2da3-44cd-8912-d52b7536fd4a"]
+  }],
+  "urls": ["https://thiagowq.github.io/"],
+  "plugins": []
+}
