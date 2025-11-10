@@ -39,3 +39,5 @@ Gestão: Permite consulta, edição e exclusão lógica de seções, com verific
 O sistema prioriza a integridade dos dados e a rastreabilidade das ações:
 Ações como edição de clientes , edição de funcionários , e exclusão de funcionários e seções  exigem o registro em auditoria de usuário, data e hora da modificação/operação.
 A inativação (exclusão lógica) é o padrão para preservar o histórico, sendo a remoção definitiva geralmente bloqueada em casos de vínculos (clientes com vendas, funcionários).
+
+Acesse como está ficando por esse link: https://thiagowq.github.io/Projeto-Engenharia-de-Software/
