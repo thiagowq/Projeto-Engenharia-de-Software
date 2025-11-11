@@ -1,5 +1,7 @@
 # Projeto-Engenharia-de-Software
+
 Projeto de Engenharia de Software, sistema de mercado
+
 🛒 Visão Geral do Projeto: Sistema de Gestão para Supermercado
 Este projeto consiste no desenvolvimento de um Sistema Integrado de Gestão projetado especificamente para atender às necessidades operacionais de um supermercado, abrangendo desde o cadastro de clientes e funcionários até a gestão de estoque, produtos e fornecedores. O objetivo principal é centralizar e otimizar processos críticos, garantindo eficiência, controle e rastreabilidade em todas as áreas.
 
@@ -40,4 +42,21 @@ O sistema prioriza a integridade dos dados e a rastreabilidade das ações:
 Ações como edição de clientes , edição de funcionários , e exclusão de funcionários e seções  exigem o registro em auditoria de usuário, data e hora da modificação/operação.
 A inativação (exclusão lógica) é o padrão para preservar o histórico, sendo a remoção definitiva geralmente bloqueada em casos de vínculos (clientes com vendas, funcionários).
 
+### Links dos Documentos
+
+* **DRE:** [https://docs.google.com/document/d/1AG3wDAE0YHVW49G6dYE4iE0XVViLezwdIAGyBRTveGo/edit?tab=t.0](https://docs.google.com/document/d/1AG3wDAE0YHVW49G6dYE4iE0XVViLezwdIAGyBRTveGo/edit?tab=t.0)
+* **Poker Planning (Planilha):** [https://docs.google.com/spreadsheets/d/1qxx6wb7zdPdO4oxO9DWLsqQK6Qi1l8gFT2rWcGnMj9Q/edit?gid=631401022#gid-6314010](https://docs.google.com/spreadsheets/d/1qxx6wb7zdPdO4oxO9DWLsqQK6Qi1l8gFT2rWcGnMj9Q/edit?gid=631401022#gid-6314010)
+* **Poker Planning (Comparativo):** [https://docs.google.com/document/d/16iFAUfpoznnNTLZYRdh-eQ2tqcIDJVT2VAFEhW3M0U/edit?tab=t.0](https://docs.google.com/document/d/16iFAUfpoznnNTLZYRdh-eQ2tqcIDJVT2VAFEhW3M0U/edit?tab=t.0)
+* **Quadro no Trello:** [https://trello.com/b/Gz19QMux/engenharia-de-software-supermarket](https://trello.com/b/Gz19QMux/engenharia-de-software-supermarket)
+
+---
+
+### Equipe
+
+* Christian Ferreira Toledo
+* Mateus Eduardo de Pádua Almeida
+* Thiago Santos Fonseca Amaral
+* Thiago José da Cruz
+
+---
 Acesse como está ficando por esse link: https://thiagowq.github.io/Projeto-Engenharia-de-Software/
