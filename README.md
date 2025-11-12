@@ -55,8 +55,9 @@ A inativação (exclusão lógica) é o padrão para preservar o histórico, sen
 
 * Christian Ferreira Toledo
 * Mateus Eduardo de Pádua Almeida
-* Thiago Santos Fonseca Amaral
 * Thiago José da Cruz
+* Thiago Santos Fonseca Amaral
+
 
 ---
 Acesse como está ficando por esse link: https://thiagowq.github.io/Projeto-Engenharia-de-Software/
