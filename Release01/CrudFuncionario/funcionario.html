@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários - Sistema de Gestão</title>
+    
+    <link rel="stylesheet" href="style-funcionario.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+            <nav class="nav-links">
+                <a href="../CrudCliente/cliente.html">Clientes</a>
+                <a href="../CrudProduto/produto.html">Produtos</a>
+                <a href="funcionario.html" class="active">Funcionários</a>
+                <a href="../../Release02/CrudFornecedor/fornecedor.html">Fornecedores</a>
+                <a href="../../Release02/CrudEstoque/estoque.html">Estoque</a>
+                <a href="../../Release02/CrudDepartamento/secao.html">Seções</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <nav class="breadcrumbs">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="funcionario.html" class="active">Gerenciamento de Funcionários</a>
+            </nav>
+
+            <div class="card-principal">
+                
+                <nav class="navegacao-abas">
+                    <button class="aba-link" data-target="tela-cadastrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
+                        Cadastrar
+                    </button>
+                    <button class="aba-link" data-target="tela-consultar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
+                        Consultar
+                    </button>
+                    <button class="aba-link" data-target="tela-editar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.42a4 4 0 0 0-.885 1.343Z" /></svg>
+                        Editar
+                    </button>
+                    <button class="aba-link" data-target="tela-excluir">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193v-.443A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75a1.25 1.25 0 0 0-1.25-1.25h-2.5A1.25 1.25 0 0 0 7.5 3.75v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z" clip-rule="evenodd" /></svg>
+                        Excluir
+                    </button>
+                </nav>
+        
+                <main class="conteudo-abas">
+        
+                    <div id="tela-cadastrar" class="tela">
+                        <form action="#" method="post" id="formCadastroFunc">
+                            <fieldset>
+                                <legend><h1>Cadastrar Funcionário</h1></legend>
+                                <p>Formulário para registrar novos funcionários no sistema.</p>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="nome-func">*Nome Completo:</label>
+                                        <input type="text" id="nome-func" name="nome" required placeholder="Nome civil completo">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cpf-func">*CPF:</label>
+                                        <input type="text" id="cpf-func" name="cpf" required placeholder="000.000.000-00">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="telefone-func">*Telefone:</label>
+                                        <input type="tel" id="telefone-func" name="telefone" required placeholder="(11) 91234-5678">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cargo-func">*Cargo:</label>
+                                        <select id="cargo-func" name="cargo" required>
+                                            <option value="">Selecione um cargo</option>
+                                            <option value="caixa">Caixa</option>
+                                            <option value="repositor">Repositor</option>
+                                            <option value="gerente">Gerente</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="endereco-func">Endereço Completo:</label>
+                                        <input type="text" id="endereco-func" name="endereco" placeholder="Rua, número, bairro...">
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="salario-func">*Salário (R$):</label>
+                                        <input type="text" id="salario-func" name="salario" required placeholder="R$ 1.500,00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="data_admissao-func">*Data de Admissão:</label>
+                                        <input type="date" id="data_admissao-func" name="data_admissao" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Limpar</button>
+                                    <button type="submit" class="btn-primary">Cadastrar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-consultar" class="tela">
+                        <form class="form-filtro" action="#" method="get" id="formConsultaFunc">
+                            <fieldset>
+                                <legend><h1>Consultar Funcionário</h1></legend>
+                                <p>Busque funcionários por nome, CPF ou cargo.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="nome-filtro">Nome:</label>
+                                        <input type="text" id="nome-filtro" name="nome" placeholder="Busca por nome">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cpf-filtro">CPF:</label>
+                                        <input type="text" id="cpf-filtro" name="cpf" placeholder="000.000.000-00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cargo-filtro">Cargo:</label>
+                                        <select id="cargo-filtro" name="cargo">
+                                            <option value="">Todos</option>
+                                            <option value="caixa">Caixa</option>
+                                            <option value="repositor">Repositor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Limpar</button>
+                                    <button type="submit" class="btn-primary">Pesquisar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        
+                        <div class="resultado">
+                            <h2>Resultados</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Cargo</th>
+                                        <th>Telefone</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                <thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Exemplo Funcionário 1</td>
+                                        <td>Gerente</td>
+                                        <td>(11) 91234-5678</td>
+                                        <td><span class="status-ativo">Ativo</span></td>
+                                        <td><button class="btn-acao">Editar</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div id="tela-editar" class="tela">
+                        <form action="#" method="get" id="formBuscarFunc" class="form-filtro">
+                            <fieldset>
+                                <legend><h1>Editar Funcionário</h1></legend>
+                                <p>Primeiro, localize o funcionário para carregar seus dados.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="busca_cpf_edit">CPF</label>
+                                        <input type="text" id="busca_cpf_edit" name="busca_cpf" placeholder="000.000.000-00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="busca_nome_edit">Nome</label>
+                                        <input type="text" id="busca_nome_edit" name="busca_nome" placeholder="Nome do funcionário">
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Carregar Dados</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <form action="#" method="post" id="formEditarFunc" class="form-dashed-top">
+                            <fieldset>
+                                <legend><h2>Dados do Funcionário (Carregados)</h2></legend>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Nome Completo (não editável):</label>
+                                        <input type="text" value="Nome do Funcionário Existente" readonly>
+                                    </div>
+                                    <div class="col">
+                                        <label>CPF (não editável):</label>
+                                        <input type="text" value="123.456.789-00" readonly>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="telefone-edit">*Telefone:</label>
+                                        <input type="tel" id="telefone-edit" name="telefone" required value="(11) 91234-5678">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cargo-edit">*Cargo:</label>
+                                        <select id="cargo-edit" name="cargo" required>
+                                            <option value="gerente" selected>Gerente</option>
+                                            <option value="caixa">Caixa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                        
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="salario-edit">*Salário (R$):</label>
+                                        <input type="text" id="salario-edit" name="salario" required value="R$ 3.500,00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="justificativa-edit">Justificativa de Alteração:</label>
+                                        <input type="text" id="justificativa-edit" name="justificativa" placeholder="Obrigatória se alterar salário/cargo">
+                                    </div>
+                                </div>
+                        
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Descartar</button>
+                                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-excluir" class="tela">
+                        <form action="#" method="get" id="formBuscarExcluirFunc" class="form-filtro">
+                            <fieldset>
+                                <legend><h1>Excluir/Inativar Funcionário</h1></legend>
+                                <p>Localize o funcionário que deseja inativar.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="busca_cpf_exc">CPF</label>
+                                        <input type="text" id="busca_cpf_exc" name="busca_cpf_exc" placeholder="000.000.000-00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="busca_nome_exc">Nome</label>
+                                        <input type="text" id="busca_nome_exc" name="busca_nome_exc" placeholder="Nome do funcionário">
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Carregar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+
+                        <form action="#" method="post" id="formExcluirFunc" class="form-dashed-top">
+                            <fieldset>
+                                <legend><h2>Dados do Funcionário Selecionado</h2></legend>
+                                
+                                <div class="resumo-box">
+                                    <strong>Funcionário:</strong> Exemplo Funcionário 1<br>
+                                    <strong>CPF:</strong> 123.456.789-00<br>
+                                    <strong>Status atual:</strong> <span class="status-ativo">Ativo</span>
+                                </div>
+
+                                <div class="alerta alerta-perigo">
+                                    <strong>Atenção:</strong> Esta ação irá <strong>INATIVAR</strong> o funcionário. Seus dados serão mantidos para o histórico.
+                                </div>
+                                
+                                <div class="confirm-group">
+                                    <input type="checkbox" id="confirmar_acao_func">
+                                    <label for="confirmar_acao_func">Confirmo que desejo inativar este funcionário.</label>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-danger">Confirmar Inativação</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                </main> </div> </div> </main> <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="script-funcionario.js"></script>
+</body>
+</html>

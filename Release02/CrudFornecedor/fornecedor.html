@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fornecedores - Sistema de Gestão</title>
+    
+    <link rel="stylesheet" href="style-fornecedor.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+            <nav class="nav-links">
+                <a href="../../Release01/CrudCliente/cliente.html">Clientes</a>
+                <a href="../../Release01/CrudProduto/produto.html">Produtos</a>
+                <a href="../../Release01/CrudFuncionario/funcionario.html">Funcionários</a>
+                <a href="fornecedor.html" class="active">Fornecedores</a> 
+                <a href="../CrudEstoque/estoque.html">Estoque</a>
+                <a href="../CrudDepartamento/secao.html">Seções</a>    
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <nav class="breadcrumbs">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="fornecedor.html" class="active">Gerenciamento de Fornecedores</a>
+            </nav>
+
+            <div class="card-principal">
+                
+                <nav class="navegacao-abas">
+                    <button class="aba-link" data-target="tela-cadastrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
+                        Cadastrar
+                    </button>
+                    <button class="aba-link" data-target="tela-consultar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
+                        Consultar
+                    </button>
+                    <button class="aba-link" data-target="tela-editar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.42a4 4 0 0 0-.885 1.343Z" /></svg>
+                        Editar
+                    </button>
+                    <button class="aba-link" data-target="tela-excluir">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193v-.443A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75a1.25 1.25 0 0 0-1.25-1.25h-2.5A1.25 1.25 0 0 0 7.5 3.75v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z" clip-rule="evenodd" /></svg>
+                        Excluir
+                    </button>
+                </nav>
+        
+                <main class="conteudo-abas">
+        
+                    <div id="tela-cadastrar" class="tela">
+                        <form id="formCadastroFornecedor">
+                            <fieldset>
+                                <legend><h1>Cadastro de Fornecedor</h1></legend>
+                                <p>Preencha os campos abaixo para inserir um novo fornecedor.</p>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="razaoSocial-cad">*Razão Social</label>
+                                        <input type="text" id="razaoSocial-cad" name="razaoSocial" maxlength="30" required placeholder="Nome da empresa">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cnpj-cad">*CNPJ</label>
+                                        <input type="text" id="cnpj-cad" name="cnpj" required placeholder="00.000.000/0001-00">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="endereco-cad">*Endereço</label>
+                                        <input type="text" id="endereco-cad" name="endereco" maxlength="100" required placeholder="Rua, bairro e número">
+                                    </div>
+                                    <div class="col">
+                                        <label for="ramoAtividade-cad">*Ramo de Atividade</label>
+                                        <select id="ramoAtividade-cad" name="ramoAtividade" required>
+                                            <option value="" disabled selected>Selecione uma opção</option>
+                                            <option value="industria">Indústria</option>
+                                            <option value="comercio">Comércio</option>
+                                            <option value="servico">Serviço</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Cancelar</button>
+                                    <button type="submit" class="btn-primary">Salvar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-consultar" class="tela">
+                        <h1>Consulta de Fornecedores</h1>
+                        <form class="form-filtro" id="formConsultaFornecedor">
+                            <fieldset>
+                                <legend><h2>Filtros de Busca</h2></legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="razaoSocial-filtro">Razão Social</label>
+                                        <input type="text" id="razaoSocial-filtro" name="razaoSocial" placeholder="Digite o nome da empresa">
+                                    </div>
+                                    <div class="col">
+                                        <label for="cnpj-filtro">CNPJ</label>
+                                        <input type="text" id="cnpj-filtro" name="cnpj" placeholder="Digite o CNPJ">
+                                    </div>
+                                    <div class="col">
+                                        <label for="ramoAtividade-filtro">Ramo de Atividade</label>
+                                        <select id="ramoAtividade-filtro" name="ramoAtividade">
+                                            <option value="" selected>Todos</option>
+                                            <option value="industria">Indústria</option>
+                                            <option value="comercio">Comércio</option>
+                                            <option value="servico">Serviço</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-primary" onclick="buscarFornecedores()">Buscar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                
+                        <div class="resultado">
+                            <h2>Resultados</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Razão Social</th>
+                                        <th>CNPJ</th>
+                                        <th>Endereço</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabelaFornecedores">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div id="tela-editar" class="tela">
+                        <h1>Editar Fornecedor: <span id="razaoSocial-edit-header" class="header-highlight"></span></h1>
+                        <p>Altere os dados necessários e clique em "Salvar Alterações".</p>
+                        
+                        <form id="formEditarFornecedor">
+                            <fieldset>
+                                <input type="hidden" id="id-edit" name="id_fornecedor">
+
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="razaoSocial-edit">Razão Social</label>
+                                        <input type="text" id="razaoSocial-edit" name="razaoSocial" readonly>
+                                    </div>
+                                    <div class="col">
+                                        <label for="cnpj-edit">CNPJ</label>
+                                        <input type="text" id="cnpj-edit" name="cnpj" readonly>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="endereco-edit">*Endereço</label>
+                                        <input type="text" id="endereco-edit" name="endereco" maxlength="100" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="ramoAtividade-edit">Ramo de Atividade</label>
+                                        <select id="ramoAtividade-edit" name="ramoAtividade" readonly>
+                                            <option value="industria">Indústria</option>
+                                            <option value="comercio">Comércio</option>
+                                            <option value="servico">Serviço</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-secondary" onclick="ativarAba('tela-consultar')">Cancelar</button>
+                                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-excluir" class="tela">
+                        <h1>Confirmar Exclusão</h1>
+                        
+                        <div class="alerta alerta-perigo">
+                            <strong>Atenção:</strong> Você tem certeza que deseja excluir o fornecedor abaixo? Esta ação não poderá ser desfeita.
+                        </div>
+
+                        <form id="formExcluirFornecedor">
+                            <fieldset>
+                                <input type="hidden" id="id-excluir" name="id_fornecedor">
+                                
+                                <legend><h2>Dados do Fornecedor</h2></legend>
+                                <div class="resumo-box">
+                                    <p><strong>Razão Social:</strong> <span id="razaoSocial-exc"></span></p>
+                                    <p><strong>CNPJ:</strong> <span id="cnpj-exc"></span></p>
+                                    <p><strong>Endereço:</strong> <span id="endereco-exc"></span></p>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="button" class="btn-secondary" onclick="ativarAba('tela-consultar')">Cancelar</button>
+                                    <button type="submit" class="btn-danger">Sim, Excluir</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                </main> </div> </div> </main> <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="script-fornecedor.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seções - Sistema de Gestão</title>
+    
+    <link rel="stylesheet" href="style-secao.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+            <nav class="nav-links">
+                <a href="../../Release01/CrudCliente/cliente.html">Clientes</a>
+                <a href="../../Release01/CrudProduto/produto.html">Produtos</a>
+                <a href="../../Release01/CrudFuncionario/funcionario.html">Funcionários</a>
+                <a href="../CrudFornecedor/fornecedor.html">Fornecedores</a>
+                <a href="../CrudEstoque/estoque.html">Estoque</a>
+                <a href="secao.html" class="active">Seções</a> </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <nav class="breadcrumbs">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="secao.html" class="active">Gerenciamento de Seções</a>
+            </nav>
+
+            <div class="card-principal">
+                
+                <nav class="navegacao-abas">
+                    <button class="aba-link" data-target="tela-cadastrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
+                        Cadastrar Seção
+                    </button>
+                    <button class="aba-link" data-target="tela-consultar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
+                        Consultar Seções
+                    </button>
+                    <button class="aba-link" data-target="tela-editar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.42a4 4 0 0 0-.885 1.343Z" /></svg>
+                        Editar Seção
+                    </button>
+                    <button class="aba-link" data-target="tela-excluir">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193v-.443A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75a1.25 1.25 0 0 0-1.25-1.25h-2.5A1.25 1.25 0 0 0 7.5 3.75v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z" clip-rule="evenodd" /></svg>
+                        Excluir Seção
+                    </button>
+                </nav>
+        
+                <main class="conteudo-abas">
+        
+                    <div id="tela-cadastrar" class="tela">
+                        <form id="formCadastroSecao">
+                            <fieldset>
+                                <legend><h1>Cadastrar Seção</h1></legend>
+                                <p>Registro de novas seções (departamentos) no supermercado.</p>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="nome_secao-cad">*Nome da Seção:</label>
+                                        <input type="text" id="nome_secao-cad" name="nome_secao" maxlength="50" required placeholder="Ex: Hortifruti, Padaria">
+                                    </div>
+                                    <div class="col">
+                                        <label for="codigo_secao-cad">*Código da Seção:</label>
+                                        <input type="text" id="codigo_secao-cad" name="codigo_secao" maxlength="10" required placeholder="Identificador técnico único (Ex: HORTI)">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="responsavel-cad">*Responsável:</label>
+                                        <select id="responsavel-cad" name="responsavel" required>
+                                            <option value="">Selecione um funcionário ativo</option>
+                                            <option value="func1">Funcionário Exemplo 1 (Gerente)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="status-cad">*Status:</label>
+                                        <select id="status-cad" name="status" required>
+                                            <option value="Ativo">Ativa</option>
+                                            <option value="Inativo">Inativa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="descricao-cad">Descrição:</label>
+                                        <textarea id="descricao-cad" name="descricao" maxlength="200" rows="3" placeholder="Detalhes sobre os produtos ou função da seção"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Limpar</button>
+                                    <button type="submit" class="btn-primary">Cadastrar Seção</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-consultar" class="tela">
+                        <h1>Consultar Seção</h1>
+                        <form class="form-filtro" id="formConsultaSecao">
+                            <fieldset>
+                                <legend><h2>Filtros de Pesquisa</h2></legend>
+                                <p>Consulte e liste todas as seções registradas no sistema.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="nome_secao-filtro">Nome da Seção:</label>
+                                        <input type="text" id="nome_secao-filtro" name="nome_secao" placeholder="Busca parcial pelo nome">
+                                    </div>
+                                    <div class="col">
+                                        <label for="codigo_secao-filtro">Código da Seção:</label>
+                                        <input type="text" id="codigo_secao-filtro" name="codigo_secao" placeholder="Filtrar por código">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="responsavel-filtro">Responsável:</label>
+                                        <select id="responsavel-filtro" name="responsavel">
+                                            <option value="">Todos</option>
+                                            <option value="func1">Funcionário Exemplo 1</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="status-filtro">Status:</label>
+                                        <select id="status-filtro" name="status">
+                                            <option value="">Todos</option>
+                                            <option value="Ativo">Ativa</option>
+                                            <option value="Inativo">Inativa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-primary" onclick="buscarSecoes()">Pesquisar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        
+                        <div class="resultado">
+                            <h2>Resultados</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nome da Seção</th>
+                                        <th>Código</th>
+                                        <th>Responsável</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabelaSecoes">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div id="tela-editar" class="tela">
+                        <h1>Editar Seção: <span id="nome-edit-header" class="header-highlight"></span></h1>
+                        <p>Permite a atualização dos dados de uma seção existente.</p>
+                        
+                        <form id="formEditarSecao">
+                            <fieldset>
+                                <input type="hidden" id="id-edit"> <div class="row">
+                                    <div class="col">
+                                        <label>Código da Seção (não editável):</label>
+                                        <input type="text" id="codigo_secao-edit" readonly>
+                                    </div>
+                                    <div class="col">
+                                        <label for="nome_secao-edit">*Nome da Seção:</label>
+                                        <input type="text" id="nome_secao-edit" name="nome_secao" maxlength="50" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="responsavel-edit">*Responsável:</label>
+                                        <select id="responsavel-edit" name="responsavel" required>
+                                            <option value="">Selecione um funcionário</option>
+                                            <option value="func1">Funcionário Exemplo 1 (Gerente)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="status-edit">*Status:</label>
+                                        <select id="status-edit" name="status" required>
+                                            <option value="Ativo">Ativa</option>
+                                            <option value="Inativo">Inativa</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="descricao-edit">Descrição:</label>
+                                        <textarea id="descricao-edit" name="descricao" maxlength="200" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-secondary" onclick="ativarAba('tela-consultar')">Cancelar</button>
+                                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-excluir" class="tela">
+                        <h1>Excluir Seção</h1>
+                        
+                        <div id="alerta-exclusao" class="alerta alerta-perigo">
+                            </div>
+
+                        <form id="formExcluirSecao">
+                            <fieldset>
+                                <input type="hidden" id="id-excluir"> <legend><h2>Dados da Seção Selecionada</h2></legend>
+                                <div class="resumo-box">
+                                    <p><strong>Nome da Seção:</strong> <span id="nome-exc"></span></p>
+                                    <p><strong>Código:</strong> <span id="codigo-exc"></span></p>
+                                    <p><strong>Status:</strong> <span id="status-exc"></span></p>
+                                    <p><strong>Produtos Vinculados:</strong> <span id="vinculos-exc"></span></p>
+                                </div>
+                                
+                                <div class="confirm-group">
+                                    <input type="checkbox" id="confirma_exclusao">
+                                    <label for="confirma_exclusao">
+                                        Confirmo que desejo excluir esta seção.
+                                    </label>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="button" class="btn-secondary" onclick="ativarAba('tela-consultar')">Cancelar</button>
+                                    <button type="submit" class="btn-danger" id="btn-confirmar-exclusao">Confirmar Exclusão</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                </main> </div> </div> </main> <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="script-secao.js"></script>
+</body>
+</html>
