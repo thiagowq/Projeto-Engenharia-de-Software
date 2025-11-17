@@ -1,0 +1,706 @@
+{
+  "id": "23abe4c7-dc91-4ed7-abf8-ea79ee525e10",
+  "version": "2.0",
+  "name": "Crud Cliente",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "e4b2b7e5-d8d5-4b6d-abc0-a5f523846ea3",
+    "name": "Inserir",
+    "commands": [{
+      "id": "0c7ec105-7b89-45b2-8a6e-41f54388e3c1",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa51436f-1721-4c10-9e73-3c85b2c452a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "588b7565-9a98-4305-87ec-bd67d32fedc7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clientes",
+      "targets": [
+        ["linkText=Clientes", "linkText"],
+        ["css=.nav-links > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Clientes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#clientes')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clientes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d9ae585-8560-4fdf-aa18-7175db3c4776",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acessar Módulo",
+      "targets": [
+        ["linkText=Acessar Módulo", "linkText"],
+        ["css=#clientes > .card-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Acessar Módulo')]", "xpath:link"],
+        ["xpath=//div[@id='clientes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acessar Módulo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "004b7746-1bd1-4eac-a21a-27bd45877d69",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(1)",
+      "targets": [
+        ["css=.aba-link:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Inserir Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ad908b-a884-4322-980e-fefb4db23415",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e871e3e0-8c25-42d8-bee8-e3fb20d55dbf",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf",
+      "targets": [
+        ["id=cpf", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf", "css:finder"],
+        ["xpath=//input[@id='cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "123.456.789-09"
+    }, {
+      "id": "aa68b55c-fe63-4c05-97d2-ef53f75f4976",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome_completo",
+      "targets": [
+        ["id=nome_completo", "id"],
+        ["name=nome_completo", "name"],
+        ["css=#nome_completo", "css:finder"],
+        ["xpath=//input[@id='nome_completo']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93e2f781-df00-47b2-9001-86a038ded04c",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome_completo",
+      "targets": [
+        ["id=nome_completo", "id"],
+        ["name=nome_completo", "name"],
+        ["css=#nome_completo", "css:finder"],
+        ["xpath=//input[@id='nome_completo']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Marcos Vinícius Andrade Silva"
+    }, {
+      "id": "afc9541b-f7b8-43b4-aa6d-3b53335a0437",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_nasc",
+      "targets": [
+        ["id=data_nasc", "id"],
+        ["name=data_nasc", "name"],
+        ["css=#data_nasc", "css:finder"],
+        ["xpath=//input[@id='data_nasc']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82509725-5553-4beb-9f80-8684bdd232a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_nasc",
+      "targets": [
+        ["id=data_nasc", "id"],
+        ["name=data_nasc", "name"],
+        ["css=#data_nasc", "css:finder"],
+        ["xpath=//input[@id='data_nasc']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "1999-08-14"
+    }, {
+      "id": "6078b0af-0b3a-4a06-a988-6ffa479aef87",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6607333f-1215-42ac-aec1-8e4bae67838e",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefone",
+      "targets": [
+        ["id=telefone", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone", "css:finder"],
+        ["xpath=//input[@id='telefone']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "(11) 98532-7744"
+    }, {
+      "id": "82efe8b9-6f3f-4065-b781-8e5da3da2558",
+      "comment": "",
+      "command": "click",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68c1defc-875f-451b-b6ca-f6022073bf33",
+      "comment": "",
+      "command": "type",
+      "target": "id=bairro",
+      "targets": [
+        ["id=bairro", "id"],
+        ["name=bairro", "name"],
+        ["css=#bairro", "css:finder"],
+        ["xpath=//input[@id='bairro']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Jardim das Palmeiras"
+    }, {
+      "id": "c0e17b33-9ad6-4f0c-87e5-d1806a8d97c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=rua",
+      "targets": [
+        ["id=rua", "id"],
+        ["name=rua", "name"],
+        ["css=#rua", "css:finder"],
+        ["xpath=//input[@id='rua']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1945af24-4eef-47ba-ace9-a2d24b971206",
+      "comment": "",
+      "command": "type",
+      "target": "id=rua",
+      "targets": [
+        ["id=rua", "id"],
+        ["name=rua", "name"],
+        ["css=#rua", "css:finder"],
+        ["xpath=//input[@id='rua']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rua Monte Verde"
+    }, {
+      "id": "c58bbc75-cc90-4062-993b-c3c6f61d6a84",
+      "comment": "",
+      "command": "click",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29054ee8-1838-49da-ae14-cc74edde23f1",
+      "comment": "",
+      "command": "type",
+      "target": "id=numero",
+      "targets": [
+        ["id=numero", "id"],
+        ["name=numero", "name"],
+        ["css=#numero", "css:finder"],
+        ["xpath=//input[@id='numero']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[3]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "742"
+    }, {
+      "id": "b9d0a346-67ce-4e80-9431-9a83ec9ff1d7",
+      "comment": "",
+      "command": "click",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b727c4-be16-43bc-8887-6cfa6effd993",
+      "comment": "",
+      "command": "type",
+      "target": "id=cep",
+      "targets": [
+        ["id=cep", "id"],
+        ["name=cep", "name"],
+        ["css=#cep", "css:finder"],
+        ["xpath=//input[@id='cep']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "03245-200"
+    }, {
+      "id": "8dac7af7-92e6-4206-8052-6ace46c1fff3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(7) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(7) > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroCliente']/fieldset/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "25a23aa0-d154-441a-90d6-73c9b55068a2",
+    "name": "Consultar",
+    "commands": [{
+      "id": "f8e73c25-a1e0-4254-b10b-09e6a86b01c9",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbc3eec1-eb94-45aa-ad12-3a2472e953df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44503add-7cda-4a7a-9fff-d1964d2ee1ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clientes",
+      "targets": [
+        ["linkText=Clientes", "linkText"],
+        ["css=.nav-links > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Clientes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#clientes')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clientes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28dd347c-9d07-44da-b5a9-71e2fbfd5b40",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acessar Módulo",
+      "targets": [
+        ["linkText=Acessar Módulo", "linkText"],
+        ["css=#clientes > .card-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Acessar Módulo')]", "xpath:link"],
+        ["xpath=//div[@id='clientes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acessar Módulo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf7d851e-5def-4d4a-b39d-91920d23363f",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_nome",
+      "targets": [
+        ["id=f_nome", "id"],
+        ["name=nome", "name"],
+        ["css=#f_nome", "css:finder"],
+        ["xpath=//input[@id='f_nome']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c835a83-0674-4f2d-9c88-5b21c887121d",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_nome",
+      "targets": [
+        ["id=f_nome", "id"],
+        ["name=nome", "name"],
+        ["css=#f_nome", "css:finder"],
+        ["xpath=//input[@id='f_nome']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Bruno Pereira"
+    }, {
+      "id": "3aea7ab3-543e-4325-af52-e2dbe704af6c",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_cpf",
+      "targets": [
+        ["id=f_cpf", "id"],
+        ["css=#f_cpf", "css:finder"],
+        ["xpath=//input[@id='f_cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1075af54-992c-4361-b68a-23d4f1029eda",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_cpf",
+      "targets": [
+        ["id=f_cpf", "id"],
+        ["css=#f_cpf", "css:finder"],
+        ["xpath=//input[@id='f_cpf']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "123.456.789-09"
+    }, {
+      "id": "b6ff66ee-42ea-493a-b194-55557027618d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(4) > .btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.form-actions:nth-child(4) > .btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb65aa2-3bc6-4644-b1af-81b0f1b9a761",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_nome",
+      "targets": [
+        ["id=f_nome", "id"],
+        ["name=nome", "name"],
+        ["css=#f_nome", "css:finder"],
+        ["xpath=//input[@id='f_nome']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dec2a4f3-b384-40d7-9836-c7a9f37b0b90",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_nome",
+      "targets": [
+        ["id=f_nome", "id"],
+        ["name=nome", "name"],
+        ["css=#f_nome", "css:finder"],
+        ["xpath=//input[@id='f_nome']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Bruno Pereira"
+    }, {
+      "id": "c4ad760f-71c1-4a95-9510-ddb0dcac7802",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(4) > .btn-secondary",
+      "targets": [
+        ["css=.form-actions:nth-child(4) > .btn-secondary", "css:finder"],
+        ["xpath=(//button[@type='reset'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaCliente']/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Limpar filtros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f20b4f89-0a3b-422d-98b4-79c9d46488c6",
+    "name": "Editar",
+    "commands": [{
+      "id": "df9beef7-65fb-4bae-a9f0-5b2d2c4cd3c8",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e2b893a5-fa12-4a4f-b83b-a98486a96180",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9bb8575-5a67-4155-bbcd-3c37d89127a5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Clientes",
+      "targets": [
+        ["linkText=Clientes", "linkText"],
+        ["css=.nav-links > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Clientes')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#clientes')]", "xpath:href"],
+        ["xpath=//nav/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Clientes')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49b80d86-51dc-4417-85c4-41acd83d9ac5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acessar Módulo",
+      "targets": [
+        ["linkText=Acessar Módulo", "linkText"],
+        ["css=#clientes > .card-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Acessar Módulo')]", "xpath:link"],
+        ["xpath=//div[@id='clientes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acessar Módulo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f5ddb91-dfc3-43e6-9550-b73dea7be3a1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(3)",
+      "targets": [
+        ["css=.aba-link:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Editar Cliente')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0adcd896-f705-4db2-a203-837f1f7c1d23",
+      "comment": "",
+      "command": "click",
+      "target": "id=tel1_edit",
+      "targets": [
+        ["id=tel1_edit", "id"],
+        ["name=tel1_edit", "name"],
+        ["css=#tel1_edit", "css:finder"],
+        ["xpath=//input[@id='tel1_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f770e345-b23f-415d-a4b8-381619bfe0c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=tel1_edit",
+      "targets": [
+        ["id=tel1_edit", "id"],
+        ["name=tel1_edit", "name"],
+        ["css=#tel1_edit", "css:finder"],
+        ["xpath=//input[@id='tel1_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9541f0ea-12a1-4378-a7a1-8045a226429c",
+      "comment": "",
+      "command": "type",
+      "target": "id=tel1_edit",
+      "targets": [
+        ["id=tel1_edit", "id"],
+        ["name=tel1_edit", "name"],
+        ["css=#tel1_edit", "css:finder"],
+        ["xpath=//input[@id='tel1_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "(11) 98831-3412"
+    }, {
+      "id": "3a5641da-c9ae-40e3-9f40-8e6434107fcd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(5) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(5) > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarCliente']/fieldset/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "82ac0f73-a2dc-4056-9036-2b7c6b91fa17",
+    "name": "Excluir/Inativar",
+    "commands": [{
+      "id": "524bcedc-7881-4965-89aa-b8d8873b6c0e",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41c640b7-6846-4db6-8934-1acd1a71c08b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3a71a93-6d31-46fd-a727-ae7e77ce758a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Acessar Módulo",
+      "targets": [
+        ["linkText=Acessar Módulo", "linkText"],
+        ["css=#clientes > .card-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Acessar Módulo')]", "xpath:link"],
+        ["xpath=//div[@id='clientes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudCliente/cliente.html')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Acessar Módulo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0d6824b-b873-4745-9be7-3402ea746df2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(4)",
+      "targets": [
+        ["css=.aba-link:nth-child(4)", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Excluir/Inativar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8f21904-e19b-403a-ad15-f7142f39c8c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=cod_excluir",
+      "targets": [
+        ["id=cod_excluir", "id"],
+        ["name=cod_excluir", "name"],
+        ["css=#cod_excluir", "css:finder"],
+        ["xpath=//input[@id='cod_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "753410a8-0aba-4f1c-b745-e2b9e49c2d5b",
+      "comment": "",
+      "command": "type",
+      "target": "id=cod_excluir",
+      "targets": [
+        ["id=cod_excluir", "id"],
+        ["name=cod_excluir", "name"],
+        ["css=#cod_excluir", "css:finder"],
+        ["xpath=//input[@id='cod_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "123"
+    }, {
+      "id": "598647e2-026b-4e13-893a-12dc8cd2c588",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf_excluir",
+      "targets": [
+        ["id=cpf_excluir", "id"],
+        ["name=cpf_excluir", "name"],
+        ["css=#cpf_excluir", "css:finder"],
+        ["xpath=//input[@id='cpf_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5417bbbf-2f2c-44d2-abc3-a342addbe801",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf_excluir",
+      "targets": [
+        ["id=cpf_excluir", "id"],
+        ["name=cpf_excluir", "name"],
+        ["css=#cpf_excluir", "css:finder"],
+        ["xpath=//input[@id='cpf_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirCliente']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "123.456.789-10"
+    }, {
+      "id": "dc11f1a3-04f5-41b2-ba27-df3c6ed1c1b8",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirmar_acao",
+      "targets": [
+        ["id=confirmar_acao", "id"],
+        ["css=#confirmar_acao", "css:finder"],
+        ["xpath=//input[@id='confirmar_acao']", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirCliente']/fieldset/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffb94ff4-793b-430f-a255-9c732b772e15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirCliente']/fieldset/div[5]/button", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[5]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar Inativação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bb68342d-6563-4723-b8fd-507087b26653",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e4b2b7e5-d8d5-4b6d-abc0-a5f523846ea3"]
+  }],
+  "urls": ["https://thiagowq.github.io/Projeto-Engenharia-de-Software/"],
+  "plugins": []
+}

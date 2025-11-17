@@ -1,0 +1,943 @@
+{
+  "id": "7f6f5f75-3494-433c-a928-573ff8c5d7d1",
+  "version": "2.0",
+  "name": "Crud Produto",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "432d43b4-be96-4a74-ab9a-3a01d977acf7",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "0aa71d73-1b7b-4e06-aa33-f48fa14faf16",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec5dcb65-3afd-4c1b-8402-7a05b47d9084",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "697x775",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24c992de-06ee-4bf0-8fb1-d97bed1211b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos",
+      "targets": [
+        ["linkText=Produtos", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#produtos')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9c5f1c1-ee2d-49f2-b407-f3984562a5a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produtos > .card-link",
+      "targets": [
+        ["css=#produtos > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[2]", "xpath:link"],
+        ["xpath=//div[@id='produtos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudProduto/produto.html')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ce2ea00-fade-451f-aef2-e6cd79f8210d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(1)",
+      "targets": [
+        ["css=.aba-link:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bdb557d-0b28-457a-ae84-c3a3db21c08c",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome-cad",
+      "targets": [
+        ["id=nome-cad", "id"],
+        ["css=#nome-cad", "css:finder"],
+        ["xpath=//input[@id='nome-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77df6312-bd15-48c2-ae46-c5fa10a1f9d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome-cad",
+      "targets": [
+        ["id=nome-cad", "id"],
+        ["css=#nome-cad", "css:finder"],
+        ["xpath=//input[@id='nome-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Sabão Líquido Brilho Max 1L"
+    }, {
+      "id": "ac213193-33fd-437a-89bc-780d905b01c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigoBarras-cad",
+      "targets": [
+        ["id=codigoBarras-cad", "id"],
+        ["css=#codigoBarras-cad", "css:finder"],
+        ["xpath=//input[@id='codigoBarras-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da535fae-6264-4112-8c3d-5e0e534829ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigoBarras-cad",
+      "targets": [
+        ["id=codigoBarras-cad", "id"],
+        ["css=#codigoBarras-cad", "css:finder"],
+        ["xpath=//input[@id='codigoBarras-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "7891234500017"
+    }, {
+      "id": "eb6064f8-ff30-44ec-87cd-b949a661ea93",
+      "comment": "",
+      "command": "select",
+      "target": "id=secao-cad",
+      "targets": [],
+      "value": "label=Limpeza"
+    }, {
+      "id": "dfa339c2-c75c-4581-bb4a-8da0c00a2bbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#secao-cad > option:nth-child(2)",
+      "targets": [
+        ["css=#secao-cad > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='limpeza']", "xpath:attributes"],
+        ["xpath=//select[@id='secao-cad']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Limpeza')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d339e86-9de9-4ba7-bd26-46d354b157ee",
+      "comment": "",
+      "command": "click",
+      "target": "id=fornecedor-cad",
+      "targets": [
+        ["id=fornecedor-cad", "id"],
+        ["css=#fornecedor-cad", "css:finder"],
+        ["xpath=//input[@id='fornecedor-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60dd0b73-e87f-46a7-af71-d5423943db20",
+      "comment": "",
+      "command": "type",
+      "target": "id=fornecedor-cad",
+      "targets": [
+        ["id=fornecedor-cad", "id"],
+        ["css=#fornecedor-cad", "css:finder"],
+        ["xpath=//input[@id='fornecedor-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Quimilar Distribuidora LTDA"
+    }, {
+      "id": "5135957c-b198-4f7e-8ef6-a2ab850feac6",
+      "comment": "",
+      "command": "click",
+      "target": "id=custo-cad",
+      "targets": [
+        ["id=custo-cad", "id"],
+        ["css=#custo-cad", "css:finder"],
+        ["xpath=//input[@id='custo-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed81088f-79d5-4cf9-9bf2-4a235c64a586",
+      "comment": "",
+      "command": "type",
+      "target": "id=custo-cad",
+      "targets": [
+        ["id=custo-cad", "id"],
+        ["css=#custo-cad", "css:finder"],
+        ["xpath=//input[@id='custo-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "R$ 3,90"
+    }, {
+      "id": "18ea2b74-f84d-472c-8133-62f0f8a13ef9",
+      "comment": "",
+      "command": "click",
+      "target": "id=venda-cad",
+      "targets": [
+        ["id=venda-cad", "id"],
+        ["css=#venda-cad", "css:finder"],
+        ["xpath=//input[@id='venda-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f26b2e9d-f6ec-4622-979c-2293a13bafa2",
+      "comment": "",
+      "command": "type",
+      "target": "id=venda-cad",
+      "targets": [
+        ["id=venda-cad", "id"],
+        ["css=#venda-cad", "css:finder"],
+        ["xpath=//input[@id='venda-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "R$ 7,49"
+    }, {
+      "id": "37292706-1af5-4ad1-a9bf-6d8f6c93cac5",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao-cad",
+      "targets": [
+        ["id=descricao-cad", "id"],
+        ["css=#descricao-cad", "css:finder"],
+        ["xpath=//textarea[@id='descricao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c7f2f10-c796-4405-b80a-057d4e5b01ae",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao-cad",
+      "targets": [
+        ["id=descricao-cad", "id"],
+        ["css=#descricao-cad", "css:finder"],
+        ["xpath=//textarea[@id='descricao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Sabão líquido para roupas, fórmula concentrada, fragrância floral."
+    }, {
+      "id": "fce5f14f-8d86-462c-9cf9-60f7dd950b88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(6) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(6) > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='cadastroForm']/fieldset/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "23a0ecb9-72bb-45d8-9668-6bf647d3fb2a",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Produto cadastrado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "201d5462-a352-4bd1-8593-82250c76d370",
+    "name": "Alterar",
+    "commands": [{
+      "id": "7f533181-82d9-4785-90a9-cc20b8fdf012",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0ed1b80-d0b0-4774-a47e-f0a084fa3da4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8133dd95-b4b8-4041-8b98-2e8f36ff332c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos",
+      "targets": [
+        ["linkText=Produtos", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#produtos')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8bd63b2-0340-487c-a048-8b76aa911622",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produtos > .card-link",
+      "targets": [
+        ["css=#produtos > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[2]", "xpath:link"],
+        ["xpath=//div[@id='produtos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudProduto/produto.html')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "133aebed-25cc-4735-aec9-91f3b04d8d41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(3)",
+      "targets": [
+        ["css=.aba-link:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Alterar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12f781d2-ae0b-4c78-9540-7736e084dc96",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(2)",
+      "targets": [
+        ["css=.aba-link:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e93ba8f3-7619-4144-ae7e-c1f7ed46c08f",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-acao:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-acao:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='abrirAlteracao(1)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaProdutos']/tr/td[7]/button", "xpath:idRelative"],
+        ["xpath=//td[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e50c189b-df40-4fc9-9b56-104ac21f0244",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao-alt",
+      "targets": [
+        ["id=descricao-alt", "id"],
+        ["css=#descricao-alt", "css:finder"],
+        ["xpath=//textarea[@id='descricao-alt']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/fieldset/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ae3fbd5-adb7-4b12-b05e-ddf2f2d45c2c",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao-alt",
+      "targets": [
+        ["id=descricao-alt", "id"],
+        ["css=#descricao-alt", "css:finder"],
+        ["xpath=//textarea[@id='descricao-alt']", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/fieldset/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": "Agora com novo aroma floral intenso e fórmula melhorada."
+    }, {
+      "id": "e2570df9-7305-4103-acb6-ba099118df0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(5) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(5) > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='alteracaoForm']/fieldset/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[5]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "487c98ea-35b5-4326-8022-2667a6343cb7",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Produto alterado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0a5b6bfe-f70c-4dc9-8f7c-0042e7579f3e",
+    "name": "Consultar",
+    "commands": [{
+      "id": "4029c855-c9ac-4f3f-974e-4bc30bddf109",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5e57073-1bef-4c73-9cae-3febbe896378",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a971f34e-8042-441e-9ec6-c3fd97c0f476",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos",
+      "targets": [
+        ["linkText=Produtos", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#produtos')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c564671-c558-4167-a2b9-a4f15330d5f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produtos > .card-link",
+      "targets": [
+        ["css=#produtos > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[2]", "xpath:link"],
+        ["xpath=//div[@id='produtos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudProduto/produto.html')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "903238b7-55a5-4165-a90c-22b8cfe11e70",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroSecao",
+      "targets": [
+        ["id=filtroSecao", "id"],
+        ["css=#filtroSecao", "css:finder"],
+        ["xpath=//select[@id='filtroSecao']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ae50b6a-4952-4a46-a684-331eb4cbb155",
+      "comment": "",
+      "command": "select",
+      "target": "id=filtroSecao",
+      "targets": [],
+      "value": "label=Hortifruti"
+    }, {
+      "id": "4f9a3af3-97a1-4571-8c9f-8e7e5118e2fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroSecao > option:nth-child(3)",
+      "targets": [
+        ["css=#filtroSecao > option:nth-child(3)", "css:finder"],
+        ["xpath=(//option[@value='hortifruti'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='filtroSecao']/option[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/select/option[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a02a7d4-bb9f-44ca-b913-d30479edc1e8",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroStatus",
+      "targets": [
+        ["id=filtroStatus", "id"],
+        ["css=#filtroStatus", "css:finder"],
+        ["xpath=//select[@id='filtroStatus']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f7fdcc6-922e-4cfd-aa97-aa7367ce07b1",
+      "comment": "",
+      "command": "select",
+      "target": "id=filtroStatus",
+      "targets": [],
+      "value": "label=Descontinuado"
+    }, {
+      "id": "a4b2ed84-afa1-45dc-ac92-d71fe25379db",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroStatus > option:nth-child(2)",
+      "targets": [
+        ["css=#filtroStatus > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='inativo']", "xpath:attributes"],
+        ["xpath=//select[@id='filtroStatus']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Descontinuado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1278372-4fd2-4b72-a19b-3c7a7156cc6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ad7cc95-553d-4791-955a-d8ae0b75f8ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-acao:nth-child(1)",
+      "targets": [
+        ["css=.btn-acao:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='abrirAlteracao(3)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaProdutos']/tr/td[7]/button", "xpath:idRelative"],
+        ["xpath=//td[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bfc081a-a9dd-4cd4-80a4-8199c0002329",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(2)",
+      "targets": [
+        ["css=.aba-link:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45cec0ad-8c32-4cea-8e2f-e7bcf6f0a042",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroSecao",
+      "targets": [
+        ["id=filtroSecao", "id"],
+        ["css=#filtroSecao", "css:finder"],
+        ["xpath=//select[@id='filtroSecao']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0a60c7d-6862-4b9e-b773-ee72690bfcba",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroSecao > option:nth-child(3)",
+      "targets": [
+        ["css=#filtroSecao > option:nth-child(3)", "css:finder"],
+        ["xpath=(//option[@value='hortifruti'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='filtroSecao']/option[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/select/option[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5ef7923-7256-422b-a12c-d4671266dd2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroStatus",
+      "targets": [
+        ["id=filtroStatus", "id"],
+        ["css=#filtroStatus", "css:finder"],
+        ["xpath=//select[@id='filtroStatus']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "413d2368-a840-4090-874a-4c74fefe835c",
+      "comment": "",
+      "command": "select",
+      "target": "id=filtroStatus",
+      "targets": [],
+      "value": "label=Ativo"
+    }, {
+      "id": "6a50c8fd-ff32-4619-9132-bab6ced74813",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroStatus > option:nth-child(1)",
+      "targets": [
+        ["css=#filtroStatus > option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='ativo']", "xpath:attributes"],
+        ["xpath=//select[@id='filtroStatus']/option", "xpath:idRelative"],
+        ["xpath=//div[3]/select/option", "xpath:position"],
+        ["xpath=//option[contains(.,'Ativo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddf0b3e6-2d77-4073-a4b6-e97faff9725f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6b6de21-5f96-46ec-9162-f6d321be7de6",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-acao:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-acao:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='abrirAlteracao(1)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaProdutos']/tr/td[7]/button", "xpath:idRelative"],
+        ["xpath=//td[7]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e8d032f-9c55-44fb-a8c7-230a31537fba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(2)",
+      "targets": [
+        ["css=.aba-link:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab264bd4-6047-494d-a1e6-519b532f4cfd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-acao:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-acao:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick='abrirDescontinuacao(1)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaProdutos']/tr/td[7]/button[2]", "xpath:idRelative"],
+        ["xpath=//td[7]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81d2bfe7-85c2-4df8-b014-fc835649e928",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(2)",
+      "targets": [
+        ["css=.aba-link:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7d8df8de-02ad-4504-b436-4fa629ddf0c5",
+    "name": "Descontinuar",
+    "commands": [{
+      "id": "3cb0aab9-4a82-4722-9092-deadcddf75ad",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b8dfdda-1102-4c2a-9bd6-05db90e97cc6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x784",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5cb47ef5-6abd-4141-8cac-c3a547346c46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-links",
+      "targets": [
+        ["css=.nav-links", "css:finder"],
+        ["xpath=//nav", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3f14a1eb-0c41-4c2a-ba71-bd040aa92a5d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Produtos",
+      "targets": [
+        ["linkText=Produtos", "linkText"],
+        ["css=a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Produtos')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#produtos')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Produtos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9bbb7b37-9883-4555-8963-87632e7026d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#produtos > .card-link",
+      "targets": [
+        ["css=#produtos > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[2]", "xpath:link"],
+        ["xpath=//div[@id='produtos']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release01/CrudProduto/produto.html')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b6de0d-9413-415c-bab0-f30c07472418",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(4)",
+      "targets": [
+        ["css=.aba-link:nth-child(4)", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Descontinuar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42d3fcd1-997e-4409-9487-eacf7b8004e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(2)",
+      "targets": [
+        ["css=.aba-link:nth-child(2)", "css:finder"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Consultar Produto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3303eeea-4c59-4d71-ae5b-5584249bd589",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .btn-acao:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(1) .btn-acao:nth-child(2)", "css:finder"],
+        ["xpath=//button[@onclick='abrirDescontinuacao(1)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaProdutos']/tr/td[7]/button[2]", "xpath:idRelative"],
+        ["xpath=//td[7]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9e9c42fe-106c-4da1-bbc0-300ea16f6491",
+      "comment": "",
+      "command": "click",
+      "target": "id=motivo-desc",
+      "targets": [
+        ["id=motivo-desc", "id"],
+        ["css=#motivo-desc", "css:finder"],
+        ["xpath=//select[@id='motivo-desc']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/fieldset/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04751c69-8de9-4201-87e6-73a25d995917",
+      "comment": "",
+      "command": "select",
+      "target": "id=motivo-desc",
+      "targets": [],
+      "value": "label=Baixo Giro/Venda"
+    }, {
+      "id": "b3033292-522b-47c0-a875-686652890044",
+      "comment": "",
+      "command": "click",
+      "target": "css=#motivo-desc > option:nth-child(2)",
+      "targets": [
+        ["css=#motivo-desc > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='baixoGiro']", "xpath:attributes"],
+        ["xpath=//select[@id='motivo-desc']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div[2]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Baixo Giro/Venda')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ecf3fce-a5e3-412e-85d5-17145f78f8f8",
+      "comment": "",
+      "command": "click",
+      "target": "id=observacao-desc",
+      "targets": [
+        ["id=observacao-desc", "id"],
+        ["css=#observacao-desc", "css:finder"],
+        ["xpath=//textarea[@id='observacao-desc']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/fieldset/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21e70a05-349f-415f-a327-24a90737aeb8",
+      "comment": "",
+      "command": "type",
+      "target": "id=observacao-desc",
+      "targets": [
+        ["id=observacao-desc", "id"],
+        ["css=#observacao-desc", "css:finder"],
+        ["xpath=//textarea[@id='observacao-desc']", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/fieldset/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[2]/div/textarea", "xpath:position"]
+      ],
+      "value": "Venda até zerar o estoque. Depois retirar da prateleira."
+    }, {
+      "id": "e6ba2268-52e5-467e-8cad-dea91e01db2a",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7322876-2e5b-40e0-ba97-b3fcb6592b78",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(3) > .btn-danger",
+      "targets": [
+        ["css=.form-actions:nth-child(3) > .btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='descontinuacaoForm']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar Descontinuação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b62f7b67-eb93-4ee8-87c9-e630dbfc446d",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Deseja realmente descontinuar o produto 'Sabão em Pó Azul 500g'?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0459751-c15d-461a-be88-a27056db3c14",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d0c34d8f-1444-43f9-a164-91577fe89754",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Produto Sabão em Pó Azul 500g descontinuado com sucesso!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce8d5daf-cc1b-4cd9-8b78-9bfb532e0840",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroSecao",
+      "targets": [
+        ["id=filtroSecao", "id"],
+        ["css=#filtroSecao", "css:finder"],
+        ["xpath=//select[@id='filtroSecao']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8305e2dc-3121-40be-bcc9-7fe6fe0d4e74",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroSecao > option:nth-child(1)",
+      "targets": [
+        ["css=#filtroSecao > option:nth-child(1)", "css:finder"],
+        ["xpath=(//option[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='filtroSecao']/option", "xpath:idRelative"],
+        ["xpath=//div[2]/select/option", "xpath:position"],
+        ["xpath=//option[contains(.,'Todas as Seções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab9d7b80-3a25-4803-9c28-c3ad747dc050",
+      "comment": "",
+      "command": "click",
+      "target": "id=filtroStatus",
+      "targets": [
+        ["id=filtroStatus", "id"],
+        ["css=#filtroStatus", "css:finder"],
+        ["xpath=//select[@id='filtroStatus']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0313982-4382-4339-acfc-16fdf1252a14",
+      "comment": "",
+      "command": "select",
+      "target": "id=filtroStatus",
+      "targets": [],
+      "value": "label=Descontinuado"
+    }, {
+      "id": "b1e92b7d-72e7-47bd-ac2d-ff81d1e4886e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#filtroStatus > option:nth-child(2)",
+      "targets": [
+        ["css=#filtroStatus > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='inativo']", "xpath:attributes"],
+        ["xpath=//select[@id='filtroStatus']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/select/option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Descontinuado')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b589e67-328f-475e-b262-d84902bcc3cf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb7bb44d-aa79-4d19-a3fe-0046452b7ba2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e83d7a6-995e-4cc4-97b6-6cc0790dd97f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d0670db2-3c39-48b2-8f44-aaf095b3c99a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["432d43b4-be96-4a74-ab9a-3a01d977acf7"]
+  }],
+  "urls": ["https://thiagowq.github.io/Projeto-Engenharia-de-Software/"],
+  "plugins": []
+}
