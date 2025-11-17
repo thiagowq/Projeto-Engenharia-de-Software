@@ -1,0 +1,1462 @@
+{
+  "id": "6b8aaae3-1fe0-4e7a-8758-1bd75b55d9bb",
+  "version": "2.0",
+  "name": "CRUD Seção",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "8de11ede-8c46-4875-be74-ac91987cbacb",
+    "name": "Consultar",
+    "commands": [{
+      "id": "1e73655a-402c-42dc-b0e7-fe0837f1f352",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d944eef4-dc60-4588-92ab-f7e5d64b2f3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c4bae58-4d1f-41ac-a50d-c73edb24f790",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Seções",
+      "targets": [
+        ["linkText=Seções", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Seções')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#secoes')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Seções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e71e5039-3292-41e3-b8c2-0fe82228916a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#secoes > .card-link",
+      "targets": [
+        ["css=#secoes > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[6]", "xpath:link"],
+        ["xpath=//div[@id='secoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudDepartamento/secao.html')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "af260402-5129-420c-8b59-6e0fc70d991f",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome_secao-filtro",
+      "targets": [
+        ["id=nome_secao-filtro", "id"],
+        ["css=#nome_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='nome_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7ef5825-e1c2-46d1-ace2-4f390e2eb097",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome_secao-filtro",
+      "targets": [
+        ["id=nome_secao-filtro", "id"],
+        ["css=#nome_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='nome_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Padaria"
+    }, {
+      "id": "94661290-1e1c-49e4-b5a1-ee2598ac46fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88e5061a-5978-4429-8143-b6d7b28a7315",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "PAD01"
+    }, {
+      "id": "723f0dbd-f224-4fe7-a816-4e64912f55f6",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "604f0ac7-602d-4957-bcb7-1e3fa7195577",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-420.58331298828125"
+    }, {
+      "id": "feef45ea-5e2b-4fda-acd7-9ee921695578",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-420.58331298828125"
+    }, {
+      "id": "9a0b6080-04a5-41a8-a420-2bfb1cd1bb01",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-420.58331298828125"
+    }, {
+      "id": "b1bd7bf5-3e6d-4d4f-91e3-423c7e549791",
+      "comment": "",
+      "command": "click",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48723eb7-d14b-49b3-9cca-9fb32f976bd2",
+      "comment": "",
+      "command": "select",
+      "target": "id=responsavel-filtro",
+      "targets": [],
+      "value": "label=Funcionário Exemplo 1"
+    }, {
+      "id": "e0ba4389-87db-4698-a657-14564488c373",
+      "comment": "",
+      "command": "click",
+      "target": "css=#responsavel-filtro > option:nth-child(2)",
+      "targets": [
+        ["css=#responsavel-filtro > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='func1'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='responsavel-filtro']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da405d5-8a8c-4f1e-b65d-e6402090580f",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-420.58331298828125"
+    }, {
+      "id": "d3300eb8-d080-4b2d-a324-768105fb0642",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-420.58331298828125"
+    }, {
+      "id": "6c1ec0b3-fc81-453a-ae71-919af0da561f",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-420.58331298828125"
+    }, {
+      "id": "7ecf399a-d7dc-4417-8af2-157f87f1d693",
+      "comment": "",
+      "command": "click",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a8d6b447-eb83-4a3d-a68e-f24bd2f6388c",
+      "comment": "",
+      "command": "select",
+      "target": "id=status-filtro",
+      "targets": [],
+      "value": "label=Ativa"
+    }, {
+      "id": "95ec5270-47ae-43ab-8b58-4af3ac5b32b2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#status-filtro > option:nth-child(2)",
+      "targets": [
+        ["css=#status-filtro > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='Ativo'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='status-filtro']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6d819341-183d-444d-9762-ebd44dbf0bf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pesquisar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "f08ff856-281a-48c1-8860-fd6375512e01",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "f9094419-9d02-41b9-8281-3a453c4877e6",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37b888c8-0386-4301-ad4c-e7daf41155c7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40b6c502-c2d5-4330-900a-cae7a2bcfef8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Seções",
+      "targets": [
+        ["linkText=Seções", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Seções')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#secoes')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Seções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eac6061-abe8-4406-a0d2-de59b0b9ec59",
+      "comment": "",
+      "command": "click",
+      "target": "css=#secoes > .card-link",
+      "targets": [
+        ["css=#secoes > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[6]", "xpath:link"],
+        ["xpath=//div[@id='secoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudDepartamento/secao.html')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9b7cbbe-5f2d-425a-b7b6-00026d2ba3bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(1)",
+      "targets": [
+        ["css=.aba-link:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar Seção')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ab3c3d1-b29d-475e-a736-a6720ac43d55",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome_secao-cad",
+      "targets": [
+        ["id=nome_secao-cad", "id"],
+        ["name=nome_secao", "name"],
+        ["css=#nome_secao-cad", "css:finder"],
+        ["xpath=//input[@id='nome_secao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb5f0e52-6c43-406e-89fb-33d44b779f17",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome_secao-cad",
+      "targets": [
+        ["id=nome_secao-cad", "id"],
+        ["name=nome_secao", "name"],
+        ["css=#nome_secao-cad", "css:finder"],
+        ["xpath=//input[@id='nome_secao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Padaria"
+    }, {
+      "id": "70b80dca-a72b-44a1-9a7d-c21b888b0cb6",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_secao-cad",
+      "targets": [
+        ["id=codigo_secao-cad", "id"],
+        ["name=codigo_secao", "name"],
+        ["css=#codigo_secao-cad", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b76855f6-81b7-4e30-a548-9d19ea5039eb",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo_secao-cad",
+      "targets": [
+        ["id=codigo_secao-cad", "id"],
+        ["name=codigo_secao", "name"],
+        ["css=#codigo_secao-cad", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "PAD01"
+    }, {
+      "id": "b3b9ef8c-e2e0-4692-b1db-ac61b856232c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=responsavel-cad",
+      "targets": [
+        ["id=responsavel-cad", "id"],
+        ["name=responsavel", "name"],
+        ["css=#responsavel-cad", "css:finder"],
+        ["xpath=//select[@id='responsavel-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "-378.5,-420.29998779296875"
+    }, {
+      "id": "6d59dfe1-d4d6-474c-9dc1-714301c17b64",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=responsavel-cad",
+      "targets": [
+        ["id=responsavel-cad", "id"],
+        ["name=responsavel", "name"],
+        ["css=#responsavel-cad", "css:finder"],
+        ["xpath=//select[@id='responsavel-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "-378.5,-420.29998779296875"
+    }, {
+      "id": "532f4ada-a59e-4a37-8992-e8dd21164306",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=responsavel-cad",
+      "targets": [
+        ["id=responsavel-cad", "id"],
+        ["name=responsavel", "name"],
+        ["css=#responsavel-cad", "css:finder"],
+        ["xpath=//select[@id='responsavel-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "-378.5,-420.29998779296875"
+    }, {
+      "id": "26a4b8a8-34f8-4aa9-994e-bc3e78f87bf6",
+      "comment": "",
+      "command": "click",
+      "target": "id=responsavel-cad",
+      "targets": [
+        ["id=responsavel-cad", "id"],
+        ["name=responsavel", "name"],
+        ["css=#responsavel-cad", "css:finder"],
+        ["xpath=//select[@id='responsavel-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a2605c3-6119-49db-8cbb-5608d7636914",
+      "comment": "",
+      "command": "select",
+      "target": "id=responsavel-cad",
+      "targets": [],
+      "value": "label=Funcionário Exemplo 1 (Gerente)"
+    }, {
+      "id": "012b4241-393c-4964-8286-e98dd012c8fd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#responsavel-cad > option:nth-child(2)",
+      "targets": [
+        ["css=#responsavel-cad > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='func1']", "xpath:attributes"],
+        ["xpath=//select[@id='responsavel-cad']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Funcionário Exemplo 1 (Gerente)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d20a3ba-04ec-4b14-8e0d-83c2d3970ee6",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=status-cad",
+      "targets": [
+        ["id=status-cad", "id"],
+        ["name=status", "name"],
+        ["css=#status-cad", "css:finder"],
+        ["xpath=//select[@id='status-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-420.29998779296875"
+    }, {
+      "id": "540abb21-720b-4e37-b9ac-47839207bcd2",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=status-cad",
+      "targets": [
+        ["id=status-cad", "id"],
+        ["name=status", "name"],
+        ["css=#status-cad", "css:finder"],
+        ["xpath=//select[@id='status-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-420.29998779296875"
+    }, {
+      "id": "d1c01324-a716-49fa-af6a-1a2495d860a3",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=status-cad",
+      "targets": [
+        ["id=status-cad", "id"],
+        ["name=status", "name"],
+        ["css=#status-cad", "css:finder"],
+        ["xpath=//select[@id='status-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-420.29998779296875"
+    }, {
+      "id": "b9b0f430-6cc2-4334-9242-c1ef9bdb315f",
+      "comment": "",
+      "command": "click",
+      "target": "id=status-cad",
+      "targets": [
+        ["id=status-cad", "id"],
+        ["name=status", "name"],
+        ["css=#status-cad", "css:finder"],
+        ["xpath=//select[@id='status-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "256e3a88-19e0-4571-97d3-07eda97dd2ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=#status-cad > option:nth-child(1)",
+      "targets": [
+        ["css=#status-cad > option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='Ativo']", "xpath:attributes"],
+        ["xpath=//select[@id='status-cad']/option", "xpath:idRelative"],
+        ["xpath=//div[2]/select/option", "xpath:position"],
+        ["xpath=//option[contains(.,'Ativa')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6787668-31c6-4710-84b0-0a5bdf5ee073",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao-cad",
+      "targets": [
+        ["id=descricao-cad", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao-cad", "css:finder"],
+        ["xpath=//textarea[@id='descricao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "334469c9-5ff8-4b90-8231-d0593f1bd6aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao-cad",
+      "targets": [
+        ["id=descricao-cad", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao-cad", "css:finder"],
+        ["xpath=//textarea[@id='descricao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Essa seção é composta por alimentos como pães, biscoitos, salgados, bolos."
+    }, {
+      "id": "d27262db-2c49-4dbc-995e-e2b88653e188",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(6) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(6) > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroSecao']/fieldset/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a7288ed-28d4-4148-87d6-682304db6981",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Seção cadastrada com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bbb62db2-c6c1-4400-add5-a64dfac33c6e",
+    "name": "Deletar",
+    "commands": [{
+      "id": "6338058b-397b-4377-b2cc-06a74faa2b3a",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4bba77c6-8f8d-4ae1-8faf-9cb1ab09494f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c3b018d-9b5d-4699-8098-0d66a8fecf7a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Seções",
+      "targets": [
+        ["linkText=Seções", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Seções')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#secoes')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Seções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ed5d66-ed6f-48d2-a8d3-299649606456",
+      "comment": "",
+      "command": "click",
+      "target": "css=#secoes > .card-link",
+      "targets": [
+        ["css=#secoes > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[6]", "xpath:link"],
+        ["xpath=//div[@id='secoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudDepartamento/secao.html')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4dfdbd8-c50a-431b-a2a6-1f7ce13a1993",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome_secao-filtro",
+      "targets": [
+        ["id=nome_secao-filtro", "id"],
+        ["css=#nome_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='nome_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "866de5e2-bce4-446a-a204-fcc30b96d7bc",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome_secao-filtro",
+      "targets": [
+        ["id=nome_secao-filtro", "id"],
+        ["css=#nome_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='nome_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Açougue"
+    }, {
+      "id": "c0af17d8-9164-4cfa-9571-f48c94399e2f",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44e0314e-c4e7-4ab5-a2b9-c77f49bce592",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "ACG01"
+    }, {
+      "id": "af104bee-c7dc-451c-848e-985486c03d66",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-439.58331298828125"
+    }, {
+      "id": "416f242c-24c4-40d6-9a4a-ccd7e528159a",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-439.58331298828125"
+    }, {
+      "id": "9102b5cf-5e85-4a44-86bf-0dd37180be08",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-439.58331298828125"
+    }, {
+      "id": "b869234d-d220-4935-b4d9-ef644caedc3c",
+      "comment": "",
+      "command": "click",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44fcb809-87fe-43d3-82ad-afcd15f5cebd",
+      "comment": "",
+      "command": "select",
+      "target": "id=status-filtro",
+      "targets": [],
+      "value": "label=Inativa"
+    }, {
+      "id": "fd13dda0-84d8-4175-a13b-783edf0a9b3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=(//option[@value='Inativo'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='status-filtro']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d8d8cdb-cea3-4b33-ab9e-743ca4a6425c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pesquisar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d0a9509-87aa-40e2-89c2-18d8aaecafa7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-acao-danger",
+      "targets": [
+        ["css=.btn-acao-danger", "css:finder"],
+        ["xpath=//button[@onclick='abrirExclusao(2)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaSecoes']/tr/td[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//td[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5dc0dcb-9d77-49fc-b014-1eae33667942",
+      "comment": "",
+      "command": "click",
+      "target": "css=.resumo-box > p:nth-child(1)",
+      "targets": [
+        ["css=.resumo-box > p:nth-child(1)", "css:finder"],
+        ["xpath=//form[@id='formExcluirSecao']/fieldset/div/p", "xpath:idRelative"],
+        ["xpath=//fieldset/div/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Nome da Seção: Açougue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2625e004-853e-4147-b382-31b0cf1af554",
+      "comment": "",
+      "command": "click",
+      "target": "id=confirma_exclusao",
+      "targets": [
+        ["id=confirma_exclusao", "id"],
+        ["css=#confirma_exclusao", "css:finder"],
+        ["xpath=//input[@id='confirma_exclusao']", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirSecao']/fieldset/div[2]/input", "xpath:idRelative"],
+        ["xpath=//fieldset/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3291362-1d5e-41c7-8ab3-6b19519d10a7",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "968182fa-c440-4b3a-b8e9-5426ad7e3f12",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn-confirmar-exclusao",
+      "targets": [
+        ["id=btn-confirmar-exclusao", "id"],
+        ["css=#btn-confirmar-exclusao", "css:finder"],
+        ["xpath=//button[@id='btn-confirmar-exclusao']", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirSecao']/fieldset/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar Exclusão')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "77611a36-aca9-41ff-9ccb-c1227f4701e1",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Tem certeza que deseja excluir a seção 'Açougue'?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "13dd2d07-4065-4403-a0a8-067eb78c6f90",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "268f0beb-0585-484d-820e-1fb3af5f7b45",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Seção excluída com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3d44f7d7-9007-445f-9793-fd6b62ca878a",
+    "name": "Editar",
+    "commands": [{
+      "id": "41a97ac2-f5c1-4867-a997-965d220d479b",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70573e34-9315-4e45-bd25-95873d7b000b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d9978e6-1847-4be1-b6eb-35a3bf3d6317",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Seções",
+      "targets": [
+        ["linkText=Seções", "linkText"],
+        ["css=a:nth-child(6)", "css:finder"],
+        ["xpath=//a[contains(text(),'Seções')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#secoes')]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"],
+        ["xpath=//a[contains(.,'Seções')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "47deb61a-ac4e-4d19-9e06-65aa917e59e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#secoes > .card-link",
+      "targets": [
+        ["css=#secoes > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[6]", "xpath:link"],
+        ["xpath=//div[@id='secoes']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudDepartamento/secao.html')]", "xpath:href"],
+        ["xpath=//div[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "709b4137-b9a8-4948-9bd7-76e9e4b1f0db",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome_secao-filtro",
+      "targets": [
+        ["id=nome_secao-filtro", "id"],
+        ["css=#nome_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='nome_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb003ee6-05b7-4ad9-b5a7-2716954488d2",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome_secao-filtro",
+      "targets": [
+        ["id=nome_secao-filtro", "id"],
+        ["css=#nome_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='nome_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Açougue"
+    }, {
+      "id": "7cd8ec98-70d2-496b-ac2e-52f4bd204d58",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a19a357-6494-4b05-a085-8f826f6eb12c",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo_secao-filtro",
+      "targets": [
+        ["id=codigo_secao-filtro", "id"],
+        ["css=#codigo_secao-filtro", "css:finder"],
+        ["xpath=//input[@id='codigo_secao-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "ACG01"
+    }, {
+      "id": "ec6989a1-5e76-4601-816b-cb1e86a51f85",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-306.58331298828125"
+    }, {
+      "id": "9de63c52-3771-4c0d-bbaa-3dc403cc874f",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-306.58331298828125"
+    }, {
+      "id": "4a09814b-0c4d-4c7a-be44-28eec1f375c6",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-306.58331298828125"
+    }, {
+      "id": "171d5e85-1ed8-4df9-bb4d-b07bdf83c7fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d911ea45-09d8-49dc-8874-3cdfae99da24",
+      "comment": "",
+      "command": "click",
+      "target": "css=#responsavel-filtro > option:nth-child(1)",
+      "targets": [
+        ["css=#responsavel-filtro > option:nth-child(1)", "css:finder"],
+        ["xpath=(//option[@value=''])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='responsavel-filtro']/option", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select/option", "xpath:position"],
+        ["xpath=//option[contains(.,'Todos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "289ba35d-c5ad-47ef-a9f3-a1550cccc34a",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-306.58331298828125"
+    }, {
+      "id": "3b52454f-e6d2-4379-ae06-787f91fb3dc6",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-306.58331298828125"
+    }, {
+      "id": "a0a5d393-70fa-4bdd-b5e4-53734157a2c2",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-306.58331298828125"
+    }, {
+      "id": "50285d9d-17f7-4241-bd00-5d84b847d0eb",
+      "comment": "",
+      "command": "click",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa9a365b-9dcf-44e6-bbd9-bad3e12dca2a",
+      "comment": "",
+      "command": "select",
+      "target": "id=status-filtro",
+      "targets": [],
+      "value": "label=Inativa"
+    }, {
+      "id": "d42f72d8-65ba-4bbf-9caf-24f8cb854ef3",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(3)",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=(//option[@value='Inativo'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='status-filtro']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "65b63255-90d4-4180-9bad-d677805cbc92",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pesquisar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0246faff-0ad6-4ea4-8e49-1e09cdba4d7e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-acao:nth-child(1)",
+      "targets": [
+        ["css=.btn-acao:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='abrirEdicao(2)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaSecoes']/tr/td[5]/button", "xpath:idRelative"],
+        ["xpath=//td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "026248f6-c4b6-4583-b824-1f50df23284e",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=responsavel-edit",
+      "targets": [
+        ["id=responsavel-edit", "id"],
+        ["css=#responsavel-edit", "css:finder"],
+        ["xpath=//select[@id='responsavel-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-378.5,-294.29998779296875"
+    }, {
+      "id": "81bafd09-c15b-4027-82c9-373359f4a27b",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=responsavel-edit",
+      "targets": [
+        ["id=responsavel-edit", "id"],
+        ["css=#responsavel-edit", "css:finder"],
+        ["xpath=//select[@id='responsavel-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-378.5,-294.29998779296875"
+    }, {
+      "id": "8d83644f-22b2-4709-b9cb-2c4eaff03058",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=responsavel-edit",
+      "targets": [
+        ["id=responsavel-edit", "id"],
+        ["css=#responsavel-edit", "css:finder"],
+        ["xpath=//select[@id='responsavel-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-378.5,-294.29998779296875"
+    }, {
+      "id": "2786dc69-1e78-4760-8a3f-f7a35a22afff",
+      "comment": "",
+      "command": "click",
+      "target": "id=responsavel-edit",
+      "targets": [
+        ["id=responsavel-edit", "id"],
+        ["css=#responsavel-edit", "css:finder"],
+        ["xpath=//select[@id='responsavel-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3821255e-6ca0-4192-bcc9-d1843693507a",
+      "comment": "",
+      "command": "select",
+      "target": "id=responsavel-edit",
+      "targets": [],
+      "value": "label=Funcionário Exemplo 1 (Gerente)"
+    }, {
+      "id": "cdd73ff5-e52d-4385-8615-7698b1ed5be4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#responsavel-edit > option:nth-child(2)",
+      "targets": [
+        ["css=#responsavel-edit > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='func1'])[3]", "xpath:attributes"],
+        ["xpath=//select[@id='responsavel-edit']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/select/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b47a5f8d-16af-4a88-becd-9bc04a2fcca5",
+      "comment": "",
+      "command": "click",
+      "target": "id=status-edit",
+      "targets": [
+        ["id=status-edit", "id"],
+        ["css=#status-edit", "css:finder"],
+        ["xpath=//select[@id='status-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "731a16d2-67b4-490a-bb60-915fa11f0b3e",
+      "comment": "",
+      "command": "select",
+      "target": "id=status-edit",
+      "targets": [],
+      "value": "label=Ativa"
+    }, {
+      "id": "16b90c8d-a4d6-4ea7-ab9d-cfa264ea100d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#status-edit > option:nth-child(1)",
+      "targets": [
+        ["css=#status-edit > option:nth-child(1)", "css:finder"],
+        ["xpath=(//option[@value='Ativo'])[3]", "xpath:attributes"],
+        ["xpath=//select[@id='status-edit']/option", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div[2]/select/option", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "652be970-ee2e-4648-adee-d45073d75cd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao-edit",
+      "targets": [
+        ["id=descricao-edit", "id"],
+        ["css=#descricao-edit", "css:finder"],
+        ["xpath=//textarea[@id='descricao-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[3]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "22d1b058-cfd6-48b1-817f-299f162cbc4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao-edit",
+      "targets": [
+        ["id=descricao-edit", "id"],
+        ["css=#descricao-edit", "css:finder"],
+        ["xpath=//textarea[@id='descricao-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[3]/div/textarea", "xpath:position"]
+      ],
+      "value": "Seção que contém carnes bovinas, suínas e os seus variados tipos de corte."
+    }, {
+      "id": "aa74fc65-e53a-4948-b01d-d27c9f9c7c71",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(5) > .btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.form-actions:nth-child(5) > .btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[4]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a125fdc-89b2-4447-956d-a6c09cda1de0",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Seção alterada com sucesso!",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "90e16285-5788-4651-a019-c4898ab24d18",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-359.58331298828125"
+    }, {
+      "id": "98e7270c-ce00-470d-99dd-6518187e118c",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-359.58331298828125"
+    }, {
+      "id": "90d2e9fb-17de-42aa-a823-2359667aca8a",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": "-797.5,-359.58331298828125"
+    }, {
+      "id": "6c28d734-934c-4443-a1a5-da4691b6a748",
+      "comment": "",
+      "command": "click",
+      "target": "id=status-filtro",
+      "targets": [
+        ["id=status-filtro", "id"],
+        ["css=#status-filtro", "css:finder"],
+        ["xpath=//select[@id='status-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f5371cb9-4c2e-49d4-9038-ae6047a911aa",
+      "comment": "",
+      "command": "select",
+      "target": "id=status-filtro",
+      "targets": [],
+      "value": "label=Ativa"
+    }, {
+      "id": "6a3667df-b543-4862-b299-e02bc96e0b85",
+      "comment": "",
+      "command": "click",
+      "target": "css=#status-filtro > option:nth-child(2)",
+      "targets": [
+        ["css=#status-filtro > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='Ativo'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='status-filtro']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div[2]/select/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8897e0c5-6e21-464e-962a-791b0854b82c",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-259.58331298828125"
+    }, {
+      "id": "1c840b03-4f5c-4add-b52c-a1ee52df1714",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-259.58331298828125"
+    }, {
+      "id": "eda0d5a2-f290-4070-af63-84efe24eb653",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": "-399.5,-259.58331298828125"
+    }, {
+      "id": "9abe73bd-aa06-407c-9b82-2e8805be6562",
+      "comment": "",
+      "command": "click",
+      "target": "id=responsavel-filtro",
+      "targets": [
+        ["id=responsavel-filtro", "id"],
+        ["css=#responsavel-filtro", "css:finder"],
+        ["xpath=//select[@id='responsavel-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "56db104f-5e65-481c-9af6-887c55e1f10e",
+      "comment": "",
+      "command": "select",
+      "target": "id=responsavel-filtro",
+      "targets": [],
+      "value": "label=Funcionário Exemplo 1"
+    }, {
+      "id": "c3ee1014-112a-4e15-ad2f-efaf0f6a23ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=#responsavel-filtro > option:nth-child(2)",
+      "targets": [
+        ["css=#responsavel-filtro > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='func1'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='responsavel-filtro']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div[2]/div/select/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0662c1a9-0cb3-445d-954c-c9118286deca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaSecao']/fieldset/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Pesquisar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcd23a6b-ffa2-49bc-bd83-a2c3c2d04198",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='tabelaSecoes']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0836811d-dc53-4eb6-81a9-62c2b5a13875",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) > td:nth-child(3)",
+      "targets": [
+        ["css=tr:nth-child(2) > td:nth-child(3)", "css:finder"],
+        ["xpath=//tbody[@id='tabelaSecoes']/tr[2]/td[3]", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "49ded7b4-a99e-40fc-acbb-8ff9895b820d",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-acao:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-acao:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='abrirEdicao(2)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaSecoes']/tr[2]/td[5]/button", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[5]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d8fb816-b0d0-4d15-b8d3-24182a0a542f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(5) > .btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.form-actions:nth-child(5) > .btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarSecao']/fieldset/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[4]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0e4e99e-3f88-4b59-bdc3-fe1d0cf4876b",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Seção alterada com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d2c1ee08-514c-4acd-9f3b-c48d9eb14fbc",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8de11ede-8c46-4875-be74-ac91987cbacb"]
+  }],
+  "urls": ["https://thiagowq.github.io/Projeto-Engenharia-de-Software/"],
+  "plugins": []
+}

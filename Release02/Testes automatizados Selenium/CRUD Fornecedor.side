@@ -1,0 +1,630 @@
+{
+  "id": "4ff4686b-b5a0-48c3-bcac-19834f0694e5",
+  "version": "2.0",
+  "name": "CRUD Fornecedor",
+  "url": " https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+  "tests": [{
+    "id": "10464ff2-7969-4280-8526-75cd5f433372",
+    "name": "Editar",
+    "commands": [{
+      "id": "06afa276-01d4-4d7b-98b6-43109ca18794",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47a0ebf8-e9fd-4857-bbcd-aa7e7ea0d9ae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d7deeba-b958-407b-b95a-e0dbeca56948",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fornecedores",
+      "targets": [
+        ["linkText=Fornecedores", "linkText"],
+        ["css=.nav-links > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Fornecedores')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#fornecedores')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Fornecedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f756ee93-6fc5-4a23-bb54-52ed30ff5de4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fornecedores > .card-link",
+      "targets": [
+        ["css=#fornecedores > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[4]", "xpath:link"],
+        ["xpath=//div[@id='fornecedores']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudFornecedor/fornecedor.html')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "559fc305-bea2-4466-9f4b-cbd4e6d36848",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(3)",
+      "targets": [
+        ["css=.aba-link:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "04f3fdc8-1ed7-4bd4-a805-f285fea5796c",
+      "comment": "",
+      "command": "click",
+      "target": "id=razaoSocial-edit",
+      "targets": [
+        ["id=razaoSocial-edit", "id"],
+        ["css=#razaoSocial-edit", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a58af9d-99a5-4b2b-9cc0-d561e1cc5994",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco-edit",
+      "targets": [
+        ["id=endereco-edit", "id"],
+        ["css=#endereco-edit", "css:finder"],
+        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "94e51232-c4cb-44a8-9718-783b82e7991c",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco-edit",
+      "targets": [
+        ["id=endereco-edit", "id"],
+        ["css=#endereco-edit", "css:finder"],
+        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Rua das Palmeiras, Bairro Centro. nº1234"
+    }, {
+      "id": "c247d99a-c6c8-459e-8d69-66de77bf6ab2",
+      "comment": "",
+      "command": "click",
+      "target": "id=ramoAtividade-edit",
+      "targets": [
+        ["id=ramoAtividade-edit", "id"],
+        ["css=#ramoAtividade-edit", "css:finder"],
+        ["xpath=//select[@id='ramoAtividade-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bdf1e981-d0ce-46cf-90ce-0c6cbc434ea1",
+      "comment": "",
+      "command": "select",
+      "target": "id=ramoAtividade-edit",
+      "targets": [],
+      "value": "label=Comércio"
+    }, {
+      "id": "d43f4fe8-bc5d-4d60-9137-550a3d9c0b02",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ramoAtividade-edit > option:nth-child(2)",
+      "targets": [
+        ["css=#ramoAtividade-edit > option:nth-child(2)", "css:finder"],
+        ["xpath=(//option[@value='comercio'])[3]", "xpath:attributes"],
+        ["xpath=//select[@id='ramoAtividade-edit']/option[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div[2]/select/option[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b29dc5e8-674c-43f3-868f-145a2b5b3e7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(4) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(4) > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "32d31242-5024-4a9e-ba51-34c2ed88964a",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Fornecedor alterado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7bda7e8f-5460-4ed4-b36f-30efe5f2309f",
+    "name": "Consultar",
+    "commands": [{
+      "id": "efa0b0b3-4048-431a-8ef2-9647472c1e66",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7b61d74-0344-46d3-9757-4a4cb5471c32",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9153f7e8-2768-4970-a85f-2e81dca130de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fornecedores",
+      "targets": [
+        ["linkText=Fornecedores", "linkText"],
+        ["css=.nav-links > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Fornecedores')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#fornecedores')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Fornecedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e7488d-33e9-4d7b-b332-484cad907e80",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fornecedores > .card-link",
+      "targets": [
+        ["css=#fornecedores > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[4]", "xpath:link"],
+        ["xpath=//div[@id='fornecedores']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudFornecedor/fornecedor.html')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98175ba1-6fed-46f9-8434-0ea26374fdcb",
+      "comment": "",
+      "command": "click",
+      "target": "id=razaoSocial-filtro",
+      "targets": [
+        ["id=razaoSocial-filtro", "id"],
+        ["css=#razaoSocial-filtro", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7503695f-69d2-48ff-a951-f2184cf1a82f",
+      "comment": "",
+      "command": "type",
+      "target": "id=razaoSocial-filtro",
+      "targets": [
+        ["id=razaoSocial-filtro", "id"],
+        ["css=#razaoSocial-filtro", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Distribuidora Alimentos ABC"
+    }, {
+      "id": "12c356ae-36de-4f4e-b990-abdcc6ad6b18",
+      "comment": "",
+      "command": "click",
+      "target": "id=cnpj-filtro",
+      "targets": [
+        ["id=cnpj-filtro", "id"],
+        ["css=#cnpj-filtro", "css:finder"],
+        ["xpath=//input[@id='cnpj-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc53b001-6824-4e18-bb8c-9fa0e0f69272",
+      "comment": "",
+      "command": "type",
+      "target": "id=cnpj-filtro",
+      "targets": [
+        ["id=cnpj-filtro", "id"],
+        ["css=#cnpj-filtro", "css:finder"],
+        ["xpath=//input[@id='cnpj-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "11.222.333/0001-14"
+    }, {
+      "id": "cf94e5da-0bd0-4880-a353-99a39b42d6e3",
+      "comment": "",
+      "command": "select",
+      "target": "id=ramoAtividade-filtro",
+      "targets": [],
+      "value": "label=Comércio"
+    }, {
+      "id": "22a40615-fca0-4dc6-9875-0830581e703d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ramoAtividade-filtro > option:nth-child(3)",
+      "targets": [
+        ["css=#ramoAtividade-filtro > option:nth-child(3)", "css:finder"],
+        ["xpath=(//option[@value='comercio'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='ramoAtividade-filtro']/option[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/select/option[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bffc87e2-db30-4554-bfca-c62d190e49e6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "75417b9e-f33b-4ec5-af9e-14daac251885",
+      "comment": "",
+      "command": "click",
+      "target": "css=th:nth-child(4)",
+      "targets": [
+        ["css=th:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='tela-consultar']/div/table/thead/tr/th[4]", "xpath:idRelative"],
+        ["xpath=//th[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f236f621-8e91-45a6-b600-4c7616f05497",
+      "comment": "",
+      "command": "click",
+      "target": "id=formConsultaFornecedor",
+      "targets": [
+        ["id=formConsultaFornecedor", "id"],
+        ["css=#formConsultaFornecedor", "css:finder"],
+        ["xpath=//form[@id='formConsultaFornecedor']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-consultar']/form", "xpath:idRelative"],
+        ["xpath=//div[2]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "41f5137c-ff1b-4cd7-ac26-74f927e7dc13",
+      "comment": "",
+      "command": "click",
+      "target": "id=ramoAtividade-filtro",
+      "targets": [
+        ["id=ramoAtividade-filtro", "id"],
+        ["css=#ramoAtividade-filtro", "css:finder"],
+        ["xpath=//select[@id='ramoAtividade-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "244eedac-05bf-4093-a83f-e5c5718654d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.page-content",
+      "targets": [
+        ["css=.page-content", "css:finder"],
+        ["xpath=//main", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb585610-c57d-4c52-be7b-74d3ab1ee090",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "dce7127b-bfa1-4b2f-9843-efeb70f1684e",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "e756129b-0658-4a0c-b360-5ea787c3a4cd",
+      "comment": "",
+      "command": "open",
+      "target": "/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14cec051-b0c7-4179-bba7-6713c0056172",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61cb6d87-348b-48dc-9c4f-a1d5231dffb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fornecedores",
+      "targets": [
+        ["linkText=Fornecedores", "linkText"],
+        ["css=.nav-links > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Fornecedores')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#fornecedores')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Fornecedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bfe4624-a71b-47fe-8ad8-6513cde92617",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fornecedores > .card-link",
+      "targets": [
+        ["css=#fornecedores > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[4]", "xpath:link"],
+        ["xpath=//div[@id='fornecedores']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudFornecedor/fornecedor.html')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da9619e-5c01-43e9-8e40-96b15cb84e80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(1)",
+      "targets": [
+        ["css=.aba-link:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af9cfb5-51cd-473a-ba8d-68348e9c6bde",
+      "comment": "",
+      "command": "click",
+      "target": "id=razaoSocial-cad",
+      "targets": [
+        ["id=razaoSocial-cad", "id"],
+        ["name=razaoSocial", "name"],
+        ["css=#razaoSocial-cad", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c092622-9b13-4534-9a7c-98730c8fa30f",
+      "comment": "",
+      "command": "type",
+      "target": "id=razaoSocial-cad",
+      "targets": [
+        ["id=razaoSocial-cad", "id"],
+        ["name=razaoSocial", "name"],
+        ["css=#razaoSocial-cad", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Suprema"
+    }, {
+      "id": "8cede0f5-531e-4a61-8b31-bf82d256d223",
+      "comment": "",
+      "command": "click",
+      "target": "id=cnpj-cad",
+      "targets": [
+        ["id=cnpj-cad", "id"],
+        ["name=cnpj", "name"],
+        ["css=#cnpj-cad", "css:finder"],
+        ["xpath=//input[@id='cnpj-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "324e8aa8-2078-4af9-a879-4ae074323f6c",
+      "comment": "",
+      "command": "type",
+      "target": "id=cnpj-cad",
+      "targets": [
+        ["id=cnpj-cad", "id"],
+        ["name=cnpj", "name"],
+        ["css=#cnpj-cad", "css:finder"],
+        ["xpath=//input[@id='cnpj-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "00.000.001/0090-12"
+    }, {
+      "id": "a5838784-1310-4449-9f04-8ae1057f330a",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco-cad",
+      "targets": [
+        ["id=endereco-cad", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco-cad", "css:finder"],
+        ["xpath=//input[@id='endereco-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64591d34-0900-4617-b01e-47d5b3e8e157",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco-cad",
+      "targets": [
+        ["id=endereco-cad", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco-cad", "css:finder"],
+        ["xpath=//input[@id='endereco-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Rua Marechal Petrus, Bairro Lagoinha, nº1725"
+    }, {
+      "id": "5e677d98-d989-4599-971a-d30a44256c8c",
+      "comment": "",
+      "command": "select",
+      "target": "id=ramoAtividade-cad",
+      "targets": [],
+      "value": "label=Indústria"
+    }, {
+      "id": "d3a96fe2-6a13-4313-a641-18d7b9dec72d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ramoAtividade-cad > option:nth-child(2)",
+      "targets": [
+        ["css=#ramoAtividade-cad > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='industria']", "xpath:attributes"],
+        ["xpath=//select[@id='ramoAtividade-cad']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Indústria')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87bbc859-57a4-443b-96f9-534c1e6b7b15",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(5) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(5) > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFornecedor']/fieldset/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91d83f0a-e811-469f-9983-4a8ffb039dfa",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Fornecedor cadastrado com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2f084214-e3f3-4fe8-a033-fc52ac6b17ee",
+    "name": "Remover",
+    "commands": [{
+      "id": "31a60049-7e85-42e5-ac21-0f880c377f93",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04c57287-761b-4075-af59-03357d2add01",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bb8a274a-59f7-4ff2-9cf8-d6205c93ddd6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Fornecedores",
+      "targets": [
+        ["linkText=Fornecedores", "linkText"],
+        ["css=.nav-links > a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Fornecedores')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#fornecedores')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Fornecedores')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf5bafcf-05b0-4f9c-a818-aeff41727ff4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fornecedores > .card-link",
+      "targets": [
+        ["css=#fornecedores > .card-link", "css:finder"],
+        ["xpath=(//a[contains(text(),'Acessar Módulo')])[4]", "xpath:link"],
+        ["xpath=//div[@id='fornecedores']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'Release02/CrudFornecedor/fornecedor.html')]", "xpath:href"],
+        ["xpath=//div[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f5232ab-a744-4854-b133-839d167d5441",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(4)",
+      "targets": [
+        ["css=.aba-link:nth-child(4)", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb14a2e0-7b93-426a-8578-0dfb1a2267fd",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79f7ebaf-0e6a-4b51-9a0f-98d80fbb5db4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirFornecedor']/fieldset/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sim, Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aa39b9a-9976-4a77-b944-3d17fbecbf51",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Deseja realmente EXCLUIR o fornecedor ''?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc839071-1c11-4611-b5f2-1af680819df4",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9f4f2454-0390-4c29-bae2-5323ffb2574d",
+      "comment": "",
+      "command": "assertAlert",
+      "target": "Fornecedor  excluído com sucesso!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0785e851-9afd-4313-90c8-4dcf09ff0026",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["10464ff2-7969-4280-8526-75cd5f433372"]
+  }],
+  "urls": ["https://thiagowq.github.io/", "https://thiagowq.github.io/Projeto-Engenharia-de-Software/"],
+  "plugins": []
+}
