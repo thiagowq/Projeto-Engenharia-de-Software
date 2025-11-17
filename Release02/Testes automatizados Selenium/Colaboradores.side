@@ -1,0 +1,730 @@
+{
+  "id": "bfce05d2-dd2c-4f60-baf1-bad0018a3937",
+  "version": "2.0",
+  "name": "Colaboradores",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release01/CrudFuncionario/funcionario.html",
+  "tests": [{
+    "id": "24d7f11f-a882-4957-9ff2-3f8f1843c4fb",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "920469e4-ce99-4197-a769-b4dad792eed3",
+      "comment": "",
+      "command": "open",
+      "target": "/Projeto-Engenharia-de-Software/Release01/CrudFuncionario/funcionario.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "48a14f5b-a7d9-4f2f-8230-f3eca07d0b3d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1278x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5973eecf-1871-4e6b-9af6-e7befa793332",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(1)",
+      "targets": [
+        ["css=.aba-link:nth-child(1)", "css:finder"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Cadastrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c8f2c3f-3f22-44a5-9413-320c13d7f486",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome-func",
+      "targets": [
+        ["id=nome-func", "id"],
+        ["name=nome", "name"],
+        ["css=#nome-func", "css:finder"],
+        ["xpath=//input[@id='nome-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f36a314e-490d-4b5b-963e-6d21485032e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome-func",
+      "targets": [
+        ["id=nome-func", "id"],
+        ["name=nome", "name"],
+        ["css=#nome-func", "css:finder"],
+        ["xpath=//input[@id='nome-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Carlos Perrone"
+    }, {
+      "id": "b1a52771-2c7b-4c14-8974-64a8923b6e80",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf-func",
+      "targets": [
+        ["id=cpf-func", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf-func", "css:finder"],
+        ["xpath=//input[@id='cpf-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a163b00-a4e7-406d-8320-e3c35cd708f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf-func",
+      "targets": [
+        ["id=cpf-func", "id"],
+        ["name=cpf", "name"],
+        ["css=#cpf-func", "css:finder"],
+        ["xpath=//input[@id='cpf-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "000.000.000-00"
+    }, {
+      "id": "aa34b9b7-d138-41ae-9f5a-a045378a838d",
+      "comment": "",
+      "command": "click",
+      "target": "id=telefone-func",
+      "targets": [
+        ["id=telefone-func", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone-func", "css:finder"],
+        ["xpath=//input[@id='telefone-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "12c7ffd4-a68c-4d35-b006-e9b88aff40e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=telefone-func",
+      "targets": [
+        ["id=telefone-func", "id"],
+        ["name=telefone", "name"],
+        ["css=#telefone-func", "css:finder"],
+        ["xpath=//input[@id='telefone-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "(00) 00000-0000"
+    }, {
+      "id": "9a83ae4e-8fad-48dd-b733-f5a53f27ae8d",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo-func",
+      "targets": [
+        ["id=cargo-func", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo-func", "css:finder"],
+        ["xpath=//select[@id='cargo-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee9c29d4-f88d-43da-848b-5bd881002c0a",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo-func",
+      "targets": [],
+      "value": "label=Caixa"
+    }, {
+      "id": "0783321d-a407-4acf-a125-ac00b46f655f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo-func",
+      "targets": [
+        ["id=cargo-func", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo-func", "css:finder"],
+        ["xpath=//select[@id='cargo-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a6905dda-1044-4fd0-85e1-cffb14ac6a3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo-func",
+      "targets": [
+        ["id=cargo-func", "id"],
+        ["name=cargo", "name"],
+        ["css=#cargo-func", "css:finder"],
+        ["xpath=//select[@id='cargo-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7202dc0f-4653-4fda-9532-edd9fe5177af",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco-func",
+      "targets": [
+        ["id=endereco-func", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco-func", "css:finder"],
+        ["xpath=//input[@id='endereco-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abffea28-f13c-44d7-9b47-47d4a0d90b3c",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco-func",
+      "targets": [
+        ["id=endereco-func", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco-func", "css:finder"],
+        ["xpath=//input[@id='endereco-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Rua das Flores, 123, Bairro da Paz, São Paulo, SP"
+    }, {
+      "id": "db2918cd-5db6-44e2-a1f2-a9b63f5df902",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario-func",
+      "targets": [
+        ["id=salario-func", "id"],
+        ["name=salario", "name"],
+        ["css=#salario-func", "css:finder"],
+        ["xpath=//input[@id='salario-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3aa24b30-347e-4bc3-aa80-32d6bbf0a2e8",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario-func",
+      "targets": [
+        ["id=salario-func", "id"],
+        ["name=salario", "name"],
+        ["css=#salario-func", "css:finder"],
+        ["xpath=//input[@id='salario-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "R$ 1.500,00"
+    }, {
+      "id": "ab66c5b2-316e-4b84-b35c-20036e0f5ffe",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_admissao-func",
+      "targets": [
+        ["id=data_admissao-func", "id"],
+        ["name=data_admissao", "name"],
+        ["css=#data_admissao-func", "css:finder"],
+        ["xpath=//input[@id='data_admissao-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6639b88a-a860-4025-a3ec-d5ee51443573",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_admissao-func",
+      "targets": [
+        ["id=data_admissao-func", "id"],
+        ["name=data_admissao", "name"],
+        ["css=#data_admissao-func", "css:finder"],
+        ["xpath=//input[@id='data_admissao-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b8350f8-2d43-4284-aa26-29e3892be6a1",
+      "comment": "",
+      "command": "click",
+      "target": "id=data_admissao-func",
+      "targets": [
+        ["id=data_admissao-func", "id"],
+        ["name=data_admissao", "name"],
+        ["css=#data_admissao-func", "css:finder"],
+        ["xpath=//input[@id='data_admissao-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcb7c395-b3f5-4680-abfb-0a34bac4c4ce",
+      "comment": "",
+      "command": "type",
+      "target": "id=data_admissao-func",
+      "targets": [
+        ["id=data_admissao-func", "id"],
+        ["name=data_admissao", "name"],
+        ["css=#data_admissao-func", "css:finder"],
+        ["xpath=//input[@id='data_admissao-func']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "2025-11-12"
+    }, {
+      "id": "a2d1fbdc-febf-4802-880e-6ed1d694983b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(7) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(7) > .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroFunc']/fieldset/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "58520843-d76e-4bb0-ad18-d9558486bc96",
+    "name": "Consultar",
+    "commands": [{
+      "id": "35895f74-a4dd-44cc-87ae-a097b2b4c241",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release01/CrudFuncionario/funcionario.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f4d018fd-442c-4155-aad1-01b6b0084e03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1278x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "36785d1d-dec8-45a0-a7f4-d1f96ffee43c",
+      "comment": "",
+      "command": "click",
+      "target": "id=nome-filtro",
+      "targets": [
+        ["id=nome-filtro", "id"],
+        ["css=#nome-filtro", "css:finder"],
+        ["xpath=//input[@id='nome-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4db0b70-f648-4488-8b89-459360c6d1ab",
+      "comment": "",
+      "command": "type",
+      "target": "id=nome-filtro",
+      "targets": [
+        ["id=nome-filtro", "id"],
+        ["css=#nome-filtro", "css:finder"],
+        ["xpath=//input[@id='nome-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Carlos Perrone"
+    }, {
+      "id": "9cb77c34-ec32-4087-9d1d-ebc57207c8f6",
+      "comment": "",
+      "command": "click",
+      "target": "id=cpf-filtro",
+      "targets": [
+        ["id=cpf-filtro", "id"],
+        ["css=#cpf-filtro", "css:finder"],
+        ["xpath=//input[@id='cpf-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f80f2562-aa8f-4148-b9f8-6743260021da",
+      "comment": "",
+      "command": "type",
+      "target": "id=cpf-filtro",
+      "targets": [
+        ["id=cpf-filtro", "id"],
+        ["css=#cpf-filtro", "css:finder"],
+        ["xpath=//input[@id='cpf-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "000.000.000-00"
+    }, {
+      "id": "e5fd368c-ce63-4182-9911-e88cd14d10bc",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo-filtro",
+      "targets": [
+        ["id=cargo-filtro", "id"],
+        ["css=#cargo-filtro", "css:finder"],
+        ["xpath=//select[@id='cargo-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFunc']/fieldset/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2377431-4359-4991-899a-3c848ccba1b5",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo-filtro",
+      "targets": [],
+      "value": "label=Caixa"
+    }, {
+      "id": "2b4d9a88-cb26-4016-ae4e-9aa308ea1359",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(4) > .btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.form-actions:nth-child(4) > .btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFunc']/fieldset/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Pesquisar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8c0b37f0-8ea7-4bba-a04b-f394b2bd0872",
+    "name": "Editar",
+    "commands": [{
+      "id": "f930a25d-09ae-43a4-a010-162fe64ced82",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release01/CrudFuncionario/funcionario.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4734742-25ff-4971-a307-455149af8cc4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1278x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2726bedc-a0a1-4ff3-99ab-7ec05bcf9958",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(3)",
+      "targets": [
+        ["css=.aba-link:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Editar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12a98ede-dc95-4473-9937-0128d3445dfd",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_cpf_edit",
+      "targets": [
+        ["id=busca_cpf_edit", "id"],
+        ["name=busca_cpf", "name"],
+        ["css=#busca_cpf_edit", "css:finder"],
+        ["xpath=//input[@id='busca_cpf_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b6ab6e8-85b4-4eda-8c89-f347333a80d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=busca_cpf_edit",
+      "targets": [
+        ["id=busca_cpf_edit", "id"],
+        ["name=busca_cpf", "name"],
+        ["css=#busca_cpf_edit", "css:finder"],
+        ["xpath=//input[@id='busca_cpf_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "123.456.789-00"
+    }, {
+      "id": "9477b93e-952d-4d6e-8dfb-f365051efb41",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_nome_edit",
+      "targets": [
+        ["id=busca_nome_edit", "id"],
+        ["name=busca_nome", "name"],
+        ["css=#busca_nome_edit", "css:finder"],
+        ["xpath=//input[@id='busca_nome_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ac5cbd5-5c8b-4218-9ec1-91398f39a44e",
+      "comment": "",
+      "command": "type",
+      "target": "id=busca_nome_edit",
+      "targets": [
+        ["id=busca_nome_edit", "id"],
+        ["name=busca_nome", "name"],
+        ["css=#busca_nome_edit", "css:finder"],
+        ["xpath=//input[@id='busca_nome_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Exemplo Funcionário 1"
+    }, {
+      "id": "6ccf1770-7e09-4c52-a5eb-41b91a75171a",
+      "comment": "",
+      "command": "click",
+      "target": "id=formBuscarFunc",
+      "targets": [
+        ["id=formBuscarFunc", "id"],
+        ["css=#formBuscarFunc", "css:finder"],
+        ["xpath=//form[@id='formBuscarFunc']", "xpath:attributes"],
+        ["xpath=//div[@id='tela-editar']/form", "xpath:idRelative"],
+        ["xpath=//div[3]/form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "624d1ac2-c5b0-4eca-8fff-9c9e96bbc1a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=cargo-edit",
+      "targets": [
+        ["id=cargo-edit", "id"],
+        ["css=#cargo-edit", "css:finder"],
+        ["xpath=//select[@id='cargo-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "078d1550-a520-4760-8608-2fcef150e723",
+      "comment": "",
+      "command": "select",
+      "target": "id=cargo-edit",
+      "targets": [],
+      "value": "label=Caixa"
+    }, {
+      "id": "925b0bb8-3d95-46ad-9c36-10fbe6d6fba2",
+      "comment": "",
+      "command": "click",
+      "target": "id=salario-edit",
+      "targets": [
+        ["id=salario-edit", "id"],
+        ["css=#salario-edit", "css:finder"],
+        ["xpath=//input[@id='salario-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42e5caf9-450f-49f6-bf36-74714fd7302e",
+      "comment": "",
+      "command": "type",
+      "target": "id=salario-edit",
+      "targets": [
+        ["id=salario-edit", "id"],
+        ["css=#salario-edit", "css:finder"],
+        ["xpath=//input[@id='salario-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div/input", "xpath:position"]
+      ],
+      "value": "R$ 1.500,00"
+    }, {
+      "id": "2a2a4118-19c7-48b8-bbce-766e35e8974c",
+      "comment": "",
+      "command": "click",
+      "target": "id=justificativa-edit",
+      "targets": [
+        ["id=justificativa-edit", "id"],
+        ["name=justificativa", "name"],
+        ["css=#justificativa-edit", "css:finder"],
+        ["xpath=//input[@id='justificativa-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36760ebe-ea15-45da-aa47-72fa5753bcc5",
+      "comment": "",
+      "command": "type",
+      "target": "id=justificativa-edit",
+      "targets": [
+        ["id=justificativa-edit", "id"],
+        ["name=justificativa", "name"],
+        ["css=#justificativa-edit", "css:finder"],
+        ["xpath=//input[@id='justificativa-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[3]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Rebaixado a caixa"
+    }, {
+      "id": "12c2601d-8217-4ba8-873b-66e2a03aaebd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#formEditarFunc .form-actions",
+      "targets": [
+        ["css=#formEditarFunc .form-actions", "css:finder"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[4]", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cb86da0-6a7e-4a42-88bc-a2eb2069107e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(5) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(5) > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFunc']/fieldset/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "de9d9c4c-f1e4-478d-9fd6-3525cefeaab6",
+    "name": "Excluir",
+    "commands": [{
+      "id": "3313ae07-faf9-41ff-a384-cdd8a02ccc78",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release01/CrudFuncionario/funcionario.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "777588a5-b8a6-47c1-a88f-226a4e248960",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8cfbcff0-70b4-4009-92c1-7a0cef5ca49c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(4)",
+      "targets": [
+        ["css=.aba-link:nth-child(4)", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Excluir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1775fbd-b9a5-488d-be90-58a209891bd2",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_nome_exc",
+      "targets": [
+        ["id=busca_nome_exc", "id"],
+        ["name=busca_nome_exc", "name"],
+        ["css=#busca_nome_exc", "css:finder"],
+        ["xpath=//input[@id='busca_nome_exc']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "61cc50aa-bed4-4f41-9af5-4ab4eef56ba0",
+      "comment": "",
+      "command": "type",
+      "target": "id=busca_nome_exc",
+      "targets": [
+        ["id=busca_nome_exc", "id"],
+        ["name=busca_nome_exc", "name"],
+        ["css=#busca_nome_exc", "css:finder"],
+        ["xpath=//input[@id='busca_nome_exc']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirFunc']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "Exemplo Funcionário 1"
+    }, {
+      "id": "47fd68db-edb0-4254-8d00-de105e66c75c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.resumo-box",
+      "targets": [
+        ["css=.resumo-box", "css:finder"],
+        ["xpath=//form[@id='formExcluirFunc']/fieldset/div", "xpath:idRelative"],
+        ["xpath=//div[4]/form[2]/fieldset/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1945b7cb-696b-48e7-ac94-f36f01aec9f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_cpf_exc",
+      "targets": [
+        ["id=busca_cpf_exc", "id"],
+        ["name=busca_cpf_exc", "name"],
+        ["css=#busca_cpf_exc", "css:finder"],
+        ["xpath=//input[@id='busca_cpf_exc']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aca70da-5d17-4290-b8a3-bb389a4b8a69",
+      "comment": "",
+      "command": "type",
+      "target": "id=busca_cpf_exc",
+      "targets": [
+        ["id=busca_cpf_exc", "id"],
+        ["name=busca_cpf_exc", "name"],
+        ["css=#busca_cpf_exc", "css:finder"],
+        ["xpath=//input[@id='busca_cpf_exc']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluirFunc']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "123.456.789-00"
+    }, {
+      "id": "8185bb01-9a5f-41b7-b5cb-68534135e9d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=label:nth-child(2)",
+      "targets": [
+        ["css=label:nth-child(2)", "css:finder"],
+        ["xpath=//form[@id='formExcluirFunc']/fieldset/div[3]/label", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Confirmo que desejo inativar este funcionário.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b654a891-fb70-465f-888f-82d20914508e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[6]", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirFunc']/fieldset/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/form[2]/fieldset/div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Confirmar Inativação')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1dc9151-2767-4007-a93a-1e81b9e74fd1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7a13202f-9c38-417b-9dfa-db5bc1ba1f0a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["24d7f11f-a882-4957-9ff2-3f8f1843c4fb"]
+  }],
+  "urls": ["https://thiagowq.github.io/", "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release01/CrudFuncionario/funcionario.html"],
+  "plugins": []
+}
