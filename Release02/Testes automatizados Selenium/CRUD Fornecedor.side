@@ -5,37 +5,23 @@
   "url": " https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
   "tests": [{
     "id": "10464ff2-7969-4280-8526-75cd5f433372",
-    "name": "Editar",
+    "name": "Excluir",
     "commands": [{
-      "id": "06afa276-01d4-4d7b-98b6-43109ca18794",
+      "id": "311badf0-153d-4d18-ab1a-9a96b8733df6",
       "comment": "",
       "command": "open",
       "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
       "targets": [],
       "value": ""
     }, {
-      "id": "47a0ebf8-e9fd-4857-bbcd-aa7e7ea0d9ae",
+      "id": "4e455f1f-4e12-43e2-a512-cbb87917a11b",
       "comment": "",
       "command": "setWindowSize",
       "target": "1936x1048",
       "targets": [],
       "value": ""
     }, {
-      "id": "3d7deeba-b958-407b-b95a-e0dbeca56948",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Fornecedores",
-      "targets": [
-        ["linkText=Fornecedores", "linkText"],
-        ["css=.nav-links > a:nth-child(4)", "css:finder"],
-        ["xpath=//a[contains(text(),'Fornecedores')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '#fornecedores')]", "xpath:href"],
-        ["xpath=//a[4]", "xpath:position"],
-        ["xpath=//a[contains(.,'Fornecedores')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "f756ee93-6fc5-4a23-bb54-52ed30ff5de4",
+      "id": "a3843a3c-84fe-4fae-88db-105240e7f14b",
       "comment": "",
       "command": "click",
       "target": "css=#fornecedores > .card-link",
@@ -48,105 +34,56 @@
       ],
       "value": ""
     }, {
-      "id": "559fc305-bea2-4466-9f4b-cbd4e6d36848",
+      "id": "a067d477-d428-485e-b35e-a650c0ed1aba",
       "comment": "",
       "command": "click",
-      "target": "css=.aba-link:nth-child(3)",
+      "target": "css=tr:nth-child(5) .btn-acao-danger",
       "targets": [
-        ["css=.aba-link:nth-child(3)", "css:finder"],
-        ["xpath=//button[3]", "xpath:position"],
-        ["xpath=//button[contains(.,'Editar')]", "xpath:innerText"]
+        ["css=tr:nth-child(5) .btn-acao-danger", "css:finder"],
+        ["xpath=//button[@onclick='abrirExclusao(3)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaFornecedores']/tr[5]/td[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[4]/button[2]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "04f3fdc8-1ed7-4bd4-a805-f285fea5796c",
+      "id": "9d4b3aff-699c-4a3a-8950-04ca05ef2293",
       "comment": "",
-      "command": "click",
-      "target": "id=razaoSocial-edit",
-      "targets": [
-        ["id=razaoSocial-edit", "id"],
-        ["css=#razaoSocial-edit", "css:finder"],
-        ["xpath=//input[@id='razaoSocial-edit']", "xpath:attributes"],
-        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
-        ["xpath=//div[3]/form/fieldset/div/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "2a58af9d-99a5-4b2b-9cc0-d561e1cc5994",
-      "comment": "",
-      "command": "click",
-      "target": "id=endereco-edit",
-      "targets": [
-        ["id=endereco-edit", "id"],
-        ["css=#endereco-edit", "css:finder"],
-        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
-        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "94e51232-c4cb-44a8-9718-783b82e7991c",
-      "comment": "",
-      "command": "type",
-      "target": "id=endereco-edit",
-      "targets": [
-        ["id=endereco-edit", "id"],
-        ["css=#endereco-edit", "css:finder"],
-        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
-        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
-        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
-      ],
-      "value": "Rua das Palmeiras, Bairro Centro. nº1234"
-    }, {
-      "id": "c247d99a-c6c8-459e-8d69-66de77bf6ab2",
-      "comment": "",
-      "command": "click",
-      "target": "id=ramoAtividade-edit",
-      "targets": [
-        ["id=ramoAtividade-edit", "id"],
-        ["css=#ramoAtividade-edit", "css:finder"],
-        ["xpath=//select[@id='ramoAtividade-edit']", "xpath:attributes"],
-        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
-        ["xpath=//div[3]/form/fieldset/div[2]/div[2]/select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "bdf1e981-d0ce-46cf-90ce-0c6cbc434ea1",
-      "comment": "",
-      "command": "select",
-      "target": "id=ramoAtividade-edit",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
       "targets": [],
-      "value": "label=Comércio"
+      "value": ""
     }, {
-      "id": "d43f4fe8-bc5d-4d60-9137-550a3d9c0b02",
+      "id": "aab6f830-4bcf-43cb-a9c8-38e0f2ae6f92",
       "comment": "",
       "command": "click",
-      "target": "css=#ramoAtividade-edit > option:nth-child(2)",
+      "target": "css=.btn-danger",
       "targets": [
-        ["css=#ramoAtividade-edit > option:nth-child(2)", "css:finder"],
-        ["xpath=(//option[@value='comercio'])[3]", "xpath:attributes"],
-        ["xpath=//select[@id='ramoAtividade-edit']/option[2]", "xpath:idRelative"],
-        ["xpath=//div[3]/form/fieldset/div[2]/div[2]/select/option[2]", "xpath:position"]
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirFornecedor']/fieldset/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Sim, Excluir')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "b29dc5e8-674c-43f3-868f-145a2b5b3e7a",
+      "id": "8b1ef08b-f152-4883-a160-57a576414c9e",
       "comment": "",
-      "command": "click",
-      "target": "css=.form-actions:nth-child(4) > .btn-primary",
-      "targets": [
-        ["css=.form-actions:nth-child(4) > .btn-primary", "css:finder"],
-        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
-        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[3]/button[2]", "xpath:idRelative"],
-        ["xpath=//div[3]/form/fieldset/div[3]/button[2]", "xpath:position"],
-        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
-      ],
+      "command": "assertConfirmation",
+      "target": "Deseja realmente EXCLUIR o fornecedor 'Indústria de Embalagens ZYX'?",
+      "targets": [],
       "value": ""
     }, {
-      "id": "32d31242-5024-4a9e-ba51-34c2ed88964a",
+      "id": "db3e00af-b39d-4694-8c94-d23463bef982",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d8c37e55-3b6d-4ccf-b26b-61fc1b35b253",
       "comment": "",
       "command": "assertAlert",
-      "target": "Fornecedor alterado com sucesso!",
+      "target": "Fornecedor Indústria de Embalagens ZYX excluído com sucesso!",
       "targets": [],
       "value": ""
     }]
@@ -521,37 +458,23 @@
     }]
   }, {
     "id": "2f084214-e3f3-4fe8-a033-fc52ac6b17ee",
-    "name": "Remover",
+    "name": "Editar",
     "commands": [{
-      "id": "31a60049-7e85-42e5-ac21-0f880c377f93",
+      "id": "a4142769-b090-48af-8d95-24b1f25044ea",
       "comment": "",
       "command": "open",
       "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/",
       "targets": [],
       "value": ""
     }, {
-      "id": "04c57287-761b-4075-af59-03357d2add01",
+      "id": "c5d34925-fa34-4229-83e3-7bad89abb56c",
       "comment": "",
       "command": "setWindowSize",
       "target": "1936x1048",
       "targets": [],
       "value": ""
     }, {
-      "id": "bb8a274a-59f7-4ff2-9cf8-d6205c93ddd6",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Fornecedores",
-      "targets": [
-        ["linkText=Fornecedores", "linkText"],
-        ["css=.nav-links > a:nth-child(4)", "css:finder"],
-        ["xpath=//a[contains(text(),'Fornecedores')]", "xpath:link"],
-        ["xpath=//a[contains(@href, '#fornecedores')]", "xpath:href"],
-        ["xpath=//a[4]", "xpath:position"],
-        ["xpath=//a[contains(.,'Fornecedores')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "cf5bafcf-05b0-4f9c-a818-aeff41727ff4",
+      "id": "ea3328c1-666d-4564-b38b-532882664406",
       "comment": "",
       "command": "click",
       "target": "css=#fornecedores > .card-link",
@@ -564,55 +487,171 @@
       ],
       "value": ""
     }, {
-      "id": "1f5232ab-a744-4854-b133-839d167d5441",
+      "id": "2601e967-fda1-4587-af0f-6f2e098e68f4",
       "comment": "",
       "command": "click",
-      "target": "css=.aba-link:nth-child(4)",
+      "target": "id=razaoSocial-filtro",
       "targets": [
-        ["css=.aba-link:nth-child(4)", "css:finder"],
-        ["xpath=//button[4]", "xpath:position"],
-        ["xpath=//button[contains(.,'Excluir')]", "xpath:innerText"]
+        ["id=razaoSocial-filtro", "id"],
+        ["css=#razaoSocial-filtro", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "bb14a2e0-7b93-426a-8578-0dfb1a2267fd",
+      "id": "85d85199-5a7c-485d-a219-fe8eb25af471",
       "comment": "",
-      "command": "chooseOkOnNextConfirmation",
-      "target": "",
-      "targets": [],
-      "value": ""
+      "command": "type",
+      "target": "id=razaoSocial-filtro",
+      "targets": [
+        ["id=razaoSocial-filtro", "id"],
+        ["css=#razaoSocial-filtro", "css:finder"],
+        ["xpath=//input[@id='razaoSocial-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "Distribuidora Alimentos ABC"
     }, {
-      "id": "79f7ebaf-0e6a-4b51-9a0f-98d80fbb5db4",
+      "id": "b0ddd0f2-d6ce-41de-844d-534f63b33820",
       "comment": "",
       "command": "click",
-      "target": "css=.btn-danger",
+      "target": "id=cnpj-filtro",
       "targets": [
-        ["css=.btn-danger", "css:finder"],
-        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
-        ["xpath=//form[@id='formExcluirFornecedor']/fieldset/div[2]/button[2]", "xpath:idRelative"],
-        ["xpath=//div[2]/button[2]", "xpath:position"],
-        ["xpath=//button[contains(.,'Sim, Excluir')]", "xpath:innerText"]
+        ["id=cnpj-filtro", "id"],
+        ["css=#cnpj-filtro", "css:finder"],
+        ["xpath=//input[@id='cnpj-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "2aa39b9a-9976-4a77-b944-3d17fbecbf51",
+      "id": "00eeb89d-4221-45bb-aecb-714de0db491d",
       "comment": "",
-      "command": "assertConfirmation",
-      "target": "Deseja realmente EXCLUIR o fornecedor ''?",
+      "command": "type",
+      "target": "id=cnpj-filtro",
+      "targets": [
+        ["id=cnpj-filtro", "id"],
+        ["css=#cnpj-filtro", "css:finder"],
+        ["xpath=//input[@id='cnpj-filtro']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "11.222.333/0001-44"
+    }, {
+      "id": "6263f53b-6bb2-4942-968b-382884abd4a1",
+      "comment": "",
+      "command": "select",
+      "target": "id=ramoAtividade-filtro",
       "targets": [],
+      "value": "label=Comércio"
+    }, {
+      "id": "d6e5f904-5eef-47e9-84e0-e490a98491b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ramoAtividade-filtro > option:nth-child(3)",
+      "targets": [
+        ["css=#ramoAtividade-filtro > option:nth-child(3)", "css:finder"],
+        ["xpath=(//option[@value='comercio'])[2]", "xpath:attributes"],
+        ["xpath=//select[@id='ramoAtividade-filtro']/option[3]", "xpath:idRelative"],
+        ["xpath=//div[3]/select/option[3]", "xpath:position"]
+      ],
       "value": ""
     }, {
-      "id": "cc839071-1c11-4611-b5f2-1af680819df4",
+      "id": "8deb17c0-a4d4-41cf-947c-ed196454b0dd",
       "comment": "",
-      "command": "webdriverChooseOkOnVisibleConfirmation",
-      "target": "",
-      "targets": [],
+      "command": "click",
+      "target": "css=.btn-primary:nth-child(1)",
+      "targets": [
+        ["css=.btn-primary:nth-child(1)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaFornecedor']/fieldset/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
       "value": ""
     }, {
-      "id": "9f4f2454-0390-4c29-bae2-5323ffb2574d",
+      "id": "95c6cb6a-050b-4f42-b597-d01328339294",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .btn-acao:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(2) .btn-acao:nth-child(1)", "css:finder"],
+        ["xpath=//button[@onclick='abrirEdicao(1)']", "xpath:attributes"],
+        ["xpath=//tbody[@id='tabelaFornecedores']/tr[2]/td[4]/button", "xpath:idRelative"],
+        ["xpath=//td[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "587e8e6a-8776-4b66-b202-65a08f663273",
+      "comment": "",
+      "command": "click",
+      "target": "id=endereco-edit",
+      "targets": [
+        ["id=endereco-edit", "id"],
+        ["css=#endereco-edit", "css:finder"],
+        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "88002d4e-1e46-44b6-8ba5-122aadf7b3e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco-edit",
+      "targets": [
+        ["id=endereco-edit", "id"],
+        ["css=#endereco-edit", "css:finder"],
+        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Rua"
+    }, {
+      "id": "7917f61d-04ed-4331-b474-74c77018ed6c",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=endereco-edit",
+      "targets": [
+        ["id=endereco-edit", "id"],
+        ["css=#endereco-edit", "css:finder"],
+        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "4fcada7e-efea-4e49-a3f8-f6d387f4a9e1",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco-edit",
+      "targets": [
+        ["id=endereco-edit", "id"],
+        ["css=#endereco-edit", "css:finder"],
+        ["xpath=//input[@id='endereco-edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Ruas das Palmeiras, Bairro Gusmão, nº1423"
+    }, {
+      "id": "a5534096-fd83-4a18-9154-2f5a926e9143",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(4) > .btn-primary",
+      "targets": [
+        ["css=.form-actions:nth-child(4) > .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarFornecedor']/fieldset/div[3]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div[3]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ff8dd7f-6e6e-4ed3-8e71-2f86f1462e93",
       "comment": "",
       "command": "assertAlert",
-      "target": "Fornecedor  excluído com sucesso!",
+      "target": "Fornecedor alterado com sucesso!",
       "targets": [],
       "value": ""
     }]
