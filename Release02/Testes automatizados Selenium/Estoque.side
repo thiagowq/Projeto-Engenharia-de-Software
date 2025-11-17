@@ -1,0 +1,703 @@
+{
+  "id": "388fd359-863c-4c45-99ac-76e1c57e4b74",
+  "version": "2.0",
+  "name": "Estoque",
+  "url": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release02/CrudEstoque/estoque.html",
+  "tests": [{
+    "id": "941b3006-7dc5-418b-b4a8-b598570afe79",
+    "name": "Cadastrar",
+    "commands": [{
+      "id": "1a2b3b59-ffae-4da5-998b-534364d127c1",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release02/CrudEstoque/estoque.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4ef751f-4923-4a2a-9bbe-0096138d3c4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5a874ba2-1e8a-4e64-9a6d-046953cb2c4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(1) > svg",
+      "targets": [
+        ["css=.aba-link:nth-child(1) > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8000197-8677-4abf-af71-fb7201ef4b4a",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_interno-cad",
+      "targets": [
+        ["id=codigo_interno-cad", "id"],
+        ["name=codigo_interno", "name"],
+        ["css=#codigo_interno-cad", "css:finder"],
+        ["xpath=//input[@id='codigo_interno-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b10ab176-f9e7-4cb0-b407-fb5f1fd1d782",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo_interno-cad",
+      "targets": [
+        ["id=codigo_interno-cad", "id"],
+        ["name=codigo_interno", "name"],
+        ["css=#codigo_interno-cad", "css:finder"],
+        ["xpath=//input[@id='codigo_interno-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "d8e20d64-5198-4076-a9b1-99e189ded817",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao-cad",
+      "targets": [
+        ["id=descricao-cad", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao-cad", "css:finder"],
+        ["xpath=//input[@id='descricao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21bb64e9-2a00-438c-a9c7-c8067a05b356",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao-cad",
+      "targets": [
+        ["id=descricao-cad", "id"],
+        ["name=descricao", "name"],
+        ["css=#descricao-cad", "css:finder"],
+        ["xpath=//input[@id='descricao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Laranja 3kg"
+    }, {
+      "id": "fce0637a-889b-4367-bc7f-47bb8a42558d",
+      "comment": "",
+      "command": "click",
+      "target": "id=categoria-cad",
+      "targets": [
+        ["id=categoria-cad", "id"],
+        ["name=categoria", "name"],
+        ["css=#categoria-cad", "css:finder"],
+        ["xpath=//select[@id='categoria-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[2]/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08ce321f-12f9-4716-8e13-19ef2d2de030",
+      "comment": "",
+      "command": "select",
+      "target": "id=categoria-cad",
+      "targets": [],
+      "value": "label=Hortifruti"
+    }, {
+      "id": "da32d17d-b9f4-4476-b348-3a820c2bf4d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=unidade-cad",
+      "targets": [
+        ["id=unidade-cad", "id"],
+        ["name=unidade", "name"],
+        ["css=#unidade-cad", "css:finder"],
+        ["xpath=//select[@id='unidade-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eef4571d-697a-47e7-819f-fc00fd5fcf86",
+      "comment": "",
+      "command": "select",
+      "target": "id=unidade-cad",
+      "targets": [],
+      "value": "label=KG"
+    }, {
+      "id": "93d4cc14-72f0-4f0e-bc86-9d3f292fdd5b",
+      "comment": "",
+      "command": "click",
+      "target": "id=lote-cad",
+      "targets": [
+        ["id=lote-cad", "id"],
+        ["name=lote", "name"],
+        ["css=#lote-cad", "css:finder"],
+        ["xpath=//select[@id='lote-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "801f231f-478f-461d-8dff-094ed18cf0e8",
+      "comment": "",
+      "command": "select",
+      "target": "id=lote-cad",
+      "targets": [],
+      "value": "label=Sim"
+    }, {
+      "id": "8e7788a7-a775-4039-a4df-54cc657f4e54",
+      "comment": "",
+      "command": "click",
+      "target": "id=validade-cad",
+      "targets": [
+        ["id=validade-cad", "id"],
+        ["name=validade", "name"],
+        ["css=#validade-cad", "css:finder"],
+        ["xpath=//select[@id='validade-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[3]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab8164d2-04d6-4df6-8855-3850e234d230",
+      "comment": "",
+      "command": "select",
+      "target": "id=validade-cad",
+      "targets": [],
+      "value": "label=Sim"
+    }, {
+      "id": "307aea95-9dce-487e-99b6-e9f62cb4a844",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque-cad",
+      "targets": [
+        ["id=estoque-cad", "id"],
+        ["name=estoque", "name"],
+        ["css=#estoque-cad", "css:finder"],
+        ["xpath=//input[@id='estoque-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d20a2851-7f25-48e3-92cc-4eadfeace8c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=estoque-cad",
+      "targets": [
+        ["id=estoque-cad", "id"],
+        ["name=estoque", "name"],
+        ["css=#estoque-cad", "css:finder"],
+        ["xpath=//input[@id='estoque-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "0e49b7cd-c85d-4a1a-8878-bd2dc486d03f",
+      "comment": "",
+      "command": "click",
+      "target": "id=localizacao-cad",
+      "targets": [
+        ["id=localizacao-cad", "id"],
+        ["name=localizacao", "name"],
+        ["css=#localizacao-cad", "css:finder"],
+        ["xpath=//input[@id='localizacao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "efc3900c-da46-47b3-af1a-3d801c171df5",
+      "comment": "",
+      "command": "type",
+      "target": "id=localizacao-cad",
+      "targets": [
+        ["id=localizacao-cad", "id"],
+        ["name=localizacao", "name"],
+        ["css=#localizacao-cad", "css:finder"],
+        ["xpath=//input[@id='localizacao-cad']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Depósito A / Rua 2"
+    }, {
+      "id": "1d9c9edf-a0da-4972-9752-f90d753f128d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#formCadastroItem .btn-primary",
+      "targets": [
+        ["css=#formCadastroItem .btn-primary", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//form[@id='formCadastroItem']/fieldset/div[6]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0939b372-4e41-436e-918f-dce74545b4c3",
+    "name": "Consultar",
+    "commands": [{
+      "id": "5ff6c959-5e89-4e20-aa9a-9b3c6bd3a2af",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release02/CrudEstoque/estoque.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9000eb7-b62b-409d-b125-bdbc1687e522",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "940441d9-428c-4d18-84da-7916c63333cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_codigo",
+      "targets": [
+        ["id=f_codigo", "id"],
+        ["css=#f_codigo", "css:finder"],
+        ["xpath=//input[@id='f_codigo']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaItem']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67231dda-9edb-481b-a36b-b1bca7803a74",
+      "comment": "",
+      "command": "type",
+      "target": "id=f_codigo",
+      "targets": [
+        ["id=f_codigo", "id"],
+        ["css=#f_codigo", "css:finder"],
+        ["xpath=//input[@id='f_codigo']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaItem']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "900b5b6d-64dd-490f-9923-0a48d5b00ba3",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_categoria",
+      "targets": [
+        ["id=f_categoria", "id"],
+        ["css=#f_categoria", "css:finder"],
+        ["xpath=//select[@id='f_categoria']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaItem']/fieldset/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/form/fieldset/div/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f89fa5c6-699c-405a-8a89-e3325bff6d5b",
+      "comment": "",
+      "command": "select",
+      "target": "id=f_categoria",
+      "targets": [],
+      "value": "label=Hortifruti"
+    }, {
+      "id": "04330a60-0e90-40ff-99d7-65e22a8ed0e7",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_unidade",
+      "targets": [
+        ["id=f_unidade", "id"],
+        ["css=#f_unidade", "css:finder"],
+        ["xpath=//select[@id='f_unidade']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaItem']/fieldset/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96535828-10bf-410b-a21d-fff4bb30d3f6",
+      "comment": "",
+      "command": "select",
+      "target": "id=f_unidade",
+      "targets": [],
+      "value": "label=KG"
+    }, {
+      "id": "7d042bae-9652-4884-b748-0d198b4206f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=f_status",
+      "targets": [
+        ["id=f_status", "id"],
+        ["css=#f_status", "css:finder"],
+        ["xpath=//select[@id='f_status']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaItem']/fieldset/div/div[4]/select", "xpath:idRelative"],
+        ["xpath=//div[4]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9894b878-5365-465c-b987-e9466e9b7209",
+      "comment": "",
+      "command": "select",
+      "target": "id=f_status",
+      "targets": [],
+      "value": "label=Ativo"
+    }, {
+      "id": "78f3ff94-57eb-442e-af1f-7e8663dbbab7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-actions:nth-child(4) > .btn-primary:nth-child(2)",
+      "targets": [
+        ["css=.form-actions:nth-child(4) > .btn-primary:nth-child(2)", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//form[@id='formConsultaItem']/fieldset/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cded0918-fd41-43b7-be3c-df41cdec559e",
+    "name": "Editar",
+    "commands": [{
+      "id": "e2d60a36-eafd-4932-b4a3-d9be43e79bb1",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release02/CrudEstoque/estoque.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e84dc5f-f643-4224-956b-e009b81bdbab",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f42d954e-3e22-4960-86fe-916b511579ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(3)",
+      "targets": [
+        ["css=.aba-link:nth-child(3)", "css:finder"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'Editar Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0d3f6b7-4fda-49d5-807a-631e5a425d36",
+      "comment": "",
+      "command": "click",
+      "target": "id=busca_codigo",
+      "targets": [
+        ["id=busca_codigo", "id"],
+        ["name=busca_codigo", "name"],
+        ["css=#busca_codigo", "css:finder"],
+        ["xpath=//input[@id='busca_codigo']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarItem']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00b57976-cf74-45d2-b7fb-53e4889e6c1f",
+      "comment": "",
+      "command": "type",
+      "target": "id=busca_codigo",
+      "targets": [
+        ["id=busca_codigo", "id"],
+        ["name=busca_codigo", "name"],
+        ["css=#busca_codigo", "css:finder"],
+        ["xpath=//input[@id='busca_codigo']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarItem']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "c221a069-4af0-4d98-a198-39cfe9f04ca1",
+      "comment": "",
+      "command": "click",
+      "target": "id=descricao_edit",
+      "targets": [
+        ["id=descricao_edit", "id"],
+        ["name=descricao_edit", "name"],
+        ["css=#descricao_edit", "css:finder"],
+        ["xpath=//input[@id='descricao_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54950ab1-d286-47ad-ae93-3283d8e7eb4b",
+      "comment": "",
+      "command": "type",
+      "target": "id=descricao_edit",
+      "targets": [
+        ["id=descricao_edit", "id"],
+        ["name=descricao_edit", "name"],
+        ["css=#descricao_edit", "css:finder"],
+        ["xpath=//input[@id='descricao_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Fruta"
+    }, {
+      "id": "bd76911f-df53-4098-b393-a8e8285c5cf1",
+      "comment": "",
+      "command": "click",
+      "target": "id=categoria_edit",
+      "targets": [
+        ["id=categoria_edit", "id"],
+        ["name=categoria_edit", "name"],
+        ["css=#categoria_edit", "css:finder"],
+        ["xpath=//select[@id='categoria_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[2]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[2]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3089346c-73a0-4c21-a7d8-716cd3ff7b1e",
+      "comment": "",
+      "command": "click",
+      "target": "id=unidade_edit",
+      "targets": [
+        ["id=unidade_edit", "id"],
+        ["name=unidade_edit", "name"],
+        ["css=#unidade_edit", "css:finder"],
+        ["xpath=//select[@id='unidade_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[3]/div/select", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5b57975-145e-40aa-a425-19a42f29d6a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=lote_edit",
+      "targets": [
+        ["id=lote_edit", "id"],
+        ["name=lote_edit", "name"],
+        ["css=#lote_edit", "css:finder"],
+        ["xpath=//select[@id='lote_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[3]/div[2]/select", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[3]/div[2]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fbfb360-adbb-4ead-8e70-ab87ededb839",
+      "comment": "",
+      "command": "select",
+      "target": "id=lote_edit",
+      "targets": [],
+      "value": "label=Sim"
+    }, {
+      "id": "01c6b234-a82f-4265-9956-99073dca07c6",
+      "comment": "",
+      "command": "click",
+      "target": "id=validade_edit",
+      "targets": [
+        ["id=validade_edit", "id"],
+        ["name=validade_edit", "name"],
+        ["css=#validade_edit", "css:finder"],
+        ["xpath=//select[@id='validade_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dde41055-2e0e-4fcb-8498-6a7450157f48",
+      "comment": "",
+      "command": "select",
+      "target": "id=validade_edit",
+      "targets": [],
+      "value": "label=Sim"
+    }, {
+      "id": "b2a5a7d9-b933-43b5-9f0b-293a2b37cfa0",
+      "comment": "",
+      "command": "click",
+      "target": "id=estoque_minimo",
+      "targets": [
+        ["id=estoque_minimo", "id"],
+        ["name=estoque_minimo", "name"],
+        ["css=#estoque_minimo", "css:finder"],
+        ["xpath=//input[@id='estoque_minimo']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a03f1df3-e9b7-4981-8c04-c39efa4e780c",
+      "comment": "",
+      "command": "type",
+      "target": "id=estoque_minimo",
+      "targets": [
+        ["id=estoque_minimo", "id"],
+        ["name=estoque_minimo", "name"],
+        ["css=#estoque_minimo", "css:finder"],
+        ["xpath=//input[@id='estoque_minimo']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[4]/div/input", "xpath:position"]
+      ],
+      "value": "10"
+    }, {
+      "id": "860ddd13-9b5e-4517-90f6-eef6d25f5f31",
+      "comment": "",
+      "command": "type",
+      "target": "id=ponto_reposicao",
+      "targets": [
+        ["id=ponto_reposicao", "id"],
+        ["name=ponto_reposicao", "name"],
+        ["css=#ponto_reposicao", "css:finder"],
+        ["xpath=//input[@id='ponto_reposicao']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[4]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[4]/div[2]/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "b6bd1e8c-3e7b-46e0-9f4b-3b312c7f7965",
+      "comment": "",
+      "command": "click",
+      "target": "id=localizacao_edit",
+      "targets": [
+        ["id=localizacao_edit", "id"],
+        ["name=localizacao_edit", "name"],
+        ["css=#localizacao_edit", "css:finder"],
+        ["xpath=//input[@id='localizacao_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[4]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f72cbd8e-1b8e-4aa8-b28a-85766311e5c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=localizacao_edit",
+      "targets": [
+        ["id=localizacao_edit", "id"],
+        ["name=localizacao_edit", "name"],
+        ["css=#localizacao_edit", "css:finder"],
+        ["xpath=//input[@id='localizacao_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[4]/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "Depósito A / Rua 3"
+    }, {
+      "id": "19bbfa86-c897-4066-be23-e0d9a8a47823",
+      "comment": "",
+      "command": "click",
+      "target": "id=status_edit",
+      "targets": [
+        ["id=status_edit", "id"],
+        ["name=status_edit", "name"],
+        ["css=#status_edit", "css:finder"],
+        ["xpath=//select[@id='status_edit']", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[5]/div/select", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[5]/div/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7af1a90c-3613-45a5-965d-afd94333f006",
+      "comment": "",
+      "command": "click",
+      "target": "css=#formEditarItem .btn-primary",
+      "targets": [
+        ["css=#formEditarItem .btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='formEditarItem']/fieldset/div[6]/button[2]", "xpath:idRelative"],
+        ["xpath=//form[2]/fieldset/div[6]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Salvar Alterações')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6648c657-285c-4327-adec-9a9a2e1eb3a6",
+    "name": "Excluir",
+    "commands": [{
+      "id": "ecae43c8-e1f8-4217-a6ea-3f9477283e23",
+      "comment": "",
+      "command": "open",
+      "target": "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release02/CrudEstoque/estoque.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7daca9ff-0319-4392-8dde-b1cee7a7a8e4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1278x670",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6157a00-486a-4ea9-8979-abc9f419aa8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.aba-link:nth-child(4)",
+      "targets": [
+        ["css=.aba-link:nth-child(4)", "css:finder"],
+        ["xpath=//button[4]", "xpath:position"],
+        ["xpath=//button[contains(.,'Excluir Item')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b8c4d9c-8e61-4467-8ce8-2c4a26733c70",
+      "comment": "",
+      "command": "click",
+      "target": "id=codigo_busca_excluir",
+      "targets": [
+        ["id=codigo_busca_excluir", "id"],
+        ["name=codigo_busca_excluir", "name"],
+        ["css=#codigo_busca_excluir", "css:finder"],
+        ["xpath=//input[@id='codigo_busca_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluir']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "866319c5-78d2-4b25-9722-0327c0c75f4f",
+      "comment": "",
+      "command": "type",
+      "target": "id=codigo_busca_excluir",
+      "targets": [
+        ["id=codigo_busca_excluir", "id"],
+        ["name=codigo_busca_excluir", "name"],
+        ["css=#codigo_busca_excluir", "css:finder"],
+        ["xpath=//input[@id='codigo_busca_excluir']", "xpath:attributes"],
+        ["xpath=//form[@id='formBuscarExcluir']/fieldset/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/form/fieldset/div/div/input", "xpath:position"]
+      ],
+      "value": "1234"
+    }, {
+      "id": "59887d67-5b23-4c19-8d1a-27e19acf8a6f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.confirm-group > label",
+      "targets": [
+        ["css=.confirm-group > label", "css:finder"],
+        ["xpath=//form[@id='formExcluirItem']/fieldset/div[3]/label", "xpath:idRelative"],
+        ["xpath=//fieldset/div[3]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Confirmo que desejo excluir este item permanentemente.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b7679bf-9cfb-46fb-8a1e-619a2aef7f31",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[5]", "xpath:attributes"],
+        ["xpath=//form[@id='formExcluirItem']/fieldset/div[4]/button[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9d65028c-dcd2-4b2f-bb48-45dba12296ea",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://thiagowq.github.io/", "https://thiagowq.github.io/Projeto-Engenharia-de-Software/Release02/CrudEstoque/estoque.html"],
+  "plugins": []
+}
