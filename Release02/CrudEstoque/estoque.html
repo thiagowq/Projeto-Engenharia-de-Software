@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque - Sistema de Gestão</title>
+    
+    <link rel="stylesheet" href="style-estoque.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+            <nav class="nav-links">
+                <a href="../../Release01/CrudCliente/cliente.html">Clientes</a>
+                <a href="../../Release01/CrudProduto/produto.html">Produtos</a>
+                <a href="../../Release01/CrudFuncionario/funcionario.html">Funcionários</a>
+                <a href="../CrudFornecedor/fornecedor.html">Fornecedores</a>
+                <a href="estoque.html" class="active">Estoque</a> 
+                <a href="../CrudDepartamento/secao.html">Seções</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <nav class="breadcrumbs">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="estoque.html" class="active">Gerenciamento de Estoque</a>
+            </nav>
+
+            <div class="card-principal">
+                
+                <nav class="navegacao-abas">
+                    <button class="aba-link" data-target="tela-cadastrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
+                        Inserir Item
+                    </button>
+                    <button class="aba-link" data-target="tela-consultar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
+                        Consultar Itens
+                    </button>
+                    <button class="aba-link" data-target="tela-editar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.42a4 4 0 0 0-.885 1.343Z" /></svg>
+                        Editar Item
+                    </button>
+                    <button class="aba-link" data-target="tela-excluir">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193v-.443A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75a1.25 1.25 0 0 0-1.25-1.25h-2.5A1.25 1.25 0 0 0 7.5 3.75v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z" clip-rule="evenodd" /></svg>
+                        Excluir Item
+                    </button>
+                </nav>
+        
+                <main class="conteudo-abas">
+        
+                    <div id="tela-cadastrar" class="tela">
+                        <form id="formCadastroItem">
+                            <fieldset>
+                                <legend><h1>Inserir Item de Estoque</h1></legend>
+                                <p>Cadastro de novo item controlado em estoque. O código interno deve ser único.</p>
+        
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="codigo_interno-cad">*Código interno</label>
+                                        <input type="text" id="codigo_interno-cad" name="codigo_interno" required maxlength="30" placeholder="Ex: 400-XYZ">
+                                    </div>
+                                    <div class="col">
+                                        <label for="descricao-cad">*Descrição / Nome do produto</label>
+                                        <input type="text" id="descricao-cad" name="descricao" required maxlength="150" placeholder="Ex: Tomate Italiano 1kg">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="categoria-cad">*Categoria</label>
+                                        <select id="categoria-cad" name="categoria" required>
+                                            <option value="">Selecione...</option>
+                                            <option>Hortifruti</option>
+                                            <option>Frios</option>
+                                            <option>Limpeza</option>
+                                            <option>Bebidas</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="unidade-cad">*Unidade de medida</label>
+                                        <select id="unidade-cad" name="unidade" required>
+                                            <option value="">Selecione...</option>
+                                            <option>KG</option>
+                                            <option>L</option>
+                                            <option>UN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="lote-cad">Controle por Lote</label>
+                                        <select id="lote-cad" name="lote">
+                                            <option>Não</option>
+                                            <option>Sim</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="validade-cad">*Controle por Validade</label>
+                                        <select id="validade-cad" name="validade" required>
+                                            <option>Não</option>
+                                            <option>Sim</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="estoque-cad">*Estoque Inicial</label>
+                                        <input type="text" id="estoque-cad" name="estoque" required placeholder="0,00">
+                                        <small>Quantidade atual (deve ser > 0 para cadastro inicial).</small>
+                                    </div>
+                                    <div class="col">
+                                        <label for="localizacao-cad">*Localização</label>
+                                        <input type="text" id="localizacao-cad" name="localizacao" required placeholder="Ex: Depósito A / Rua 3">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="status-cad">*Status</label>
+                                        <select id="status-cad" name="status" required>
+                                            <option>Ativo</option>
+                                            <option>Inativo</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="data_cadastro-cad">*Data de cadastro</label>
+                                        <input type="text" id="data_cadastro-cad" name="data_cadastro" readonly>
+                                        <small>Preenchido automaticamente.</small>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Limpar</button>
+                                    <button type="submit" class="btn-primary">Salvar Item</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-consultar" class="tela">
+                        <h1>Consultar Itens de Estoque</h1>
+                        <form id="formConsultaItem" class="form-filtro">
+                            <fieldset>
+                                <legend><h2>Filtros de Busca</h2></legend>
+                                <p>Consulte itens cadastrados aplicando filtros.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="f_codigo">Código interno</label>
+                                        <input type="text" id="f_codigo" name="codigo_interno" placeholder="código completo ou parcial">
+                                    </div>
+                                    <div class="col">
+                                        <label for="f_categoria">Categoria</label>
+                                        <select id="f_categoria" name="categoria">
+                                            <option value="">Todas</option>
+                                            <option>Hortifruti</option>
+                                            <option>Frios</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="f_unidade">Unidade</label>
+                                        <select id="f_unidade" name="unidade">
+                                            <option value="">Todas</option>
+                                            <option>KG</option>
+                                            <option>UN</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="f_status">Status</label>
+                                        <select id="f_status" name="status">
+                                            <option value="">Todos</option>
+                                            <option>Ativo</option>
+                                            <option>Inativo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Limpar</button>
+                                    <button type="button" class="btn-primary" onclick="buscarEstoque()">Buscar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                
+                        <div class="resultado">
+                            <h2>Itens Ativos</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Descrição</th>
+                                        <th>Categoria</th>
+                                        <th>Un.</th>
+                                        <th>Estoque</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyAtivos">
+                                    </tbody>
+                            </table>
+                        </div>
+                        <div class="resultado">
+                            <h2>Itens Inativos</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Descrição</th>
+                                        <th>Categoria</th>
+                                        <th>Un.</th>
+                                        <th>Estoque</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbodyInativos">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div id="tela-editar" class="tela">
+                        <form id="formBuscarItem" class="form-filtro">
+                            <fieldset>
+                                <legend><h1>Editar Item de Estoque</h1></legend>
+                                <p>Informe o código interno do item para carregar os dados e permitir edição.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="busca_codigo">*Código Interno</label>
+                                        <input type="text" id="busca_codigo" name="busca_codigo" required placeholder="Ex: 400-XYZ">
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Carregar Dados</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                
+                        <form id="formEditarItem" class="form-dashed-top">
+                            <fieldset>
+                                <legend><h2>Dados do Item: <span id="desc-edit-header" class="header-highlight"></span></h2></legend>
+                                <input type="hidden" id="id-edit"> <div class="row">
+                                    <div class="col">
+                                        <label for="codigo_interno_edit">*Código Interno</label>
+                                        <input type="text" id="codigo_interno_edit" name="codigo_interno_edit" required readonly>
+                                    </div>
+                                    <div class="col inline-check">
+                                        <input type="checkbox" id="permitir_codigo">
+                                        <label for="permitir_codigo">Permitir alterar Código Interno</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="descricao_edit">*Descrição</label>
+                                        <input type="text" id="descricao_edit" name="descricao_edit" required maxlength="150">
+                                    </div>
+                                    <div class="col">
+                                        <label for="categoria_edit">*Categoria</label>
+                                        <select id="categoria_edit" name="categoria_edit" required>
+                                            <option>Hortifruti</option>
+                                            <option>Frios</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="unidade_edit">*Unidade</label>
+                                        <select id="unidade_edit" name="unidade_edit" required>
+                                            <option>KG</option>
+                                            <option>UN</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="lote_edit">Controle por Lote</label>
+                                        <select id="lote_edit" name="lote_edit">
+                                            <option>Não</option>
+                                            <option>Sim</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="validade_edit">Controle por Validade</label>
+                                        <select id="validade_edit" name="validade_edit">
+                                            <option>Não</option>
+                                            <option>Sim</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="estoque_minimo">Estoque mínimo</label>
+                                        <input type="text" id="estoque_minimo" name="estoque_minimo" placeholder="0,00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="ponto_reposicao">Ponto de reposição</label>
+                                        <input type="text" id="ponto_reposicao" name="ponto_reposicao" placeholder="0,00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="localizacao_edit">*Localização</label>
+                                        <input type="text" id="localizacao_edit" name="localizacao_edit" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="status_edit">*Status</label>
+                                        <select id="status_edit" name="status_edit" required>
+                                            <option>Ativo</option>
+                                            <option>Inativo</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Descartar Mudanças</button>
+                                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-excluir" class="tela">
+                        <form id="formBuscarExcluir" class="form-filtro">
+                            <fieldset>
+                                <legend><h1>Excluir Item de Estoque</h1></legend>
+                                <p>Para excluir um item, o estoque dele precisa ser 0. Busque o item pelo código.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="codigo_busca_excluir">Código Interno</label>
+                                        <input type="text" id="codigo_busca_excluir" name="codigo_busca_excluir" placeholder="Ex: 999-OLD">
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Carregar Item</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                
+                        <form id="formExcluirItem" class="form-dashed-top">
+                            <fieldset>
+                                <legend><h2>Resumo do Item Selecionado</h2></legend>
+                                <input type="hidden" id="id-excluir"> <div class="resumo-box" id="resumo_item">
+                                    <p><strong>Item:</strong> <span id="desc-exc"></span> (Cód: <span id="cod-exc"></span>)</p>
+                                    <p><strong>Categoria:</strong> <span id="cat-exc"></span></p>
+                                    <p><strong>Status:</strong> <span id="status-exc"></span></p>
+                                    <p><strong>Estoque atual:</strong> <span id="estoque_atual_valor"></span></p>
+                                </div>
+                
+                                <div id="alerta_estoque" class="alerta alerta-perigo" style="display:none;">
+                                    Não é possível excluir: o estoque precisa ser 0.
+                                </div>
+                
+                                <div class="confirm-group">
+                                    <input type="checkbox" id="confirma_exclusao">
+                                    <label for="confirma_exclusao">
+                                        Confirmo que desejo excluir este item permanentemente.
+                                    </label>
+                                </div>
+                
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Cancelar</button>
+                                    <button type="submit" class="btn-danger">Excluir Item</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                </main> </div> </div> </main> <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="script-estoque.js"></script>
+</body>
+</html>

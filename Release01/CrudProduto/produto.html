@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Sistema de Gestão</title>
+    
+    <link rel="stylesheet" href="style-produto.css"> 
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+            <nav class="nav-links">
+                <a href="../CrudCliente/cliente.html">Clientes</a>
+                <a href="produto.html" class="active">Produtos</a>
+                <a href="../CrudFuncionario/funcionario.html">Funcionários</a>
+                <a href="../../Release02/CrudFornecedor/fornecedor.html">Fornecedores</a>
+                <a href="../../Release02/CrudEstoque/estoque.html">Estoque</a>
+                <a href="../../Release02/CrudDepartamento/secao.html">Seções</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        <div class="container">
+
+            <nav class="breadcrumbs">
+                <a href="index.html">Início</a>
+                <span>/</span>
+                <a href="produto.html" class="active">Gerenciamento de Produtos</a>
+            </nav>
+
+            <div class="card-principal">
+                
+                <nav class="navegacao-abas">
+                    <button class="aba-link" data-target="tela-cadastrar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 4.75a.75.75 0 0 0-1.5 0v4.5h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5v-4.5Z" /></svg>
+                        Cadastrar Produto
+                    </button>
+                    <button class="aba-link" data-target="tela-consultar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z" clip-rule="evenodd" /></svg>
+                        Consultar Produto
+                    </button>
+                    <button class="aba-link" data-target="tela-alterar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path d="m2.695 14.762-1.262 3.155a.5.5 0 0 0 .65.65l3.155-1.262a4 4 0 0 0 1.343-.886L17.5 5.501a2.121 2.121 0 0 0-3-3L3.58 13.42a4 4 0 0 0-.885 1.343Z" /></svg>
+                        Alterar Produto
+                    </button>
+                    <button class="aba-link" data-target="tela-descontinuar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8.75 1A2.75 2.75 0 0 0 6 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 1 0 .23 1.482l.149-.022.841 10.518A2.75 2.75 0 0 0 7.596 19h4.807a2.75 2.75 0 0 0 2.742-2.53l.841-10.52.149.023a.75.75 0 0 0 .23-1.482A41.03 41.03 0 0 0 14 4.193v-.443A2.75 2.75 0 0 0 11.25 1h-2.5ZM10 4c.84 0 1.673.025 2.5.075V3.75a1.25 1.25 0 0 0-1.25-1.25h-2.5A1.25 1.25 0 0 0 7.5 3.75v.325C8.327 4.025 9.16 4 10 4ZM8.58 7.72a.75.75 0 0 0-1.5.06l.3 7.5a.75.75 0 1 0 1.5-.06l-.3-7.5Zm4.34.06a.75.75 0 1 0-1.5-.06l-.3 7.5a.75.75 0 1 0 1.5.06l.3-7.5Z" clip-rule="evenodd" /></svg>
+                        Descontinuar
+                    </button>
+                </nav>
+        
+                <main class="conteudo-abas">
+        
+                    <div id="tela-cadastrar" class="tela">
+                        <form id="cadastroForm">
+                            <fieldset>
+                                <legend><h1>Cadastrar Novo Produto</h1></legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="nome-cad">*Nome do Produto</label>
+                                        <input type="text" id="nome-cad" required placeholder="Ex: Sabão em Pó Azul 500g">
+                                    </div>
+                                    <div class="col">
+                                        <label for="codigoBarras-cad">*Código de Barras</label>
+                                        <input type="text" id="codigoBarras-cad" required placeholder="Ex: 7891234567890">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="secao-cad">*Seção</label>
+                                        <select id="secao-cad" required>
+                                            <option value="">Selecione a Seção</option>
+                                            <option value="limpeza">Limpeza</option>
+                                            <option value="hortifruti">Hortifruti</option>
+                                            <option value="padaria">Padaria</option>
+                                            <option value="mercearia">Mercearia</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="fornecedor-cad">*Fornecedor Principal</label>
+                                        <input type="text" id="fornecedor-cad" required placeholder="Ex: Empresa X Distribuidora">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="custo-cad">*Custo Unitário (R$)</label>
+                                        <input type="text" id="custo-cad" required placeholder="R$ 0,00">
+                                    </div>
+                                    <div class="col">
+                                        <label for="venda-cad">*Preço de Venda (R$)</label>
+                                        <input type="text" id="venda-cad" required placeholder="R$ 0,00">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="descricao-cad">Descrição</label>
+                                        <textarea id="descricao-cad" rows="3" placeholder="Detalhes, ingredientes ou características."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="reset" class="btn-secondary">Limpar</button>
+                                    <button type="submit" class="btn-primary">Cadastrar Produto</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-consultar" class="tela">
+                        <h1>Consulta e Gestão de Produtos</h1>
+                        <form class="form-filtro">
+                            <fieldset>
+                                <legend><h2>Filtros de Busca</h2></legend>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="filtroNome">Nome ou Código</label>
+                                        <input type="text" id="filtroNome" placeholder="Buscar por Nome ou Código">
+                                    </div>
+                                    <div class="col">
+                                        <label for="filtroSecao">Seção</label>
+                                        <select id="filtroSecao">
+                                            <option value="">Todas as Seções</option>
+                                            <option value="limpeza">Limpeza</option>
+                                            <option value="hortifruti">Hortifruti</option>
+                                            <option value="padaria">Padaria</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="filtroStatus">Status</label>
+                                        <select id="filtroStatus">
+                                            <option value="ativo">Ativo</option>
+                                            <option value="inativo">Descontinuado</option>
+                                            <option value="">Todos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-primary" onclick="buscarProdutos()">Buscar</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                
+                        <div class="resultado">
+                            <h2>Resultados</h2>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Código</th>
+                                        <th>Nome</th>
+                                        <th>Seção</th>
+                                        <th>Estoque</th>
+                                        <th>Preço Venda</th>
+                                        <th>Status</th>
+                                        <th>Ações</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tabelaProdutos">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+        
+                    <div id="tela-alterar" class="tela">
+                        <h1>Alterar Produto: <span id="produtoNome-alt" class="header-highlight"></span></h1>
+                        
+                        <div class="alerta alerta-aviso">
+                            <strong>Quantidade em Estoque:</strong> <span id="estoqueAtual-alt"></span>
+                            <br>
+                            *Para alterar o estoque, use a função de "Movimentação de Estoque".
+                        </div>
+                
+                        <form id="alteracaoForm">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="codigoBarras-alt">Código de Barras (Não Editável)</label>
+                                        <input type="text" id="codigoBarras-alt" readonly>
+                                    </div>
+                                    <div class="col">
+                                        <label for="nome-alt">*Nome do Produto</label>
+                                        <input type="text" id="nome-alt" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="secao-alt">*Seção</label>
+                                        <select id="secao-alt" required>
+                                            <option value="limpeza">Limpeza</option>
+                                            <option value="hortifruti">Hortifruti</option>
+                                            <option value="padaria">Padaria</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label for="fornecedor-alt">*Fornecedor Principal</label>
+                                        <input type="text" id="fornecedor-alt" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="custo-alt">*Novo Custo (R$)</label>
+                                        <input type="text" id="custo-alt" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="venda-alt">*Novo Preço Venda (R$)</label>
+                                        <input type="text" id="venda-alt" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="descricao-alt">Descrição</label>
+                                        <textarea id="descricao-alt" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="button" class="btn-danger" onclick="abrirDescontinuacao(1)">Descontinuar</button>
+                                    <button type="submit" class="btn-primary">Salvar Alterações</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                    <div id="tela-descontinuar" class="tela">
+                        <h1>Descontinuar Produto: <span id="produtoNome-desc" class="header-highlight"></span></h1>
+                
+                        <div class="alerta alerta-perigo">
+                            ATENÇÃO: Este produto será marcado como **Inativo**. Ele não será excluído para manter o histórico de vendas.
+                        </div>
+                
+                        <form id="descontinuacaoForm">
+                            <fieldset>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="estoqueAtual-desc">Quantidade Atual em Estoque</label>
+                                        <input type="text" id="estoqueAtual-desc" readonly>
+                                    </div>
+                                    <div class="col">
+                                        <label for="motivo-desc">*Motivo da Descontinuação</label>
+                                        <select id="motivo-desc" required>
+                                            <option value="">Selecione o Motivo</option>
+                                            <option value="baixoGiro">Baixo Giro/Venda</option>
+                                            <option value="fimLinha">Fim de Linha</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label for="observacao-desc">Observações (Opcional)</label>
+                                        <textarea id="observacao-desc" rows="3" placeholder="Ex: Vender até zerar o estoque."></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-danger">Confirmar Descontinuação</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        
+                </main> </div> </div> </main> <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="script-produto.js"></script>
+</body>
+</html>

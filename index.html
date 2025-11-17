@@ -3,84 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> 
     <title>Menu Principal - Sistema de Gestão</title>
 </head>
 <body>
-    <header>
-        <div class="titulo">
-            <h1>Gestão para Supermercado</h1>
-        </div>
-        <div class="lista">
-            <ul>
-                <li><a href="">CRUD CLIENTE</a></li>
-                <li><a href="">CRUD FUNCIONÁRIO</a></li>
-                <li><a href="">CRUD PRODUTO</a></li>
-            </ul>
+
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">SG<span>Supermercado</span></a>
+            <nav class="nav-links">
+                <a href="#clientes">Clientes</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#funcionarios">Funcionários</a>
+                <a href="#fornecedores">Fornecedores</a>
+                <a href="#estoque">Estoque</a>
+                <a href="#secoes">Seções</a>
+            </nav>
         </div>
     </header>
 
-    <section class="primeira">
-        <div>
-            <h1>Gestão para Supermercado</h1>
-            <p>O melhor sistema para a gestão do seu negócio</p>
+    <section class="hero">
+        <div class="container">
+            <h1>O melhor sistema para a gestão do seu negócio</h1>
+            <p>Controle total de clientes, produtos, estoque e muito mais, tudo em um só lugar.</p>
+            <a href="#modulos" class="cta-button">Ver Módulos</a>
         </div>
     </section>
 
-    <section class="segunda">
-        <div>
-            <div>
-                <h2>Gerenciamento de Clientes</h2>
-                <ul>
-                    <li>
-                        <a href="Release01/CrudCliente/inserir-cliente.html">Inserir Cliente</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudCliente/consultar-cliente.html">Consultar Cliente</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudCliente/editar-cliente.html">Editar Cliente</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudCliente/excluir-cliente.html">Excluir/Inativar Cliente</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>Gerenciamento de Estoque/Produtos</h2>
-                <ul>
-                    <li>
-                        <a href="Release01/CrudProduto/cadastrarProduto.html">Cadastrar Produto</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudProduto/consultarProduto.html">Consultar Produtos</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudProduto/altercaodeProduto.html">Alterar Produto</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudProduto/deletarProduto.html">Descontinuar Produto</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h2>Gerenciamento de Colaboradores</h2>
-                <ul>
-                    <li>
-                        <a href="Release01/CrudFuncionario/cadastrarFuncionario.html">Cadastrar Funcionário</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudFuncionario/consultarFuncionario.html">Consultar Funcionário</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudFuncionario/editarFuncionario.html">Editar Funcionário</a>
-                    </li>
-                    <li>
-                        <a href="Release01/CrudFuncionario/excluirFuncionario.html">Inativar Funcionário</a>
-                    </li>
-                </ul>
+    <main id="modulos" class="modules-section">
+        <div class="container">
+            <h2>Módulos de Gerenciamento</h2>
+            
+            <div class="card-grid">
+                
+                <div class="card" id="clientes">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M4.5 6.375a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75v11.25a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V6.375Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3>Gerenciamento de Clientes</h3>
+                    <p>Cadastro, consulta, edição e inativação de clientes.</p>
+                    <a href="Release01/CrudCliente/cliente.html" class="card-link">Acessar Módulo</a>
+                </div>
+
+                <div class="card" id="produtos">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                             <path fill-rule="evenodd" d="M6 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3H6Zm1.5 1.5a.75.75 0 0 0-.75.75V6H6a.75.75 0 0 0 0 1.5h1.5v1.5a.75.75 0 0 0 1.5 0V7.5H9a.75.75 0 0 0 0-1.5H7.5V4.5a.75.75 0 0 0-.75-.75ZM10.5 6a.75.75 0 0 0 0 1.5h6.75a.75.75 0 0 0 0-1.5H10.5Zm0 3a.75.75 0 0 0 0 1.5h6.75a.75.75 0 0 0 0-1.5H10.5Zm0 3a.75.75 0 0 0 0 1.5h6.75a.75.75 0 0 0 0-1.5H10.5Zm0 3a.75.75 0 0 0 0 1.5h6.75a.75.75 0 0 0 0-1.5H10.5Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3>Gerenciamento de Produtos</h3>
+                    <p>Cadastro, consulta de preços e descontinuação de itens.</p>
+                    <a href="Release01/CrudProduto/produto.html" class="card-link">Acessar Módulo</a>
+                </div>
+
+                <div class="card" id="funcionarios">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                             <path d="M4.5 3.75a.75.75 0 0 1 .75-.75h13.5a.75.75 0 0 1 .75.75v16.5a.75.75 0 0 1-.75.75H5.25a.75.75 0 0 1-.75-.75V3.75ZM8.25 4.5a.75.75 0 0 0-.75.75v13.5a.75.75 0 0 0 .75.75h7.5a.75.75 0 0 0 .75-.75V5.25a.75.75 0 0 0-.75-.75H8.25Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3>Gerenciamento de Colaboradores</h3>
+                    <p>Gestão de funcionários, cargos, salários e permissões.</p>
+                    <a href="Release01/CrudFuncionario/funcionario.html" class="card-link">Acessar Módulo</a>
+                </div>
+                
+                <div class="card" id="fornecedores">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M3.375 4.5C2.339 4.5 1.5 5.34 1.5 6.375V13.5h1.125c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125H1.5v3.375c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875V6.375c0-1.036-.84-1.875-1.875-1.875H3.375ZM15 6a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5H15ZM15 9a.75.75 0 0 0 0 1.5h4.5a.75.75 0 0 0 0-1.5H15Z" />
+                          <path d="M5.25 13.5c0-.621.504-1.125 1.125-1.125H12v5.25H6.375c-.621 0-1.125-.504-1.125-1.125v-3Z" />
+                        </svg>
+                    </div>
+                    <h3>Gerenciamento de Fornecedores</h3>
+                    <p>Gestão de parceiros, cotações e notas de entrada.</p>
+                    <a href="Release02/CrudFornecedor/fornecedor.html" class="card-link">Acessar Módulo</a>
+                </div>
+
+                <div class="card" id="estoque">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                          <path d="M12 1.5a.75.75 0 0 1 .75.75v5.25a.75.75 0 0 1-1.5 0V2.25A.75.75 0 0 1 12 1.5ZM18.75 6a.75.75 0 0 0-1.5 0v5.25a.75.75 0 0 0 1.5 0V6ZM5.25 6a.75.75 0 0 0-1.5 0v5.25a.75.75 0 0 0 1.5 0V6Z" />
+                          <path fill-rule="evenodd" d="M3 12.75c0-1.518 1.232-2.75 2.75-2.75h12.5A2.75 2.75 0 0 1 21 12.75v5.5A2.75 2.75 0 0 1 18.25 21H5.75A2.75 2.75 0 0 1 3 18.25v-5.5Zm3 1.5v3.25c0 .414.336.75.75.75h10.5a.75.75 0 0 0 .75-.75v-3.25a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75Z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <h3>Gerenciamento de Estoque</h3>
+                    <p>Controle de inventário, itens, lotes e validades.</p>
+                    <a href="Release02/CrudEstoque/estoque.html" class="card-link">Acessar Módulo</a>
+                </div>
+
+                <div class="card" id="secoes">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                          <path fill-rule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12Zm11.378-3.917c-.882-1.025-2.833-1.025-3.715 0a.75.75 0 0 1-1.115-.986C9.89 5.901 11.838 5 12 5c.162 0 2.11.901 3.202 2.115a.75.75 0 0 1-1.115.986Z" clip-rule="evenodd" />
+                          <path d="M12.01 16.5c2.09 0 3.864-1.002 4.968-2.606a.75.75 0 1 0-1.22-.888C15.02 14.156 13.61 15 12.01 15c-1.6 0-3.01-.844-3.75-1.994a.75.75 0 0 0-1.22.888C8.146 15.498 9.92 16.5 12.01 16.5Z" />
+                        </svg>
+                    </div>
+                    <h3>Gerenciamento de Seções</h3>
+                    <p>Organização de departamentos, categorias e setores.</p>
+                    <a href="Release02/CrudDepartamento/secao.html" class="card-link">Acessar Módulo</a>
+                </div>
+
             </div>
         </div>
-    </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
