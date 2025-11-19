@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Relatório de Fornecedores por Ramo de Atividade - SGSupermercado</title>
+</head>
+<body>
+
+    <header class="navbar">
+    <div class="container">
+        <!-- Voltar para o menu principal -->
+        <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+
+        <nav class="nav-links">
+            <!-- Links voltando para as seções do index -->
+            <a href="../../index.html#clientes">Clientes</a>
+            <a href="../../index.html#produtos">Produtos</a>
+            <a href="../../index.html#funcionarios">Funcionários</a>
+
+            <!-- Estamos na parte de fornecedores, então deixo destacado -->
+            <a href="../../index.html#fornecedores"
+               style="color: var(--primary-color); border-bottom: 2px solid var(--primary-color);">
+               Fornecedores
+            </a>
+
+            <!-- Link direto para o RELATÓRIO de Estoque -->
+            <a href="../Relatorio de estoque/relatorio_estoque.html">Estoque</a>
+
+            <a href="../../index.html#secoes">Seções</a>
+        </nav>
+        </div>
+    </header>
+
+
+    <main class="content-page">
+        <div class="container">
+            
+            <div class="breadcrumb">
+                <a href="../../index.html">Início</a> / Relatório de Fornecedores por Ramo de Atividade
+            </div>
+
+            <h1 class="page-title">Relatório de Fornecedores por Ramo de Atividade</h1>
+            
+            <div class="main-content-area">
+                
+                <aside class="sidebar-menu">
+                    <a href="../../index.html" class="menu-item">
+                        <span class="icon">🏠</span> Início
+                    </a>
+
+                    <a href="../Relatorio de estoque/relatorio_estoque.html" class="menu-item">
+                        <span class="icon">📊</span> Relatório de Estoque
+                    </a>
+
+                    <a href="./relatorio_fornecedores.html" class="menu-item active">
+                        <span class="icon">📋</span> Relatório de Fornecedores
+                    </a>
+                </aside>
+
+
+
+                <section class="report-area">
+
+                    <!-- CARD DE FILTROS -->
+                    <div class="card-report filters-card">
+                        <h2>Filtros para Emissão</h2>
+                        <div class="form-grid">
+                            
+                            <div class="form-group">
+                                <label for="razaoSocial">Razão Social *</label>
+                                <input type="text" id="razaoSocial" placeholder="Ex: Indústrias Alfa LTDA">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="ramoAtividade">Ramo de Atividade *</label>
+                                <input type="text" id="ramoAtividade" placeholder="Ex: Indústria, Atacado, Varejo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="cnpj">CNPJ *</label>
+                                <input type="text" id="cnpj" placeholder="00.000.000/0001-00">
+                            </div>
+
+                            <div class="form-group form-action">
+                                <button id="emitirRelatorioFor" class="cta-button" disabled>Emitir Relatório</button>
+                            </div>
+                        </div>
+
+                        <p class="chart-note">Campos marcados com * são obrigatórios.</p>
+                    </div>
+                    
+                    <!-- CARD DE RESULTADOS -->
+                    <div class="card-report results-card">
+                        <h2>Resultados do Relatório</h2>
+
+                        <div class="table-container">
+                            <h3>Fornecedores agrupados por Ramo de Atividade</h3>
+
+                            <!-- Aqui os blocos por ramo serão inseridos via JS -->
+                            <div id="blocos-ramo"></div>
+
+                            <hr class="section-divider">
+
+                            <div class="total-summary">
+                                <h3>TOTAL (Montante de fornecedores em todos os ramos)</h3>
+                                <p class="total-value" id="total-fornecedores">
+                                    0 fornecedores - 0 produtos no total
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <script src="./script_fornecedores.js"></script>
+</body>
+</html>
+

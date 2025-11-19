@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <title>Relatório de Produto por Estoque - SGSupermercado</title>
+</head>
+<body>
+
+        <header class="navbar">
+            <div class="container">
+                <!-- Voltar para o menu principal -->
+                <a href="../../index.html" class="logo">SG<span>Supermercado</span></a>
+
+                <nav class="nav-links">
+                    <!-- Links para as seções do index -->
+                    <a href="../../index.html#clientes">Clientes</a>
+                    <a href="../../index.html#produtos">Produtos</a>
+                    <a href="../../index.html#funcionarios">Funcionários</a>
+
+                    <!-- Link pro RELATÓRIO de Fornecedores -->
+                    <a href="../Relatorio de fornecedor/relatorio_fornecedores.html">Fornecedores</a>
+
+                    <!-- Estamos NO relatório de estoque, então deixo destacado -->
+                    <a href="./relatorio_estoque.html"
+                    style="color: var(--primary-color); border-bottom: 2px solid var(--primary-color);">
+                    Estoque
+                    </a>
+
+                    <a href="../../index.html#secoes">Seções</a>
+                </nav>
+            </div>
+        </header>
+
+
+    <main class="content-page">
+        <div class="container">
+            
+            <div class="breadcrumb">
+                <a href="../../index.html">Início</a> / Relatório de Produto por Estoque
+            </div>
+
+
+            <h1 class="page-title">Relatório de Produto por Estoque</h1>
+            
+            <div class="main-content-area">
+                
+            <aside class="sidebar-menu">
+                <!-- Consultar Estoque (CRUD) -->
+                <a href="../../Release02/CrudEstoque/estoque.html" class="menu-item">
+                    <span class="icon">🔍</span> Consultar Estoque
+                </a>
+
+                <!-- Estamos NESTE relatório -->
+                <a href="./relatorio_estoque.html" class="menu-item active">
+                    <span class="icon">📊</span> <strong>Relatório por Estoque</strong>
+                </a>
+
+                <!-- Link para o RELATÓRIO DE FORNECEDORES -->
+                <a href="../Relatorio de fornecedores/relatorio_fornecedores.html" class="menu-item">
+                    <span class="icon">📋</span> Relatório de Fornecedores
+                </a>
+            </aside>
+
+
+
+                <section class="report-area">
+
+                    <div class="card-report filters-card">
+                        <h2>Filtros para Emissão</h2>
+                        <div class="form-grid">
+                            
+                            <div class="form-group">
+                                <label for="produto">Produto *</label>
+                                <input type="text" id="produto" placeholder="Nome ou Código do Produto">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="validade">Validade *</label>
+                                <input type="date" id="validade">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="secao">Seção *</label>
+                                <select id="secao">
+                                    <option value="" selected>Todas as Seções</option>
+                                    <option value="limpeza">Limpeza</option>
+                                    <option value="bebidas">Bebidas</option>
+                                    <option value="mercearia">Mercearia</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fornecedor">Fornecedor *</label>
+                                <select id="fornecedor">
+                                    <option value="" selected>Todos os Fornecedores</option>
+                                    <option value="forn1">Alfa Suprimentos</option>
+                                    <option value="forn2">Betha Distribuidora</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="quantidade">Qtd. Mínima em Estoque *</label>
+                                <input type="number" id="quantidade" placeholder="Ex: 50">
+                            </div>
+
+                            <div class="form-group form-action">
+                                <button id="emitirRelatorio" class="cta-button" disabled>Emitir Relatório</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="card-report results-card">
+                        <h2>Resultados do Relatório</h2>
+
+                        <div class="chart-container">
+                            <h3>Gráfico: Produto vs. Quantidade em Estoque</h3>
+                            <div class="bar-chart-placeholder">
+                                <canvas id="estoqueChart"></canvas>
+                            </div>
+                            <p class="chart-note">Nota: Cada barra do gráfico é interativa e detalha os dados do lote (Nota 01).</p>
+                        </div>
+                        
+                        <hr class="separator">
+
+                        <div class="table-container">
+                            <h3>Detalhamento Tabulado por Seção e Validade</h3>
+                            
+                            <div class="section-group">
+                                <div class="section-header">
+                                    &lt;&lt; Seção de <span id="secao-nome">Limpeza</span> &gt;&gt;
+                                </div>
+                                <table class="report-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Produto</th>
+                                            <th>Data de Validade</th>
+                                            <th>Quantidade</th>
+                                            <th>Valor Unitário</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody-estoque">
+                                        <!-- linhas serão preenchidas via JS -->
+                                    </tbody>
+                                </table>
+                                <div class="section-footer">
+                                    <p>SubTotal Seção (<span id="subtotal-qtd">0</span> unidades)</p>
+                                    <p>SubTotal Seção (valor): <span id="subtotal-valor">R$ 0,00</span></p>
+                                </div>
+                            </div>
+
+                            <hr class="section-divider">
+
+                            <div class="total-summary">
+                                <h3>TOTAL GERAL (Montante do valor arrecadado em todas as seções)</h3>
+                                <p class="total-value" id="total-geral">R$ 0,00</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 SGSupermercado. Todos os direitos reservados.</p>
+            <p>Desenvolvido como projeto acadêmico.</p>
+        </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="./script_estoque.js"></script>
+</body>
+</html>
+

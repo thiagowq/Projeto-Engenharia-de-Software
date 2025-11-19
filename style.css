@@ -4,14 +4,20 @@
 :root {
     --primary-color: #007bff; /* Azul vibrante */
     --primary-hover: #0056b3; /* Azul mais escuro para hover */
+
+    /* NOVO: cores para o botão verde */
+    --success-color: #28a745;
+    --success-hover: #1e7e34;
+
     --text-dark: #333;
     --text-light: #666;
-    --bg-light: #f8f9fa; /* Fundo do corpo */
+    --bg-light: #f8f9fa;
     --bg-white: #ffffff;
     --border-color: #e9ecef;
     --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.05);
     --shadow-medium: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Reset básico e tipografia */
 * {
@@ -211,6 +217,16 @@ body {
     background-color: var(--primary-hover);
 }
 
+/* Botão verde (ex: Relatório de Fornecedores) */
+.card-link-success {
+    background-color: var(--success-color);
+}
+
+/* Hover do botão verde */
+.card-link-success:hover {
+    background-color: var(--success-hover);
+}
+
 /* ================================================= */
 /* 5. RODAPÉ */
 /* ================================================= */
@@ -265,4 +281,235 @@ body {
     .nav-links a {
         margin-left: 0;
     }
+}
+
+/* ================================================= */
+/* 7. ESTILOS ESPECÍFICOS PARA TELAS INTERNAS (CRUD/RELATÓRIO) */
+/* ================================================= */
+
+.content-page {
+    padding-top: 100px; /* Espaço para a navbar fixa */
+    padding-bottom: 50px;
+    min-height: calc(100vh - 80px); /* Altura mínima para ocupar a tela */
+}
+
+.breadcrumb {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+.main-content-area {
+    display: flex;
+    gap: 30px;
+}
+
+/* Menu Lateral (Sidebar) */
+.sidebar-menu {
+    width: 250px;
+    flex-shrink: 0;
+    padding-top: 15px;
+}
+
+.sidebar-menu .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar-menu .menu-item .icon {
+    margin-right: 10px;
+    font-size: 1.1rem;
+}
+
+.sidebar-menu .menu-item:hover,
+.sidebar-menu .menu-item.active {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Área Principal do Relatório */
+.report-area {
+    flex-grow: 1;
+}
+
+.card-report {
+    background-color: var(--bg-white);
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: var(--shadow-light);
+    margin-bottom: 30px;
+    border: 1px solid var(--border-color);
+}
+
+.card-report h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+/* Estilo para Formulário de Filtros */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: var(--bg-white);
+}
+
+.form-action {
+    display: flex;
+    align-items: flex-end; /* Alinha o botão com a base dos campos */
+}
+
+.form-action .cta-button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos de Resultados */
+
+.chart-container {
+    padding: 20px 0;
+}
+
+.chart-container h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.bar-chart-placeholder {
+    height: 300px; /* Altura para simular o gráfico de barras */
+    background-color: #e9f5ff; /* Fundo azul claro para simular área de gráfico */
+    border: 1px dashed var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-style: italic;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.chart-note {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    margin-bottom: 30px;
+}
+
+.separator {
+    border: 0;
+    border-top: 1px solid var(--border-color);
+    margin: 30px 0;
+}
+
+/* Estilos de Tabela do Relatório */
+.section-group {
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.section-header {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-white);
+}
+
+.report-table th, .report-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.report-table th {
+    background-color: #f1f1f1;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.report-table tbody tr:nth-child(even) {
+    background-color: #fcfcfc;
+}
+
+.section-footer {
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #ddd;
+}
+
+.section-footer p {
+    margin: 5px 0;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.total-summary {
+    text-align: right;
+    padding: 20px 0;
+}
+
+.total-summary h3 {
+    font-size: 1.5rem;
+    color: var(--primary-hover);
+    margin-bottom: 5px;
+}
+
+.total-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
 }
